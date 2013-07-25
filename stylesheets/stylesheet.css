@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'GothamBlack';
+    src: url('gotham-black-webfont-webfont.eot');
+    src: url('gotham-black-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-black-webfont-webfont.woff') format('woff'),
+         url('gotham-black-webfont-webfont.ttf') format('truetype'),
+         url('gotham-black-webfont-webfont.svg#gothamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamBook';
+    src: url('gothambook-webfont.eot');
+    src: url('gothambook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothambook-webfont.woff') format('woff'),
+         url('gothambook-webfont.ttf') format('truetype'),
+         url('gothambook-webfont.svg#gothambookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('gothamexlight-webfont.eot');
+    src: url('gothamexlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothamexlight-webfont.woff') format('woff'),
+         url('gothamexlight-webfont.ttf') format('truetype'),
+         url('gothamexlight-webfont.svg#gothamexlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .grid {
 	margin: 0 auto;
 	max-width: 900px;
@@ -30,9 +62,14 @@ header nav ul li a {
 	display: block;
 	padding: 10px 13px 21px;
 	text-transform: uppercase;
+	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 header nav ul li a:hover {
 	color: #7e7e7e;
+}
+
+#head {
+        background: #fff;
 }
 
 
