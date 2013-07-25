@@ -32,7 +32,7 @@
 
 .grid {
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 1000px;
 	padding: 0 0px;
 }
 
@@ -72,4 +72,70 @@ header nav ul li a:hover {
         background: #fff;
 }
 
+.area {
+	padding: 100px 0;
+}
 
+.orange {
+	background: #f5af33 url(../images/lensflare.png) no-repeat center top;
+	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.orange a {
+	color: #000;
+}
+.blue {
+	background: #f0ebe4 url(../images/carousel_bg.jpg);
+	color: #213f41;
+}
+.blue h4 {
+	color: #fff;
+}
+.lightgrey {
+	background: #f0ebe4 url(../images/lightgrey_bg.jpg);
+}
+.grey {
+	background: #1c1c1c;
+	color: #737373;
+}
+.black {
+	background: #000;
+	color: #fff;
+}
+
+#sponsors {
+        padding: 30px;
+}
+
+#sponsors a {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+
+        transition: filter 1s;
+        transition: -webkit-filter 1s;
+        transition: -moz-filter 1s;
+        transition: -o-filter 1s;
+        transition: -ms-filter 1s;
+}
+
+#sponsors a:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+
+        transition: filter 1s;
+        transition: -webkit-filter 1s;
+        transition: -moz-filter 1s;
+        transition: -o-filter 1s;
+        transition: -ms-filter 1s;
+}
+
+footer {
+        padding: 10px;
+        text-align:center;
+}
