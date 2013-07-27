@@ -77,18 +77,15 @@ header nav ul li a:hover {
 }
 
 .orange {
-	background: #f5af33 url(../images/lensflare.png) no-repeat center top;
+	background: #ff6a00;
 	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
 	box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
 }
 .orange a {
 	color: #000;
 }
-.blue {
-	background: #f0ebe4 url(../images/carousel_bg.jpg);
-	color: #213f41;
-}
-.blue h4 {
+.purple {
+	background: #6633cc;
 	color: #fff;
 }
 .lightgrey {
