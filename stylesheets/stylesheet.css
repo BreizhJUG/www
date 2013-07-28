@@ -97,7 +97,42 @@ header nav ul li a:hover {
 }
 .black {
 	background: #000;
+	}
+
+
+#events li {
+        float: left;
+	list-style: none;
+	position: relative;
+	width: 266px;
+	margin-right: 2px;
+}
+
+#events h4 {
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #ff6a00;
+}
+
+#speakers {
+	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
+}
+
+#speakers li {
+	list-style: none;
+	background: #fff; 	
+}
+#speakers h2 {
 	color: #fff;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+a.twitter {
+      	background: url(../images/twitter_icon.gif) no-repeat 0 0;
+        padding-left: 50px;
+        color: #8af;
 }
 
 #sponsors {
