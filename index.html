@@ -6,6 +6,10 @@
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+    <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +42,10 @@
     </header>
 
         <section id="head">
-          <img src="images/breizhjug-grand.png"/>
+          <ul class="slider">
+            <li><img src="images/breizhjug-grand.png"/></li>
+            <li><img src="images/GDG_Rennes.png"/></li>
+          <ul>
         </section>
   
         <section id="next" class="area lightgrey">
@@ -155,11 +162,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
           BreizhJUG est une association loi 1901 - <a href="mailto:team@breizhjug.org">team@breizhjug.org</a> 
           <br/>
           Ce site a été réalisé avec les contributions de <a href="http://www.twitter.com/ndeloof">@ndeloof</a>, ...
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" style="position:absolute; left:0"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a><br />Cette œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 France</a>.
         </footer>
 
 
-        <script src="http://code.jquery.com/jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+$(document).ready(function(){
+  $('.slider').bxSlider();
+});
+        </script>
         <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
