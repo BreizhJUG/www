@@ -121,8 +121,19 @@ header nav ul li a:hover {
 
 #speakers li {
 	list-style: none;
-	background: #fff; 	
+	text-align: center;
 }
+
+#speakers li img {
+        border: solid 1px #000;
+	height: 160px;
+	width: 160px;
+	line-height: 150px;
+	margin: 1px auto;
+	-webkit-border-radius: 80px;
+	border-radius: 80px;
+}
+
 #speakers h2 {
 	color: #fff;
 	margin-bottom: 70px;
@@ -130,9 +141,10 @@ header nav ul li a:hover {
 }
 
 a.twitter {
-      	background: url(../images/twitter_icon.gif) no-repeat 0 0;
+      	background: url(../images/twitter_icon.png) no-repeat 0 0;
         padding-left: 50px;
-        color: #8af;
+	min-height: 50px;
+        color: #139be8;
 }
 
 #sponsors {
