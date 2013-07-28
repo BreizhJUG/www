@@ -163,11 +163,41 @@ a.twitter {
 	color: #737373;
 }
 
+/* 5 columns http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap */
+@media (min-width: 768px){
+    .fivecolumns .span2 {
+        width: 18.297872340425532%;
+        *width: 18.2234042553191494%;
+    }
+}
+@media (min-width: 1200px) {
+    .fivecolumns .span2 {
+        width: 17.9487179487179488%;
+        *width: 17.87424986361156592%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .fivecolumns .span2 {
+        width: 17.79005524861878448%;
+        *width: 17.7155871635124022%;
+    }
+}
+
+#team .row {
+	margin:auto;
+}
+
+
 #team h2 {
 	color: #fff;
 	margin-bottom: 70px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#team h4{
+	color: #ff6a00;
+	min-height: 40px;
 }
 
 #sponsors {
