@@ -113,6 +113,8 @@ header nav ul li a:hover {
 h2 {
 	text-transform: uppercase;
 	text-align: center;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 #events h4 {
@@ -218,8 +220,6 @@ a.twitter {
 #team h2 {
 	color: #fff;
 	margin-bottom: 70px;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 #team h4{
@@ -227,9 +227,10 @@ a.twitter {
 	min-height: 40px;
 }
 
-#sponsors {
-        padding: 30px;
+#sponsors h2 {
+	margin-bottom: 70px;
 }
+
 
 #sponsors a {
         filter: grayscale(100%);
