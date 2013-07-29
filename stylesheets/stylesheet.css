@@ -128,9 +128,8 @@ h2 {
 	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
 }
 
-#speakers li {
-	list-style: none;
-	text-align: center;
+#speakers .speaker {
+    text-align: center;
 }
 
 .speaker img {
@@ -151,7 +150,6 @@ h2 {
 #speakers h2 {
 	color: #fff;
 	margin-bottom: 70px;
-	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -161,7 +159,9 @@ h2 {
 	border-radius:10px;
  	padding: 5px;
         background: #fff;
-        box-shadow: 2px 2px 2px #000; 
+        box-shadow: 2px 2px 2px #000;
+    text-align: left;
+    margin: 0px auto;
 }
 
 a.twitter {
@@ -192,31 +192,6 @@ a.twitter {
 	color: #737373;
 }
 
-/* 5 columns http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap */
-@media (min-width: 768px){
-    .fivecolumns .span2 {
-        width: 18.297872340425532%;
-        *width: 18.2234042553191494%;
-    }
-}
-@media (min-width: 1200px) {
-    .fivecolumns .span2 {
-        width: 17.9487179487179488%;
-        *width: 17.87424986361156592%;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-    .fivecolumns .span2 {
-        width: 17.79005524861878448%;
-        *width: 17.7155871635124022%;
-    }
-}
-
-#team .row {
-	margin:auto;
-}
-
-
 #team h2 {
 	color: #fff;
 	margin-bottom: 70px;
@@ -225,6 +200,21 @@ a.twitter {
 #team h4{
 	color: #ff6a00;
 	min-height: 40px;
+}
+
+@media (max-width: 767px) {
+    #team .team {
+        padding: 10px;
+    }
+}
+
+#sponsors {
+    padding: 30px;
+}
+
+#sponsors .sponsor {
+    padding: 20px;
+    text-align: center;
 }
 
 #sponsors h2 {
@@ -264,4 +254,22 @@ a.twitter {
 footer {
         padding: 10px;
         text-align:center;
+    position: relative;
+}
+
+footer .license {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    footer .license {
+        position: relative;
+        left: auto;
+        top: auto;
+        display: block;
+        text-align: center;
+    }
 }
