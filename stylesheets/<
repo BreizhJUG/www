@@ -53,21 +53,20 @@
   
         <section id="next" class="area lightgrey">
           <a name="events"></a>
-          <h2><span class="glyphicon glyphicon-bullhorn"></span> Prochain événement</h2>
           <div class="grid">
             <div class="row">
               <div class="span4">
                 <img src="images/breizhjug.png"/>
               </div>
               <div class="span8">
-                <h3>Lorem ipsum </h3>
+                <h2>Prochain événement</h2>
                 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.
                 </p>
                 <ul>
-                  <li><span class="glyphicon glyphicon-time"></span> <a href="#">Jeudi 3 Octobre à 18h00</a></li>
-                  <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">ISTIC, campus de Beaulieu</a></li>
-                  <li><span class="glyphicon glyphicon-share"> Share on [Twitter][???][Mail]</li>
+                  <li><a href="#">Jeudi 3 Octobre à 18h00</a></li>
+                  <li><a href="#">ISTIC, campus de Beaulieu</a></li>
+                  <li>Share on [Twitter][???][Mail]</li>
                 </ul> 
               </div>
             </div>
@@ -76,7 +75,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
 
         <section id="events" class="area grey">
           <div class="carousel">
-            <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés</h2>
             <ol>
               <li>
                 <img src="events/kids.png" />
@@ -84,14 +82,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
                 <h4>Kids at work</h4>
                 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-                <ul>
-                  <li><span class="glyphicon glyphicon-film"></span> <a href="#">vidéo</a></li>
-                  <li><span class="glyphicon glyphicon-camera"></span> <a href="#">photos</a></li>
-                  <li><span class="glyphicon glyphicon-picture"></span> <a href="#">slides</a></li>
-                  <li><span class="glyphicon glyphicon-paperclip"></span> <a href="#">link</a></li>
-                </ul> 
-
-                </ul>
               </li>
               <li>
                 <img src="events/kids.png" />
@@ -129,7 +119,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
         <section id="speakers" class="area orange">
           <a name="speakers"></a>
           <div class="">
-            <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
+            <h2>Speakers</h2>
             <div class="grid">
             <div class="row">
               <div class="span4 speaker">
@@ -169,7 +159,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
         </section>
         <section id="news" class="area white">
           <a name="news"></a>
-            <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
+            <h2><span class="glyphicon glyphicon-retweet"></span>Ze social network</h2>
           <div class="grid">
             <div class="row">
               <div class="span9">
@@ -212,7 +202,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
 
         <section id="team" class="area">
           <a name="team"></a>
-          <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
+          <h2>l'équipe</h2>
           <div class="grid">
             <div class="row fivecolumns">
               <div class="span2 team">
@@ -272,20 +262,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
 
         <section id="sponsors">
           <a name="partners"></a>
-          <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
-          <div class="grid">
-            <div class="row">
-              <div class="span4" align="center">
+        <div class="grid">
+          <div class="row">
+            <div class="span4" align="center">
                 <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.png" alt="Zenika"/></a>
-              </div>
-              <div class="span4" align="center">
+            </div>
+            <div class="span4" align="center">
                 <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam"/></a>
-              </div>
-              <div class="span4" align="center">
+            </div>
+            <div class="span4" align="center">
                 <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic"/></a>
-              </div>
             </div>
           </div>
+        </div>
         </section>
         <footer class="black">
           BreizhJUG est une association loi 1901 - <a href="mailto:team@breizhjug.org">team@breizhjug.org</a> 

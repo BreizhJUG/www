@@ -95,6 +95,12 @@ header nav ul li a:hover {
 	background: #000;
 	}
 
+#next h2 {
+	color: #ff6a00;
+}
+#next h3 {
+	color: #ff6a00;
+}
 
 #events li {
         float: left;
@@ -102,6 +108,11 @@ header nav ul li a:hover {
 	position: relative;
 	width: 266px;
 	margin-right: 10px;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #events h4 {
@@ -227,25 +238,17 @@ a.twitter {
         -o-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
 
-        transition: filter 1s;
-        transition: -webkit-filter 1s;
-        transition: -moz-filter 1s;
-        transition: -o-filter 1s;
-        transition: -ms-filter 1s;
+        transition: all 1s;
 }
 
-#sponsors a:hover{
+#sponsors a:hover {
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
         -o-filter: grayscale(0%);
         -ms-filter: grayscale(0%);
 
-        transition: filter 1s;
-        transition: -webkit-filter 1s;
-        transition: -moz-filter 1s;
-        transition: -o-filter 1s;
-        transition: -ms-filter 1s;
+        transition: all 1s;
 }
 
 footer {
