@@ -158,6 +158,22 @@ a.twitter {
         color: #139be8;
 }
 
+#forum_embed {
+	border:solid 1px #444;
+}
+
+#news {
+	background: #fff;
+}
+
+#news h2 {
+	color: #ff8000;
+	margin-bottom: 70px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
 #team {
 	background: #1c1c1c url(../images/lensflare.png) no-repeat center top;
 	color: #737373;
