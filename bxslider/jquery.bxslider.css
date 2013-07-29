@@ -28,7 +28,7 @@
 
 /** THEME
 ===================================*/
-
+/* the border causes an horizontal overflow with the 'width: 100%' put on bx-viewport
 .bx-wrapper .bx-viewport {
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
@@ -37,7 +37,7 @@
 	left: -5px;
 	background: #fff;
 }
-
+*/
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
