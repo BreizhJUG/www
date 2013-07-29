@@ -1,257 +1,263 @@
 @font-face {
     font-family: 'GothamBlack';
     src: url('gotham-black-webfont-webfont.eot');
-    src: url('gotham-black-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gotham-black-webfont-webfont.woff') format('woff'),
-         url('gotham-black-webfont-webfont.ttf') format('truetype'),
-         url('gotham-black-webfont-webfont.svg#gothamregular') format('svg');
+    src: url('gotham-black-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('gotham-black-webfont-webfont.woff') format('woff'), url('gotham-black-webfont-webfont.ttf') format('truetype'), url('gotham-black-webfont-webfont.svg#gothamregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GothamBook';
     src: url('gothambook-webfont.eot');
-    src: url('gothambook-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gothambook-webfont.woff') format('woff'),
-         url('gothambook-webfont.ttf') format('truetype'),
-         url('gothambook-webfont.svg#gothambookregular') format('svg');
+    src: url('gothambook-webfont.eot?#iefix') format('embedded-opentype'), url('gothambook-webfont.woff') format('woff'), url('gothambook-webfont.ttf') format('truetype'), url('gothambook-webfont.svg#gothambookregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GothamLight';
     src: url('gothamexlight-webfont.eot');
-    src: url('gothamexlight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gothamexlight-webfont.woff') format('woff'),
-         url('gothamexlight-webfont.ttf') format('truetype'),
-         url('gothamexlight-webfont.svg#gothamexlightregular') format('svg');
+    src: url('gothamexlight-webfont.eot?#iefix') format('embedded-opentype'), url('gothamexlight-webfont.woff') format('woff'), url('gothamexlight-webfont.ttf') format('truetype'), url('gothamexlight-webfont.svg#gothamexlightregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-
 .grid {
-	margin: 0 auto;
-	max-width: 1000px;
-	padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 0px;
 }
 
 .row {
-	clear: both;
+    clear: both;
 }
+
 img {
     vertical-align: middle;
 }
 
 header {
-	background: #fff;
-        padding: 20px 0 0 0;
-	position: fixed;
-	width: 100%;
+    background: #fff;
+    padding: 20px 0 0 0;
+    position: fixed;
+    width: 100%;
 }
+
 header nav ul {
-	float: right;
+    float: right;
 }
+
 header nav ul li {
-	display: inline;
-	float: left;
-	position: relative;
+    display: inline;
+    float: left;
+    position: relative;
 }
+
 header nav ul li a {
-	color: #000;
-	display: block;
-	padding: 10px 13px 21px;
-	text-transform: uppercase;
-	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #000;
+    display: block;
+    padding: 10px 13px 21px;
+    text-transform: uppercase;
+    font: normal 17px/17px "GothamBook", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
 header nav ul li a:hover {
-	color: #7e7e7e;
+    color: #7e7e7e;
 }
 
 #head {
-        background: #fff;
+    background: #fff;
 }
 
 .area {
-	padding: 100px 0;
+    padding: 100px 0;
 }
 
 .orange {
-	background: #ff6a00;
-	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    background: #ff6a00;
+    -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
 }
+
 .orange a {
-	color: #000;
+    color: #000;
 }
+
 .purple {
-	background: #6633cc;
-	color: #fff;
+    background: #6633cc;
+    color: #fff;
 }
+
 .lightgrey {
-	background: #f0ebe4 url(../images/lightgrey_bg.jpg);
+    background: #f0ebe4 url(../images/lightgrey_bg.jpg);
 }
+
 .black {
-	background: #000;
-	}
+    background: #000;
+}
 
 #next h2 {
-	color: #ff6a00;
+    color: #ff6a00;
 }
+
 #next h3 {
-	color: #ff6a00;
+    color: #ff6a00;
 }
 
 #events li {
-        float: left;
-	list-style: none;
-	position: relative;
-	width: 266px;
-	margin-right: 10px;
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 266px;
+    margin-right: 10px;
 }
 
 h2 {
-	text-transform: uppercase;
-	text-align: center;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #events h4 {
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	color: #ff6a00;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #ff6a00;
 }
 
 #speakers {
-	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
+    background: #ff6a00 url(../images/lensflare.png) no-repeat center top;
 }
 
-#speakers li {
-	list-style: none;
-	text-align: center;
+#speakers .speaker {
+    text-align: center;
 }
 
 .speaker img {
-        border: solid 1px #000;
-	height: 160px;
-	width: 160px;
-	line-height: 150px;
-	margin: 1px auto;
-	-webkit-border-radius: 80px;
-	border-radius: 80px;
+    border: solid 1px #000;
+    height: 160px;
+    width: 160px;
+    line-height: 150px;
+    margin: 1px auto;
+    -webkit-border-radius: 80px;
+    border-radius: 80px;
 }
 
 .speaker h4 {
-	color: #fff;
-	text-align: center;
+    color: #fff;
+    text-align: center;
 }
 
 #speakers h2 {
-	color: #fff;
-	margin-bottom: 70px;
-	text-align: center;
-	text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 70px;
+    text-transform: uppercase;
 }
 
 #speakers .popup {
- 	width: 200px;
- 	border: solid 1px #000;
-	border-radius:10px;
- 	padding: 5px;
-        background: #fff;
-        box-shadow: 2px 2px 2px #000; 
+    width: 200px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 2px #000;
+    text-align: left;
+    margin: 0px auto;
 }
 
 a.twitter {
-      	background: url(../images/twitter_icon.png) no-repeat 0 0;
-        padding-left: 50px;
-	min-height: 50px;
-        color: #139be8;
+    background: url(../images/twitter_icon.png) no-repeat 0 0;
+    padding-left: 50px;
+    min-height: 50px;
+    color: #139be8;
 }
 
 #forum_embed {
-	border:solid 1px #444;
+    border: solid 1px #444;
 }
 
 #news {
-	background: #fff;
+    background: #fff;
 }
 
 #news h2 {
-	color: #ff8000;
-	margin-bottom: 70px;
-	text-align: center;
-	text-transform: uppercase;
+    color: #ff8000;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase;
 
 }
 
 #team {
-	background: #1c1c1c url(../images/lensflare.png) no-repeat center top;
-	color: #737373;
+    background: #1c1c1c url(../images/lensflare.png) no-repeat center top;
+    color: #737373;
 }
-
-/* 5 columns http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap */
-@media (min-width: 768px){
-    .fivecolumns .span2 {
-        width: 18.297872340425532%;
-        *width: 18.2234042553191494%;
-    }
-}
-@media (min-width: 1200px) {
-    .fivecolumns .span2 {
-        width: 17.9487179487179488%;
-        *width: 17.87424986361156592%;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-    .fivecolumns .span2 {
-        width: 17.79005524861878448%;
-        *width: 17.7155871635124022%;
-    }
-}
-
-#team .row {
-	margin:auto;
-}
-
 
 #team h2 {
-	color: #fff;
-	margin-bottom: 70px;
-	text-align: center;
-	text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#team h4{
-	color: #ff6a00;
-	min-height: 40px;
+#team h4 {
+    color: #ff6a00;
+    min-height: 30px;
+}
+
+@media (max-width: 767px) {
+    #team .team {
+        padding: 10px;
+    }
 }
 
 #sponsors {
-        padding: 30px;
+    padding: 30px;
+}
+
+#sponsors .sponsor {
+    padding: 20px;
+    text-align: center;
 }
 
 #sponsors a {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
 
-        transition: all 1s;
+    transition: all 1s;
 }
 
 #sponsors a:hover {
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
 
-        transition: all 1s;
+    transition: all 1s;
 }
 
 footer {
-        padding: 10px;
-        text-align:center;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer .license {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    footer .license {
+        position: relative;
+        left: auto;
+        top: auto;
+        display: block;
+        text-align: center;
+    }
 }

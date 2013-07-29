@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
 
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -36,7 +37,7 @@
               <li><a href="#speakers">Speakers</a></li>
               <li><a href="#news">News</a></li>
               <li><a href="#team">Team</a></li>
-              <li><a href="#partners">Partners</a></li>
+              <li><a href="#sponsors">Partners</a></li>
             </ul>
         </nav>
       </div>
@@ -54,7 +55,7 @@
         <section id="next" class="area lightgrey">
           <h2><span class="glyphicon glyphicon-bullhorn"></span> Prochain événement</h2>
           <div class="grid">
-            <div class="row">
+            <div class="row-fluid">
               <div class="span4">
                 <img src="images/breizhjug.png"/>
               </div>
@@ -121,39 +122,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
         </section>
 
         <section id="speakers" class="area orange">
-          <a name="speakers"></a>
           <div class="">
             <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
             <div class="grid">
-              <div class="row">
+              <div class="row-fluid">
                 <div class="span4 speaker">
                   <img src="images/speakers/Forax_Remi.jpg" />
                   <h4>Rémi Forax</h4>
                   <div class="popup">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
+                    </p>
+                    <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
                   </div>
                 </div>
                 <div class="span4 speaker">
                   <img src="images/speakers/Thierry_Lau.jpg" />
                   <h4>Thierry Lau</h4>
                   <div class="popup">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/laut3rry">@laut3rry</a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
+                    </p>
+                    <a class="twitter" href="http://www.twitter.com/laut3rry">@laut3rry</a>
                   </div>
                 </div>
                 <div class="span4 speaker">
                   <img src="images/speakers/Paul_Sandoz.jpg" />
                   <h4>Paul Sandoz</h4>
                   <div class="popup">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/paulsandoz">@paulsandoz</a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
+                    </p>
+                    <a class="twitter" href="http://www.twitter.com/paulsandoz">@paulsandoz</a>
                   </div>
                 </div>
               </div>
@@ -161,55 +161,52 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
           </div>
           <p style="clear:both"><a href="#" class="btn">more ...</a></p>
         </section>
+
         <section id="news" class="area white">
-          <a name="news"></a>
-            <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
+          <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
           <div class="grid">
-            <div class="row">
+            <div class="row-fluid">
               <div class="span9">
-<h4>Sur le <a href="https://groups.google.com/forum/#!forum/breizhjug">forum</a> :</h4>
-<iframe id="forum_embed"
-  src="javascript:void(0)"
-  scrolling="no"
-  frameborder="0"
-  width="100%"
-  height="600">
-</iframe>
-<script type="text/javascript">
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/breizhjug'
-     + '&showsearch=true&showpopout=true&showtabs=false';
-</script>
+                <h4>Sur le <a href="https://groups.google.com/forum/#!forum/breizhjug">forum</a> :</h4>
+                <iframe id="forum_embed"
+                        src="javascript:void(0)"
+                        scrolling="no"
+                        frameborder="0"
+                        width="100%"
+                        height="600">
+                </iframe>
+                <script type="text/javascript">
+                  document.getElementById('forum_embed').src =
+                          'https://groups.google.com/forum/embed/?place=forum/breizhjug'
+                                  + '&showsearch=true&showpopout=true&showtabs=false';
+                </script>
 
-<form action="mailto:breizhjug+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
-   <input type="submit" class="btn" value="Rejoindre le forum">
-</form>
-             </div>
-             <div class="span3">
-<h4>Sur <a href="http://www.twitter.com/breizhjug">twitter</a> :</h4>
-<a class="twitter-timeline" href="https://twitter.com/search?q=breizhjug" data-widget-id="361772145119997952">Tweets about "breizhjug"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-             </div>
-           </div>
-           <div class="row">
-             <div class="span4 offset8">
-<form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
-   Recevez par email les annonces des prochains événements :
-   <input type="submit" class="btn btn-primary" value="S'inscrire"/>
-</form>
-             </div>
-           </div>
-         </div>
-
+                <form action="mailto:breizhjug+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
+                  <input type="submit" class="btn" value="Rejoindre le forum">
+                </form>
+              </div>
+              <div class="span3">
+                <h4>Sur <a href="http://www.twitter.com/breizhjug">twitter</a> :</h4>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=breizhjug" data-widget-id="361772145119997952">Tweets about "breizhjug"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span12" style="text-align: right">
+                <form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
+                  Recevez par email les annonces des prochains événements :
+                  <input type="submit" class="btn btn-primary" value="S'inscrire"/>
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="team" class="area">
-          <a name="team"></a>
           <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
           <div class="grid">
-            <div class="row fivecolumns">
-              <div class="span2 team">
+            <div class="row-fluid">
+              <div class="span2 offset1 team">
                 <img src="images/team/Nicolas.jpg" />
                 <h4>Nicolas De Loof</h4>
                 <div class="popup">
@@ -265,29 +262,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
         </section>
 
         <section id="sponsors">
-          <a name="partners"></a>
           <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
           <div class="grid">
-            <div class="row">
-              <div class="span4" align="center">
+            <div class="row-fluid">
+              <div class="span4 sponsor">
                 <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.png" alt="Zenika"/></a>
               </div>
-              <div class="span4" align="center">
+              <div class="span4 sponsor">
                 <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam"/></a>
               </div>
-              <div class="span4" align="center">
+              <div class="span4 sponsor">
                 <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic"/></a>
               </div>
             </div>
           </div>
         </section>
+
         <footer class="black">
           BreizhJUG est une association loi 1901 - <a href="mailto:team@breizhjug.org">team@breizhjug.org</a>
           <br/>
           Ce site a été réalisé avec les contributions de <a href="http://www.twitter.com/ndeloof">@ndeloof</a>, ...
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" style="position:absolute; left:0"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a><br />Cette œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 France</a>.
+          <br />
+          Cette œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 France</a>.
+          <a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+            <img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+          </a>
         </footer>
-
 
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
