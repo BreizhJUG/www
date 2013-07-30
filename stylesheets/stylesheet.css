@@ -74,6 +74,7 @@ header nav ul li a:hover {
 
 .area {
 	padding: 100px 0;
+        clear:both;
 }
 
 .orange {
@@ -95,11 +96,40 @@ header nav ul li a:hover {
 	background: #000;
 	}
 
+#next {
+	padding-bottom: 10px;
+}
+
 #next h2 {
-	color: #ff6a00;
+	color: #000;
+	margin-bottom: 50px;
 }
 #next h3 {
 	color: #ff6a00;
+	margin-top: -15px;
+}
+#next h4 {
+	color: #000;
+}
+
+img.vignette {
+	border: solid 1px #aaa;
+	box-shadow: 5px 5px 5px;
+}
+
+#next .bio {
+	border: solid 1px #000;
+	border-radius: 6px;
+	background: #fff;
+	padding: 6px;
+	width: 300px;
+	position: relative;
+	top: -160px;
+	left: 300px;
+}
+
+#events {
+	padding-top:0;
 }
 
 #events li {
@@ -118,18 +148,26 @@ h2 {
 }
 
 #events h4 {
-	font-size: 16px;
+	font: bold 16px/16px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
 	line-height: 16px;
 	text-transform: uppercase;
 	color: #ff6a00;
+}
+
+#events .date {
+	font: bold 15px/15px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
+	color: #000;
+}
+#events img {
+	width:250px;
 }
 
 #speakers {
 	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
 }
 
-#speakers .speaker {
-    text-align: center;
+.speaker {
+    	text-align: center;
 }
 
 .speaker img {
