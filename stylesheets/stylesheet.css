@@ -29,6 +29,9 @@
     font-style: normal;
 }
 
+body {
+    padding: 0;
+}
 
 .grid {
 	margin: 0 auto;
@@ -43,31 +46,49 @@ img {
     vertical-align: middle;
 }
 
+/*########### Menu ###########*/
 header {
-	background: #fff;
-        padding: 20px 0 0 0;
-	position: fixed;
-	width: 100%;
+    background: #fff;
+    z-index: 10000 !important;
 }
-header nav ul {
-	float: right;
+
+header .navbar-inner {
+    background: #fff;
+    padding: 0 !important;
 }
-header nav ul li {
-	display: inline;
-	float: left;
-	position: relative;
+
+header .brand {
+    padding: 2px 0 0 0 !important;
+    margin: 0 40px 0 30px !important;
 }
-header nav ul li a {
+
+header .caret {
+    margin-left: 4px !important;
+    margin-top: 6px !important;
+}
+
+header .nav li a {
 	color: #000;
 	display: block;
-	padding: 10px 13px 21px;
+	padding: 16px 15px !important;
 	text-transform: uppercase;
 	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-header nav ul li a:hover {
-	color: #7e7e7e;
+
+.menu-spacer {
+    height: 53px;
 }
 
+@media (max-width: 979px) {
+    .menu-spacer {
+        height: 0;
+    }
+    .navbar-fixed-top {
+        margin: 0;
+    }
+}
+
+/*########### Others ###########*/
 #head {
         background: #fff;
 }
