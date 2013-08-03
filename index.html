@@ -34,7 +34,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#next">événements</a></li>
-              <li><a href="#homeSpeakers">Speakers</a></li>
+              <li><a href="#speakers">Speakers</a></li>
               <li><a href="#news">News</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#sponsors">Partners</a></li>
@@ -79,22 +79,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
 [Mail]</span>
 
               </div>
-              <div class="span4 speaker">
-	          <h4>Rémi Forax</h4>
-                  <img src="images/speakers/Forax_Remi.jpg"/>
-                  <div class="bio">
-                    <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                    </p>
-                    <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
+              <div class="span8">
+                <div class="speaker left">
+                  <img class="speaker-avatar" src="images/speakers/Forax_Remi.jpg" />
+                  <div class="speaker-popup">
+                    <div class="speaker-arrow"></div>
+                    <h4 class="speaker-name">Rémi Forax</h4>
+                    <div class="speaker-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio
+                      eget lorem mollis tincidunt sit amet in neque.</div>
+                    <a class="twitter" href="http://www.twitter.com/johndoe"><span>@pasletemps</span></a>
                   </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
         </section>
 
         <section id="events" class="area grey">
-          <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></h2>
+          <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
           <ul class="eventsCarousel">
             <li>
               <img src="images/events/kids.png"/>
@@ -140,39 +143,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
           </ul>
         </section>
 
-        <section id="homeSpeakers" class="area">
-          <div class="">
+        <section id="speakers" class="area">
             <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
             <div class="grid">
               <div class="row-fluid">
-                <div class="span4 speaker">
-                  <img src="images/speakers/Forax_Remi.jpg" />
+                <div class="span4 home-speaker">
+                  <img class="home-speaker-avatar" src="images/speakers/Forax_Remi.jpg" />
                   <h4>Rémi Forax</h4>
-                  <div class="bio">
+                  <div class="home-speaker-bio">
                   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
                   </p>
-                  <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
+                  <a class="twitter" href="http://www.twitter.com/johndoe"><span>@pasletemps</span></a>
                   </div>
                 </div>
-                <div class="span4 speaker">
-                  <img src="images/speakers/Thierry_Lau.jpg" />
+                <div class="span4 home-speaker">
+                  <img class="home-speaker-avatar" src="images/speakers/Thierry_Lau.jpg" />
                   <h4>Thierry Lau</h4>
-                  <div class="bio">
+                  <div class="home-speaker-bio">
                   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
                   </p>
-                  <a class="twitter" href="http://www.twitter.com/laut3rry">@laut3rry</a>
+                  <a class="twitter" href="http://www.twitter.com/laut3rry"><span>@laut3rry</span></a>
                   </div>
                 </div>
-                <div class="span4 speaker">
-                  <img src="images/speakers/Paul_Sandoz.jpg" />
+                <div class="span4 home-speaker">
+                  <img class="home-speaker-avatar" src="images/speakers/Paul_Sandoz.jpg" />
                   <h4>Paul Sandoz</h4>
-                  <div class="bio">
+                  <div class="home-speaker-bio">
                   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
                   </p>
-                  <a class="twitter" href="http://www.twitter.com/paulsandoz">@paulsandoz</a>
+                  <a class="twitter" href="http://www.twitter.com/paulsandoz"><span>@paulsandoz</span></a>
                   </div>
                 </div>
               </div>
@@ -182,10 +184,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
                 <a href="speakers.html" class="btn btn-default">More...</a>
              </div>
            </div>
-
-          </div>
-          <p style="clear:both">
         </section>
+
         <section id="news" class="area white">
             <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
           <div class="grid">

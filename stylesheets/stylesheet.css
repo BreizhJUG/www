@@ -96,6 +96,23 @@ header nav ul li a:hover {
 	background: #000;
 	}
 
+/*########### Twitter link ###########*/
+.twitter {
+    background: url(../images/twitter_icon.png) no-repeat 0 0;
+    height: 26px;
+    padding: 2px 0 0 45px;
+    color: #139be8;
+    text-align: left;
+    display: block;
+}
+
+/* < 500px, we just show the image and hide the text */
+@media (max-width: 500px) {
+    .twitter span {
+        display: none;
+    }
+}
+
 /*########### Home - Next event ###########*/
 #next {
 	padding-bottom: 10px;
@@ -165,16 +182,16 @@ h2 {
 }
 
 /*########### Home - Speakers ###########*/
-#homeSpeakers {
+#speakers {
 	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
 }
 
-#homeSpeakers .speaker {
-    	text-align: center;
+.home-speaker {
+    text-align: center;
 }
 
-#homeSpeakers .speaker img {
-        border: solid 1px #000;
+.home-speaker-avatar {
+    border: solid 1px #000;
 	height: 160px;
 	width: 160px;
 	line-height: 150px;
@@ -183,41 +200,22 @@ h2 {
 	border-radius: 80px;
 }
 
-#homeSpeakers .speaker h4 {
+.home-speaker h4 {
 	color: #fff;
 	text-align: center;
 }
 
-#homeSpeakers h2 {
-	color: #fff;
-	margin-bottom: 70px;
-	text-transform: uppercase;
-}
-
-#homeSpeakers .popup {
- 	width: 200px;
+.home-speaker-bio {
  	border: solid 1px #000;
-	border-radius:10px;
+	border-radius: 10px;
  	padding: 5px;
-        background: #fff;
-        box-shadow: 2px 2px 2px #000;
-    text-align: left;
-    margin: 0px auto;
+    background: #fff;
+    box-shadow: 2px 2px 2px #000;
+    text-align: justify;
+    margin: 0 20px 20px 20px;
 }
 
-#homeSpeakers .twitter {
-    display: inline;
-}
-
-.twitter {
-    background: url(../images/twitter_icon.png) no-repeat 0 0;
-    height: 26px;
-    padding: 2px 0px 0px 45px;
-    color: #139be8;
-    text-align: left;
-    display: block;
-}
-
+/*########### Home - News ###########*/
 #forum_embed {
 	border: solid 1px #444;
 }
@@ -325,27 +323,28 @@ footer .license {
 }
 
 /*########### Speakers ###########*/
-#speakers .speaker {
+.speaker {
      min-height: 150px;
      margin: 30px 10px;
 }
 
-#speakers .speaker .avatar {
+.speaker-avatar {
     width: 150px;
     height: 150px;
+    border: solid 1px #000;
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
 
-#speakers .speaker.left .avatar {
+.speaker.left .speaker-avatar {
     float: left;
 }
 
-#speakers .speaker.right .avatar {
+.speaker.right .speaker-avatar {
     float: right;
 }
 
-#speakers .speaker .popup {
+.speaker-popup {
      background: #fff;
      color: #000;
      padding: 2px 10px 10px 10px;
@@ -362,8 +361,7 @@ footer .license {
      -webkit-transition: all 0.25s ease-out 0s;
 }
 
-
-#speakers .speaker .popup:hover {
+.speaker-popup:hover {
     -moz-transform: translateX(10px);
     -webkit-transform: translateX(10px);
     -o-transform: translateX(10px);
@@ -371,15 +369,15 @@ footer .license {
     transform: translateX(10px);
 }
 
-#speakers .speaker.left .popup {
-    margin: 0px 20px 0px 180px;
+.speaker.left .speaker-popup {
+    margin: 0 20px 0 180px;
 }
 
-#speakers .speaker.right .popup {
-    margin: 0px 180px 0px 20px;
+.speaker.right .speaker-popup {
+    margin: 0 180px 0 20px;
 }
 
-#speakers .speaker .arrow {
+.speaker-arrow {
     position: absolute;
     width: 0;
     height: 0;
@@ -388,23 +386,23 @@ footer .license {
     top: 69px;
 }
 
-#speakers .speaker.left .arrow {
+.speaker.left .speaker-arrow {
     border-left: 0;
     border-right: 15px solid #fff;
     left: -15px;
 }
 
-#speakers .speaker.right .arrow {
+.speaker.right .speaker-arrow {
     border-left: 15px solid #fff;
     border-right: 0;
     right: -15px;
 }
 
-#speakers .speaker .resume {
+.speaker-resume {
     margin-bottom: 30px;
 }
 
-#speakers .speaker .twitter {
+.speaker .twitter {
     position: absolute;
     bottom: 8px;
 }
