@@ -36,13 +36,12 @@
       </div>
       <div class="span8">
         <div class="speaker left">
-          <img class="speaker-avatar" src="images/speakers/Forax_Remi.jpg" />
+          <img class="speaker-avatar" src="{{ speaker.avatar }}" />
           <div class="speaker-popup">
             <div class="speaker-arrow"></div>
-            <h4 class="speaker-name">Rémi Forax</h4>
-            <div class="speaker-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio
-              eget lorem mollis tincidunt sit amet in neque.</div>
-            <a class="twitter" href="http://www.twitter.com/johndoe"><span>@pasletemps</span></a>
+            <h4 class="speaker-name">{{ speaker.name }}</h4>
+            <div class="speaker-resume">{{ speaker.resume }}</div>
+            <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
           </div>
         </div>
       </div>
@@ -101,34 +100,12 @@
   <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
   <div class="grid">
     <div class="row-fluid">
-      <div class="span4 home-speaker">
-        <img class="home-speaker-avatar" src="images/speakers/Forax_Remi.jpg" />
-        <h4>Rémi Forax</h4>
+      <div class="home-speaker" ng-repeat="speaker in speakers" ng-class="'span'+(12/speakers.length)">
+        <img class="home-speaker-avatar" src="{{ speaker.avatar }}" />
+        <h4>{{ speaker.name }}</h4>
         <div class="home-speaker-bio">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-          </p>
-          <a class="twitter" href="http://www.twitter.com/johndoe"><span>@pasletemps</span></a>
-        </div>
-      </div>
-      <div class="span4 home-speaker">
-        <img class="home-speaker-avatar" src="images/speakers/Thierry_Lau.jpg" />
-        <h4>Thierry Lau</h4>
-        <div class="home-speaker-bio">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-          </p>
-          <a class="twitter" href="http://www.twitter.com/laut3rry"><span>@laut3rry</span></a>
-        </div>
-      </div>
-      <div class="span4 home-speaker">
-        <img class="home-speaker-avatar" src="images/speakers/Paul_Sandoz.jpg" />
-        <h4>Paul Sandoz</h4>
-        <div class="home-speaker-bio">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-          </p>
-          <a class="twitter" href="http://www.twitter.com/paulsandoz"><span>@paulsandoz</span></a>
+          <p>{{ speaker.resume }}</p>
+          <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
         </div>
       </div>
     </div>
