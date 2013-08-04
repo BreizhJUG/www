@@ -8,6 +8,7 @@
   <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
 
+  <script src="http://code.jquery.com/jquery.js"></script>
   <link href="glyphicons/css/bootstrap-glyphicons.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if lt IE 9]>
@@ -24,23 +25,36 @@
     improve your experience.</p>
   <![endif]-->
 
-  <header class="grid navbar navbar-static-top">
-    <div class="row-fluid">
-      <div style="float:left">
-        <a href="#"><img src="images/logo-txt.png"></a>
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="grid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="index.html#"><img src="images/logo-txt.png"></a>
+
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html#next">événements</a></li>
+                <li><a href="index.html#homeSpeakers">Speakers</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#sponsors">Partners</a></li>
+              </ul>
+            </li>
+            <li><a href="speakers.html">Speakers</a></li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html#">Home</a></li>
-          <li><a href="index.html#next">événements</a></li>
-          <li><a href="index.html#speakers">Speakers</a></li>
-          <li><a href="index.html#news">News</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#sponsors">Partners</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
+  <div class="menu-spacer"></div>
 
   <div class="lightgrey" style="padding: 40px 0;">
     <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
