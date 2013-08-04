@@ -79,8 +79,10 @@ breizhjugApp.controller("homeNewsController", function ($scope) {
 
 });
 
-breizhjugApp.controller("homeTeamController", function ($scope) {
-
+breizhjugApp.controller("homeTeamController", function ($scope, Team) {
+    Team.fetch().success(function (resp) {
+        $scope.team = resp;
+    });
 });
 
 breizhjugApp.controller("homeSponsorsController", function ($scope) {
@@ -124,6 +126,19 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
                     defer.reject(resp);
                 });
             return defer.promise;
+        }
+
+    };
+
+});
+
+breizhjugApp.factory("Team", function ($http) {
+    var API_URI = '/data/team.json';
+
+    return {
+
+        fetch: function () {
+            return $http.get(API_URI, {cache: true});
         }
 
     };

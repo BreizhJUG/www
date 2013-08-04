@@ -275,6 +275,13 @@ h2 {
     }
 }
 
+@media (min-width: 768px){
+    .fivecolumns .span2 {
+        width: 17.6%;
+        margin-left: 3%;
+    }
+}
+
 /*########### Home - Sponsors ###########*/
 #sponsors {
     padding: 30px;
