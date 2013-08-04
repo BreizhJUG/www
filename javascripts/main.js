@@ -45,24 +45,34 @@ breizhjugApp.controller("homeHeadController", function ($scope) {
     });
 });
 
-breizhjugApp.controller("homeNextController", function ($scope, Speakers) {
-    Speakers.fetchOne(1).then(function (resp) {
-        $scope.speaker = resp;
+breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers) {
+    Events.next().then(function (evt) {
+        $scope.event = evt;
+        if (evt.speakers && evt.speakers.length > 0) {
+            Speakers.fetchSome(evt.speakers).then(function (speakers) {
+                $scope.speakers = speakers;
+            });
+        }
     });
 });
 
-breizhjugApp.controller("homeEventsController", function ($scope) {
-    // initialize the slider
-    // FIXME an error occurs in angularjs and the next controllers are not initialized
-/*    $('.eventsCarousel').bxSlider({
-        slideWidth: 250,
-        minSlides: 1,
-        maxSlides: 5,
-        slideMargin: 2,
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        pager: false
-    });*/
+breizhjugApp.controller("homeEventsController", function ($scope, Events) {
+    Events.prev().then(function (resp) {
+        $scope.events = resp;
+        // FIXME find a better way to achieve this, it's not even working properly when resizing the window.
+        setTimeout(function () {
+            // initialize the slider
+            $('.eventsCarousel').bxSlider({
+                slideWidth: 250,
+                minSlides: 1,
+                maxSlides: 5,
+                slideMargin: 2,
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                pager: false
+            });
+        }, 1000);
+    });
 });
 
 breizhjugApp.controller("homeSpeakersController", function ($scope, Speakers) {
@@ -103,7 +113,6 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
     };
 
     return {
-
         fetch: fetch,
 
         fetchOne: function (id) {
@@ -113,7 +122,7 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
                 for (var i = 0; i < resp.length; i++) {
                     var tmp = resp[i];
                     if (tmp.id == id) {
-                        speaker = resp[i];
+                        speaker = tmp;
                         break;
                     }
                 }
@@ -126,21 +135,66 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
                     defer.reject(resp);
                 });
             return defer.promise;
+        },
+
+        fetchSome: function (ids) {
+            var defer = $q.defer();
+            fetch().success(function (resp) {
+                var speakers = [];
+                for (var i = 0; i < resp.length; i++) {
+                    var tmp = resp[i];
+                    if (ids.indexOf(tmp.id) != -1) {
+                        speakers.push(tmp);
+                    }
+                }
+                defer.resolve(speakers);
+            }).error(function (resp) {
+                    defer.reject(resp);
+                });
+            return defer.promise;
         }
-
     };
-
 });
 
 breizhjugApp.factory("Team", function ($http) {
     var API_URI = '/data/team.json';
 
     return {
-
         fetch: function () {
             return $http.get(API_URI, {cache: true});
         }
 
     };
+});
 
+breizhjugApp.factory("Events", function ($http, $q) {
+    var API_URI = '/data/events.json';
+
+    var fetch = function () {
+        return $http.get(API_URI, {cache: true});
+    };
+
+    return {
+        fetch: fetch,
+
+        next: function () {
+            var defer = $q.defer();
+            fetch().success(function (resp) {
+                defer.resolve(resp[resp.length - 1]);
+            }).error(function (resp) {
+                    defer.reject(resp);
+                });
+            return defer.promise;
+        },
+
+        prev: function () {
+            var defer = $q.defer();
+            fetch().success(function (resp) {
+                defer.resolve(resp.splice(0, resp.length - 1));
+            }).error(function (resp) {
+                    defer.reject(resp);
+                });
+            return defer.promise;
+        }
+    };
 });

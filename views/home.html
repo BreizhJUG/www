@@ -12,16 +12,14 @@
   <div class="grid">
     <div class="row-fluid">
       <div class="span4">
-        <img class="vignette" src="images/events/sous-le-capot.jpg" />
+        <img class="vignette" ng-src="{{ event.image }}" />
       </div>
       <div class="span8">
-        <h3>Sous le capot de la JVM</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.
-        </p>
+        <h3>{{ event.name }}</h3>
+        <p>{{ event.resume }}</p>
         <ul>
-          <li><span class="glyphicon glyphicon-time"></span> <a href="#">Jeudi 3 Octobre à 18h00</a></li>
-          <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">ISTIC, campus de Beaulieu</a></li>
+          <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
+          <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
         </ul>
       </div>
     </div>
@@ -35,8 +33,8 @@
 
       </div>
       <div class="span8">
-        <div class="speaker left">
-          <img class="speaker-avatar" src="{{ speaker.avatar }}" />
+        <div class="speaker" ng-repeat="speaker in speakers" ng-class-odd="'left'" ng-class-even="'right'">
+          <img class="speaker-avatar" ng-src="{{ speaker.avatar }}" />
           <div class="speaker-popup">
             <div class="speaker-arrow"></div>
             <h4 class="speaker-name">{{ speaker.name }}</h4>
@@ -52,46 +50,16 @@
 <section id="events" class="area grey" ng-controller="homeEventsController">
   <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
   <ul class="eventsCarousel">
-    <li>
-      <img src="images/events/kids.png"/>
-      <div class="date">15 Juin 2013</div>
-      <h4>Kids at work</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
+    <li ng-repeat="event in events">
+      <img ng-src="{{ event.image }}"/>
+      <div class="date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
+      <h4>{{ event.name }}</h4>
+      <p>{{ event.resume }}</p>
       <ul>
-        <li><span class="glyphicon glyphicon-film"></span> <a href="#">vidéo</a></li>
-        <li><span class="glyphicon glyphicon-camera"></span> <a href="#">photos</a></li>
-        <li><span class="glyphicon glyphicon-picture"></span> <a href="#">slides</a></li>
-        <li><span class="glyphicon glyphicon-paperclip"></span> <a href="#">link</a></li>
+        <li ng-repeat="link in event.links">
+          <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
+        </li>
       </ul>
-    </li>
-    <li>
-      <img src="images/events/kids.png" />
-      <div class="date">15 Juin 2013</div>
-      <h4>Kids at work</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-    </li>
-    <li>
-      <img src="images/events/kids.png" />
-      <div class="date">15 Juin 2013</div>
-      <h4>Kids at work</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-    </li>
-    <li>
-      <img src="images/events/kids.png" />
-      <div class="date">15 Juin 2013</div>
-      <h4>Kids at work</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-    </li>
-    <li>
-      <img src="images/events/kids.png" />
-      <div class="date">15 Juin 2013</div>
-      <h4>Kids at work</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
     </li>
   </ul>
 </section>
@@ -101,7 +69,7 @@
   <div class="grid">
     <div class="row-fluid">
       <div class="home-speaker" ng-repeat="speaker in speakers" ng-class="'span'+(12/speakers.length)">
-        <img class="home-speaker-avatar" src="{{ speaker.avatar }}" />
+        <img class="home-speaker-avatar" ng-src="{{ speaker.avatar }}" />
         <h4>{{ speaker.name }}</h4>
         <div class="home-speaker-bio">
           <p>{{ speaker.resume }}</p>
@@ -164,7 +132,7 @@
   <div class="grid">
     <div class="row-fluid fivecolumns">
       <div class="span2 team" ng-repeat="member in team">
-        <img src="{{ member.avatar }}" />
+        <img ng-src="{{ member.avatar }}" />
         <h4>{{ member.name }}</h4>
         <div class="popup">
           <p>{{ member.resume }}</p>

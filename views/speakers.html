@@ -3,7 +3,7 @@
 
   <div class="grid">
     <div class="speaker" ng-repeat="speaker in speakers" ng-class-odd="'left'" ng-class-even="'right'">
-      <img class="speaker-avatar" src="{{ speaker.avatar }}" />
+      <img class="speaker-avatar" ng-src="{{ speaker.avatar }}" />
       <div class="speaker-popup">
         <div class="speaker-arrow"></div>
         <h4 class="speaker-name">{{ speaker.name }}</h4>
