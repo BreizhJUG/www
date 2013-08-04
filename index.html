@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset='utf-8'>
@@ -7,9 +7,6 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bxslider/jquery.bxslider.min.js"></script>
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link href="glyphicons/css/bootstrap-glyphicons.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,290 +16,45 @@
     <title>BreizhJUG</title>
   </head>
 
-  <body>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
-    improve your experience.</p>
-<![endif]-->
-    <header class="grid navbar navbar-static-top">
-      <div class="row-fluid">
-        <div style="float:left">
-          <a href="#"><img src="images/logo-txt.png"></a>
-        </div>
-        <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#next">événements</a></li>
-              <li><a href="#homeSpeakers">Speakers</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#sponsors">Partners</a></li>
+  <body ng-app="breizhjugApp" id="ng-app">
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="grid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="brand" href="#/home/"><img src="images/logo-txt.png"></a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#/home/next">événements</a></li>
+                  <li><a href="#/home/speakers">Speakers</a></li>
+                  <li><a href="#/home/news">News</a></li>
+                  <li><a href="#/home/team">Team</a></li>
+                  <li><a href="#/home/sponsors">Partners</a></li>
+                </ul>
+              </li>
+              <li><a href="#/speakers">Speakers</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
       </div>
     </header>
+    <div class="menu-spacer"></div>
 
-        <section id="head">
-          <ul class="headSlider">
-            <li><img src="images/breizhjug-grand.png"/></li>
-            <li><img src="images/BreizhCamp.png"/></li>
-            <li><img src="images/BreizhKids.png"/></li>
-            <li><img src="images/GDG_Rennes.png"/></li>
-          </ul>
-        </section>
+    <!--[if lt IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+      your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+      improve your experience.</p>
+    <![endif]-->
 
-        <section id="next" class="area lightgrey">
-          <h2><span class="glyphicon glyphicon-bullhorn"></span> Prochain événement</h2>
-          <div class="grid">
-            <div class="row-fluid">
-              <div class="span4">
-                <img class="vignette" src="images/events/sous-le-capot.jpg" />
-              </div>
-              <div class="span8">
-                <h3>Sous le capot de la JVM</h3>
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.
-                </p>
-                <ul>
-                  <li><span class="glyphicon glyphicon-time"></span> <a href="#">Jeudi 3 Octobre à 18h00</a></li>
-                  <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">ISTIC, campus de Beaulieu</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row-fluid">
-              <div class="span4" style="padding-top:60px">
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.breizhjug.org" data-text="Lorem ipsum" data-lang="fr" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-[Mail]</span>
-
-              </div>
-              <div class="span4 speaker">
-	          <h4>Rémi Forax</h4>
-                  <img src="images/speakers/Forax_Remi.jpg"/>
-                  <div class="bio">
-                    <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                    </p>
-                    <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="events" class="area grey">
-          <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></h2>
-          <ul class="eventsCarousel">
-            <li>
-              <img src="images/events/kids.png"/>
-              <div class="date">15 Juin 2013</div>
-              <h4>Kids at work</h4>
-              <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-              <ul>
-                <li><span class="glyphicon glyphicon-film"></span> <a href="#">vidéo</a></li>
-                <li><span class="glyphicon glyphicon-camera"></span> <a href="#">photos</a></li>
-                <li><span class="glyphicon glyphicon-picture"></span> <a href="#">slides</a></li>
-                <li><span class="glyphicon glyphicon-paperclip"></span> <a href="#">link</a></li>
-              </ul>
-            </li>
-            <li>
-              <img src="images/events/kids.png" />
-              <div class="date">15 Juin 2013</div>
-              <h4>Kids at work</h4>
-              <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-            </li>
-            <li>
-              <img src="images/events/kids.png" />
-              <div class="date">15 Juin 2013</div>
-              <h4>Kids at work</h4>
-              <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-            </li>
-            <li>
-              <img src="images/events/kids.png" />
-              <div class="date">15 Juin 2013</div>
-              <h4>Kids at work</h4>
-              <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-            </li>
-            <li>
-              <img src="images/events/kids.png" />
-              <div class="date">15 Juin 2013</div>
-              <h4>Kids at work</h4>
-              <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.</p>
-            </li>
-          </ul>
-        </section>
-
-        <section id="homeSpeakers" class="area">
-          <div class="">
-            <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
-            <div class="grid">
-              <div class="row-fluid">
-                <div class="span4 speaker">
-                  <img src="images/speakers/Forax_Remi.jpg" />
-                  <h4>Rémi Forax</h4>
-                  <div class="bio">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/johndoe">@pasletemps</a>
-                  </div>
-                </div>
-                <div class="span4 speaker">
-                  <img src="images/speakers/Thierry_Lau.jpg" />
-                  <h4>Thierry Lau</h4>
-                  <div class="bio">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/laut3rry">@laut3rry</a>
-                  </div>
-                </div>
-                <div class="span4 speaker">
-                  <img src="images/speakers/Paul_Sandoz.jpg" />
-                  <h4>Paul Sandoz</h4>
-                  <div class="bio">
-                  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                  </p>
-                  <a class="twitter" href="http://www.twitter.com/paulsandoz">@paulsandoz</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row-fluid">
-             <div class="span1 offset10" style="text-align: right">
-                <a href="speakers.html" class="btn btn-default">More...</a>
-             </div>
-           </div>
-
-          </div>
-          <p style="clear:both">
-        </section>
-        <section id="news" class="area white">
-            <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
-          <div class="grid">
-            <div class="row-fluid">
-              <div class="span9">
-<h4>Sur le <a href="https://groups.google.com/forum/#!forum/breizhjug">forum</a> :</h4>
-<iframe id="forum_embed"
-  src="javascript:void(0)"
-  scrolling="no"
-  frameborder="0"
-  width="100%"
-  height="600">
-</iframe>
-<script type="text/javascript">
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/breizhjug'
-     + '&showsearch=true&showpopout=true&showtabs=false';
-</script>
-
-<form action="mailto:breizhjug+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
-   <input type="submit" class="btn" value="Rejoindre le forum">
-</form>
-             </div>
-             <div class="span3">
-<h4>Sur <a href="http://www.twitter.com/breizhjug">twitter</a> :</h4>
-<a class="twitter-timeline" href="https://twitter.com/search?q=breizhjug" data-widget-id="361772145119997952">Tweets about "breizhjug"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-             </div>
-           </div>
-           <div class="row-fluid">
-             <div class="span12" style="text-align: right">
-<form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
-   Recevez par email les annonces des prochains événements :
-   <input type="submit" class="btn btn-primary" value="S'inscrire"/>
-</form>
-             </div>
-           </div>
-         </div>
-
-        </section>
-
-        <section id="team" class="area">
-          <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
-          <div class="grid">
-            <div class="row-fluid">
-              <div class="span2 offset1 team">
-                <img src="images/team/Nicolas.jpg" />
-                <h4>Nicolas De Loof</h4>
-                <div class="popup">
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                </p>
-                <a class="twitter" href="http://www.twitter.com/ndeloof">@ndeloof</a>
-                </div>
-              </div>
-              <div class="span2 team">
-                <img src="images/team/Michel.jpg" />
-                <h4>Michel David</h4>
-                <div class="popup">
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                </p>
-                <a class="twitter" href="http://www.twitter.com/mimah35">@mimah35</a>
-                </div>
-              </div>
-              <div class="span2 team">
-                <img src="images/team/Julien.jpg" />
-                <h4>Julien Coste</h4>
-                <div class="popup">
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                </p>
-                <a class="twitter" href="http://www.twitter.com/costejulien">@costejulien</a>
-                </div>
-              </div>
-              <div class="span2 team">
-                <img src="images/team/Sebastien.jpg" />
-                <h4>Sébastien Brousse</h4>
-                <div class="popup">
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                </p>
-                <a class="twitter" href="http://www.twitter.com/seb_brousse">@seb_brousse</a>
-                </div>
-              </div>
-              <div class="span2 team">
-                <img src="images/team/Laurent.jpg" />
-                <h4>Laurent Huet</h4>
-                <div class="popup">
-                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.
-                </p>
-                <a class="twitter" href="http://www.twitter.com/lhuet35">@lhuet35</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <section id="sponsors" class="area blue">
-          <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
-          <div class="grid">
-            <div class="row-fluid">
-              <div class="span4 sponsor">
-                <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.png" alt="Zenika"/></a>
-              </div>
-              <div class="span4 sponsor">
-                <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam"/></a>
-              </div>
-              <div class="span4 sponsor">
-                <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic"/></a>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div ng-view></div>
 
         <footer class="black">
           BreizhJUG est une association loi 1901 - <a href="mailto:team@breizhjug.org">team@breizhjug.org</a>
@@ -317,24 +69,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris e
                                                                                              src="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a>
         </footer>
 
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.0.7/i18n/angular-locale_fr-fr.js"></script>
+        <script src="bxslider/jquery.bxslider.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $('.headSlider').bxSlider({
-              auto: true
-            });
-            $('.eventsCarousel').bxSlider({
-              slideWidth: 250,
-              minSlides: 1,
-              maxSlides: 5,
-              slideMargin: 2,
-              infiniteLoop: false,
-              hideControlOnEnd: true,
-              pager: false
-            });
-          });
-        </script>
+        <script type="text/javascript" src="javascripts/main.js"></script>
         <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

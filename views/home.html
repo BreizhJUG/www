@@ -1,0 +1,162 @@
+<section id="head" ng-controller="homeHeadController">
+  <ul class="headSlider">
+    <li><img src="images/breizhjug-grand.png"/></li>
+    <li><img src="images/BreizhCamp.png"/></li>
+    <li><img src="images/BreizhKids.png"/></li>
+    <li><img src="images/GDG_Rennes.png"/></li>
+  </ul>
+</section>
+
+<section id="next" class="area lightgrey" ng-controller="homeNextController">
+  <h2><span class="glyphicon glyphicon-bullhorn"></span> Prochain événement</h2>
+  <div class="grid">
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="vignette" ng-src="{{ event.image }}" />
+      </div>
+      <div class="span8">
+        <h3>{{ event.name }}</h3>
+        <p>{{ event.resume }}</p>
+        <ul>
+          <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
+          <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4" style="padding-top:60px">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.breizhjug.org" data-text="Lorem ipsum" data-lang="fr" data-size="large">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+        [Mail]</span>
+
+      </div>
+      <div class="span8">
+        <div class="speaker" ng-repeat="speaker in speakers" ng-class-odd="'left'" ng-class-even="'right'">
+          <img class="speaker-avatar" ng-src="{{ speaker.avatar }}" />
+          <div class="speaker-popup">
+            <div class="speaker-arrow"></div>
+            <h4 class="speaker-name">{{ speaker.name }}</h4>
+            <div class="speaker-resume">{{ speaker.resume }}</div>
+            <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="area grey" ng-controller="homeEventsController">
+  <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
+  <ul class="eventsCarousel">
+    <li ng-repeat="event in events">
+      <img ng-src="{{ event.image }}"/>
+      <div class="date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
+      <h4>{{ event.name }}</h4>
+      <p>{{ event.resume }}</p>
+      <ul>
+        <li ng-repeat="link in event.links">
+          <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section id="speakers" class="area" ng-controller="homeSpeakersController">
+  <h2><span class="glyphicon glyphicon-volume-up"></span> Speakers</h2>
+  <div class="grid">
+    <div class="row-fluid">
+      <div class="home-speaker" ng-repeat="speaker in speakers" ng-class="'span'+(12/speakers.length)">
+        <img class="home-speaker-avatar" ng-src="{{ speaker.avatar }}" />
+        <h4>{{ speaker.name }}</h4>
+        <div class="home-speaker-bio">
+          <p>{{ speaker.resume }}</p>
+          <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span1 offset10" style="text-align: right">
+      <a href="#/speakers" class="btn btn-default">More...</a>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="area white" ng-controller="homeNewsController">
+  <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
+  <div class="grid">
+    <div class="row-fluid">
+      <div class="span9">
+        <h4>Sur le <a href="https://groups.google.com/forum/#!forum/breizhjug">forum</a> :</h4>
+        <iframe id="forum_embed"
+                src="javascript:void(0)"
+                scrolling="no"
+                frameborder="0"
+                width="100%"
+                height="600">
+        </iframe>
+        <script type="text/javascript">
+          document.getElementById('forum_embed').src =
+                  'https://groups.google.com/forum/embed/?place=forum/breizhjug'
+                          + '&showsearch=true&showpopout=true&showtabs=false';
+        </script>
+
+        <form action="mailto:breizhjug+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
+          <input type="submit" class="btn" value="Rejoindre le forum">
+        </form>
+      </div>
+      <div class="span3">
+        <h4>Sur <a href="http://www.twitter.com/breizhjug">twitter</a> :</h4>
+        <a class="twitter-timeline" href="https://twitter.com/search?q=breizhjug" data-widget-id="361772145119997952">Tweets about "breizhjug"</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12" style="text-align: right">
+        <form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank">
+          Recevez par email les annonces des prochains événements :
+          <input type="submit" class="btn btn-primary" value="S'inscrire"/>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="team" class="area" ng-controller="homeTeamController">
+  <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
+  <div class="grid">
+    <div class="row-fluid fivecolumns">
+      <div class="span2 team" ng-repeat="member in team">
+        <img ng-src="{{ member.avatar }}" />
+        <h4>{{ member.name }}</h4>
+        <div class="popup">
+          <p>{{ member.resume }}</p>
+          <a class="twitter" href="http://www.twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="sponsors" class="area blue" ng-controller="homeSponsorsController">
+  <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
+  <div class="grid">
+    <div class="row-fluid">
+      <div class="span4 sponsor">
+        <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.png" alt="Zenika"/></a>
+      </div>
+      <div class="span4 sponsor">
+        <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam"/></a>
+      </div>
+      <div class="span4 sponsor">
+        <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic"/></a>
+      </div>
+    </div>
+  </div>
+</section>

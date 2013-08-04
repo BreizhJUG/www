@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Nicolas De Loof",
+        "avatar": "images/team/Nicolas.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "twitter": "ndeloof"
+    },
+    {
+        "name": "Michel David",
+        "avatar": "images/team/Michel.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "twitter": "mimah35"
+    },
+    {
+        "name": "Julien Coste",
+        "avatar": "images/team/Julien.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "twitter": "costejulien"
+    },
+    {
+        "name": "Sébastien Brousse",
+        "avatar": "images/team/Sebastien.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "twitter": "seb_brousse"
+    },
+    {
+        "name": "Laurent Huet",
+        "avatar": "images/team/Laurent.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "twitter": "lhuet35"
+    }
+]
