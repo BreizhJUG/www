@@ -106,7 +106,7 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers) {
 });
 
 breizhjugApp.factory("Speakers", function ($http, $q) {
-    var API_URI = '/data/speakers.json';
+    var API_URI = 'data/speakers.json';
 
     var fetch = function () {
         return $http.get(API_URI, {cache: true});
@@ -157,7 +157,7 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
 });
 
 breizhjugApp.factory("Team", function ($http) {
-    var API_URI = '/data/team.json';
+    var API_URI = 'data/team.json';
 
     return {
         fetch: function () {
@@ -168,7 +168,7 @@ breizhjugApp.factory("Team", function ($http) {
 });
 
 breizhjugApp.factory("Events", function ($http, $q) {
-    var API_URI = '/data/events.json';
+    var API_URI = 'data/events.json';
 
     var fetch = function () {
         return $http.get(API_URI, {cache: true});
