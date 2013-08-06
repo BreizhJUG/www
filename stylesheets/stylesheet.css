@@ -75,12 +75,12 @@ header .nav li a {
 	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.menu-spacer {
+#menu-spacer {
     height: 53px;
 }
 
 @media (max-width: 979px) {
-    .menu-spacer {
+    #menu-spacer {
         height: 0;
     }
     .navbar-fixed-top {
@@ -111,7 +111,7 @@ header .nav li a {
 	color: #fff;
 }
 .lightgrey {
-	background: #f0ebe4 url(../images/lightgrey_bg.jpg);
+	background: #f0ebe4;
 }
 .black {
 	background: #000;
@@ -211,40 +211,6 @@ h2 {
 }
 #events img {
 	width:250px;
-}
-
-/*########### Home - Speakers ###########*/
-#speakers {
-	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
-}
-
-.home-speaker {
-    text-align: center;
-}
-
-.home-speaker-avatar {
-    border: solid 1px #000;
-	height: 160px;
-	width: 160px;
-	line-height: 150px;
-	margin: 1px auto;
-	-webkit-border-radius: 80px;
-	border-radius: 80px;
-}
-
-.home-speaker h4 {
-	color: #fff;
-	text-align: center;
-}
-
-.home-speaker-bio {
- 	border: solid 1px #000;
-	border-radius: 10px;
- 	padding: 5px;
-    background: #fff;
-    box-shadow: 2px 2px 2px #000;
-    text-align: justify;
-    margin: 0 20px 20px 20px;
 }
 
 /*########### Home - News ###########*/
