@@ -7,7 +7,7 @@
       <div class="speaker-popup">
         <div class="speaker-arrow"></div>
         <h4 class="speaker-name">{{ speaker.name }}</h4>
-        <div class="speaker-resume">{{ speaker.resume }}</div>
+        <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
         <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
       </div>
     </div>
