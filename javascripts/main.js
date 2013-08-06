@@ -27,6 +27,15 @@ breizhjugApp.controller("homeController", function ($scope, $route, $location, $
     // change the url so we can move to a section even if the url didn't change
     $location.hash(':');
 
+    $scope.converter = new Markdown.getSanitizingConverter();
+
+    $scope.getSafeDescription = function(description) {
+        if (description) {
+            return $scope.converter.makeHtml(description);
+        }
+        return description;
+    };
+
     $scope.$on('$locationChangeSuccess', function (event) {
         // if we try to move to the same page, it means we want to go to a section of the page. we scroll to it and told angular it's the same route to not reload the page.
         if ($route.current.templateUrl.indexOf('home') > 0) {
@@ -100,6 +109,15 @@ breizhjugApp.controller("homeSponsorsController", function ($scope) {
 });
 
 breizhjugApp.controller("speakersController", function ($scope, Speakers) {
+    $scope.converter = new Markdown.getSanitizingConverter();
+
+    $scope.getSafeDescription = function(description) {
+        if (description) {
+            return $scope.converter.makeHtml(description);
+        }
+        return description;
+    };
+
     Speakers.fetch().success(function (resp) {
         $scope.speakers = resp;
     });

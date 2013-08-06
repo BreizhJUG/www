@@ -16,7 +16,7 @@
       </div>
       <div class="span8">
         <h3>{{ event.name }}</h3>
-        <p>{{ event.resume }}</p>
+        <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
         <ul>
           <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
           <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
@@ -51,7 +51,7 @@
           <div class="speaker-popup">
             <div class="speaker-arrow"></div>
             <h4 class="speaker-name">{{ speaker.name }}</h4>
-            <div class="speaker-resume">{{ speaker.resume }}</div>
+            <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
             <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
           </div>
         </div>
@@ -75,7 +75,7 @@
       <img ng-src="{{ event.image }}"/>
       <div class="date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
       <h4>{{ event.name }}</h4>
-      <p>{{ event.resume }}</p>
+      <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
       <ul>
         <li ng-repeat="link in event.links">
           <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
@@ -128,7 +128,7 @@
         <img ng-src="{{ member.avatar }}" />
         <h4>{{ member.name }}</h4>
         <div class="popup">
-          <p>{{ member.resume }}</p>
+          <p ng-bind-html-unsafe="getSafeDescription(member.resume)"></p>
           <a class="twitter" href="http://www.twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>
         </div>
       </div>
