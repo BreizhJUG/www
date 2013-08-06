@@ -36,7 +36,7 @@ body {
 .grid {
 	margin: 0 auto;
 	max-width: 1000px;
-	padding: 0 0px;
+	padding: 0;
 }
 
 .row {
@@ -44,6 +44,21 @@ body {
 }
 img {
     vertical-align: middle;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+section {
+    padding: 0 30px 40px 30px;
+}
+
+section h2 {
+    padding: 40px 0;
+    margin: 0;
 }
 
 /*########### Menu ###########*/
@@ -91,11 +106,7 @@ header .nav li a {
 /*########### Others ###########*/
 #head {
         background: #fff;
-}
-
-.area {
-	padding: 100px 0;
-        clear:both;
+    padding: 0;
 }
 
 .orange {
@@ -139,10 +150,6 @@ header .nav li a {
 	padding-bottom: 10px;
 }
 
-#next h2 {
-	color: #000;
-	margin-bottom: 50px;
-}
 #next h3 {
 	color: #ff6a00;
 	margin-top: -15px;
@@ -152,7 +159,6 @@ header .nav li a {
 }
 
 img.vignette {
-	border: solid 1px #aaa;
 	box-shadow: 5px 5px 5px;
 }
 
@@ -179,23 +185,12 @@ img.vignette {
 }
 
 /*########### Home - Last events ###########*/
-#events {
-	padding-top:20px;
-}
-
 #events li {
         float: left;
 	list-style: none;
 	position: relative;
 	width: 266px;
 	margin-right: 10px;
-}
-
-h2 {
-	text-transform: uppercase;
-	text-align: center;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 #events h4 {
@@ -255,14 +250,13 @@ h2 {
 #forum_embed {
  	background: #fff;
 	border: solid 1px #444;
+    box-sizing: border-box;
 }
 
-#news h2 {
-	color: #000;
-	margin-bottom: 70px;
-	text-align: center;
-	text-transform: uppercase;
-
+@media (max-width: 767px) {
+    #news{
+        text-align: center;
+    }
 }
 
 /*########### Home - Team ###########*/
@@ -273,7 +267,6 @@ h2 {
 
 #team h2 {
 	color: #fff;
-	margin-bottom: 70px;
 }
 
 #team h4{
@@ -295,19 +288,10 @@ h2 {
 }
 
 /*########### Home - Sponsors ###########*/
-#sponsors {
-    padding: 30px;
-}
-
 #sponsors .sponsor {
     padding: 20px;
     text-align: center;
 }
-
-#sponsors h2 {
-	margin-bottom: 70px;
-}
-
 
 #sponsors a img {
         filter: grayscale(100%);
@@ -363,6 +347,15 @@ footer .license {
 }
 
 /*########### Speakers ###########*/
+#speakers {
+    padding: 30px 20px 10px 20px;
+}
+
+#speakers h2 {
+    padding: 10px 0;
+    margin: 0;
+}
+
 .speaker {
      min-height: 150px;
      margin: 30px 10px;

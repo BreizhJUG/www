@@ -7,7 +7,7 @@
   </ul>
 </section>
 
-<section id="next" class="area lightgrey" ng-controller="homeNextController">
+<section id="next" class="lightgrey" ng-controller="homeNextController">
   <h2><span class="glyphicon glyphicon-bullhorn"></span> Prochain événement</h2>
   <div class="grid">
     <div class="row-fluid">
@@ -28,7 +28,9 @@
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.breizhjug.org" data-text='{{ event.date | date:"EEEE dd MMMM HH:mm" }} au BreizhJug : {{ event.name }}'  data-lang="fr" data-size="large">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
+        <div style="overflow: hidden;">
           <g:plus action="share" href="http://www.breizhjug.org" annotation="inline"></g:plus>
+        </div>
 
           <!-- Placez cette ballise après la dernière balise Partager. -->
           <script type="text/javascript">
@@ -68,7 +70,7 @@
   </div>
 </section>
 
-<section id="events" class="area grey" ng-controller="homeEventsController">
+<section id="events" class="grey" ng-controller="homeEventsController">
   <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
   <ul class="eventsCarousel">
     <li ng-repeat="event in events">
@@ -86,7 +88,7 @@
 
 </section>
 
-<section id="news" class="area white" ng-controller="homeNewsController">
+<section id="news" class="white" ng-controller="homeNewsController">
   <h2><span class="glyphicon glyphicon-link"></span> Ze social network</h2>
   <div class="grid">
     <div class="row-fluid">
@@ -120,7 +122,7 @@
 
 </section>
 
-<section id="team" class="area" ng-controller="homeTeamController">
+<section id="team" ng-controller="homeTeamController">
   <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
   <div class="grid">
     <div class="row-fluid fivecolumns">
@@ -137,7 +139,7 @@
 
 </section>
 
-<section id="sponsors" class="area blue" ng-controller="homeSponsorsController">
+<section id="sponsors" class="blue" ng-controller="homeSponsorsController">
   <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
   <div class="grid">
     <div class="row-fluid">
