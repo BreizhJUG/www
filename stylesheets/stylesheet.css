@@ -167,9 +167,20 @@ img.vignette {
 	left: 300px;
 }
 
+#annonce-subscribe {
+	background:#fff;
+	border: solid 1px #000;
+	padding: 5px;
+	border-radius:4px;
+	box-shadow: 2px 2px 2px;
+	position:relative;
+	top:50px;
+	left:0;
+}
+
 /*########### Home - Last events ###########*/
 #events {
-	padding-top:0;
+	padding-top:20px;
 }
 
 #events li {
@@ -237,16 +248,17 @@ h2 {
 }
 
 /*########### Home - News ###########*/
+#news {
+	background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
+}
+
 #forum_embed {
+ 	background: #fff;
 	border: solid 1px #444;
 }
 
-#news {
-	background: #fff;
-}
-
 #news h2 {
-	color: #ff8000;
+	color: #000;
 	margin-bottom: 70px;
 	text-align: center;
 	text-transform: uppercase;
