@@ -4,7 +4,7 @@ var breizhjugApp = angular.module('breizhjugApp', []);
 
 breizhjugApp.config(function ($routeProvider) {
     $routeProvider
-        .when('/home/:scrollTo', {
+        .when('/home', {
             templateUrl: 'views/home.html',
             controller: 'homeController'
         })
@@ -13,19 +13,29 @@ breizhjugApp.config(function ($routeProvider) {
             controller: 'speakersController'
         })
         .otherwise({
-            redirectTo: '/home/'
+            redirectTo: '/home'
         });
 });
 
-breizhjugApp.controller("homeController", function ($scope, $route, $location, $anchorScroll) {
-    // hack to make internal links on the page works
-    // saving the current route
-    var lastRoute = $route.current;
-    // scroll to the section
-    $location.hash($route.current.params.scrollTo);
-    $anchorScroll();
-    // change the url so we can move to a section even if the url didn't change
-    $location.hash(':');
+breizhjugApp.controller("menuController", function ($scope, $route, $rootScope, $location, Scroll) {
+    $scope.homeSectionClick = function (sectionId) {
+        if ($route.current.templateUrl.indexOf('home') > 0) {
+            Scroll.scrollTo(sectionId);
+        } else {
+            $rootScope.scrollTo = sectionId;
+            $location.path("/home");
+        }
+    };
+});
+
+breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) {
+    if ($rootScope.scrollTo) {
+        var sectionId = $rootScope.scrollTo;
+        $rootScope.scrollTo = null;
+        setTimeout(function () {
+            Scroll.scrollTo(sectionId);
+        }, 2000);
+    }
 
     $scope.converter = new Markdown.getSanitizingConverter();
 
@@ -35,16 +45,6 @@ breizhjugApp.controller("homeController", function ($scope, $route, $location, $
         }
         return description;
     };
-
-    $scope.$on('$locationChangeSuccess', function (event) {
-        // if we try to move to the same page, it means we want to go to a section of the page. we scroll to it and told angular it's the same route to not reload the page.
-        if ($route.current.templateUrl.indexOf('home') > 0) {
-            $location.hash($route.current.params.scrollTo);
-            $anchorScroll();
-            $location.hash(':');
-            $route.current = lastRoute;
-        }
-    });
 });
 
 breizhjugApp.controller("homeHeadController", function ($scope) {
@@ -81,16 +81,6 @@ breizhjugApp.controller("homeEventsController", function ($scope, Events) {
                 pager: false
             });
         }, 1000);
-    });
-});
-
-breizhjugApp.controller("homeSpeakersController", function ($scope, Speakers) {
-    Speakers.fetch().success(function (resp) {
-        resp.sort(function (a, b) {
-            return Math.random() - 0.5;
-        });
-        resp.length = 2;
-        $scope.speakers = resp;
     });
 });
 
@@ -215,4 +205,25 @@ breizhjugApp.factory("Events", function ($http, $q) {
             return defer.promise;
         }
     };
+});
+
+breizhjugApp.factory("Scroll", function () {
+    var bodyElt = $('html, body');
+    var menuSpacerElt = $("#menu-spacer");
+    var menuPopupElt = $("#menu-popup");
+
+    return {
+        scrollTo: function (sectionId) {
+            // scroll to the section
+            var diff = menuSpacerElt.height();
+            if (diff == 0 && menuPopupElt.is(":visible")) {
+                diff = menuPopupElt.height();
+            }
+            var scrollTop = ($("#" + sectionId).offset().top - diff);
+            bodyElt.animate({
+                scrollTop: scrollTop
+            }, 1000);
+        }
+    }
+
 });
