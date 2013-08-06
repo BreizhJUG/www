@@ -227,3 +227,29 @@ breizhjugApp.factory("Scroll", function () {
     }
 
 });
+
+breizhjugApp.directive("twitterlink", function() {
+    return {
+        restrict: "E",
+        scope: {
+            name: "@"
+        },
+        template:
+            "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
+        replace: true,
+        transclude: false
+    }
+});
+
+breizhjugApp.directive("githublink", function() {
+    return {
+        restrict: "E",
+        scope: {
+            name: "@"
+        },
+        template:
+            "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>@{{ name }}</span></a>",
+        replace: true,
+        transclude: false
+    }
+});
