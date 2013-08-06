@@ -54,7 +54,10 @@
             <div class="speaker-arrow"></div>
             <h4 class="speaker-name">{{ speaker.name }}</h4>
             <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
-            <a class="twitter" href="http://www.twitter.com/{{ speaker.twitter }}"><span>@{{ speaker.twitter }}</span></a>
+            <div ng-show="speaker.twitter || speaker.github">
+              <twitterlink name="{{ speaker.twitter }}" />
+              <githublink name="{{ speaker.github }}" />
+            </div>
           </div>
         </div>
       </div>
@@ -131,7 +134,7 @@
         <h4>{{ member.name }}</h4>
         <div class="popup">
           <p ng-bind-html-unsafe="getSafeDescription(member.resume)"></p>
-          <a class="twitter" href="http://www.twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>
+          <twitterlink name="{{ member.twitter }}"/>
         </div>
       </div>
     </div>
