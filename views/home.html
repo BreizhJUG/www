@@ -28,8 +28,21 @@
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.breizhjug.org" data-text='{{ event.date | date:"EEEE dd MMMM HH:mm" }} au BreizhJug : {{ event.name }}'  data-lang="fr" data-size="large">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
+          <g:plus action="share" href="http://www.breizhjug.org" annotation="inline"></g:plus>
 
-        [Mail]</span>
+          <!-- Placez cette ballise après la dernière balise Partager. -->
+          <script type="text/javascript">
+              window.___gcfg = {lang: 'fr'};
+
+              (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+          </script>
+
+          <a href='mailto:?subject=Breizhjug%20:%20{{ event.name }}&body={{ event.date | date:"EEEE dd MMMM HH:mm" }}'>Partager par mail</a>
+
 
       </div>
       <div class="span8">
