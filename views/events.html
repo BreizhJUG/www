@@ -1,30 +1,35 @@
-<div class="lightgrey">
+<div class="lightgrey page">
 
   <div class="grid">
 
-    <div class="speakers-title">
-      <span>Evénements</span>
-      <input type="text" placeholder="Rechercher..." class="speakers-search" ng-model="search">
+    <div class="page-title">
+      <span>Événements</span>
+
+      <div class="page-search">
+        <input type="text" placeholder="Rechercher..." ng-model="search">
+      </div>
     </div>
 
-    <div ng-repeat="event in events | filter : search">
-      <div class="row-fluid">
-        <div class="span4">
-          <img class="vignette" ng-src="{{ event.image }}"/>
-        </div>
-        <div class="span8">
-          <h3>{{ event.name }}</h3>
+    <div class="events">
+      <div class="event" ng-repeat="event in events | filter : search">
+        <div class="row-fluid">
+          <div class="span4">
+            <img class="vignette" ng-src="{{ event.image }}"/>
+          </div>
+          <div class="span8">
+            <h3>{{ event.name }}</h3>
 
-          <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
-          <ul>
-            <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
-            <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
-          </ul>
+            <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
+            <ul>
+              <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
+              <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span12" ng-repeat="speaker in event.speakers" ng-controller="speakerController">
-          <div ng-include src="'views/speaker.html'"></div>
+        <div class="row-fluid">
+          <div class="span12" ng-repeat="speaker in event.speakers" ng-controller="speakerController">
+            <div ng-include src="'views/speaker.html'"></div>
+          </div>
         </div>
       </div>
     </div>

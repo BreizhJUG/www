@@ -246,8 +246,7 @@ breizhjugApp.directive("twitterlink", function () {
             name: "@"
         },
         template: "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
-        replace: true,
-        transclude: false
+        replace: true
     }
 });
 
@@ -258,7 +257,17 @@ breizhjugApp.directive("githublink", function () {
             name: "@"
         },
         template: "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>{{ name }}</span></a>",
-        replace: true,
-        transclude: false
+        replace: true
+    }
+});
+
+breizhjugApp.directive("maillink", function () {
+    return {
+        restrict: "E",
+        scope: {
+            name: "@"
+        },
+        template: "<a ng-show=\"name\" class=\"mail\" ng-href=\"mailto:{{ name }}\"><img src=\"/images/mail_icon.png\"/><span>{{ name }}</span></a>",
+        replace: true
     }
 });

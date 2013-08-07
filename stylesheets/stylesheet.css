@@ -129,7 +129,7 @@ header .nav li a {
 	}
 
 /*########### Twitter & Github link ###########*/
-.twitter, .github {
+.twitter, .github, .mail {
     display: inline-block;
 }
 
@@ -137,13 +137,13 @@ header .nav li a {
     color: #139be8;
 }
 
-.github {
+.github, .mail {
     color: #000;
 }
 
 /* < 500px, we just show the image and hide the text */
 @media (max-width: 500px) {
-    .twitter span, .github span {
+    .twitter span, .github span, .mail span {
         display: none;
     }
 }
@@ -155,8 +155,14 @@ header .nav li a {
 
 #next h3 {
 	color: #ff6a00;
-	margin-top: -15px;
 }
+
+@media (min-width: 768px) {
+    #next h3 {
+        margin-top: -15px;
+    }
+}
+
 #next h4 {
 	color: #000;
 }
@@ -315,37 +321,39 @@ footer .license {
     }
 }
 
-/*########### Speakers ###########*/
-#speakers {
-    padding: 30px 20px 10px 20px;
+/*########### Common to specific pages ###########*/
+.page {
+    padding: 20px 20px 10px 20px;
 }
 
-.speakers-title {
+.page-title {
     font-size: 30px;
     font-weight: bold;
     line-height: 40px;
     position: relative;
     border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
 }
 
-.speakers-search {
+.page-search {
     position: absolute;
     right: 0;
     top: 5px;
 }
 
-@media (max-width: 450px) {
-    .speakers-title {
+@media (max-width: 767px) {
+    .page-title {
         text-align: center;
     }
-    .speakers-search {
+    .page-search {
         position: relative;
     }
 }
 
+/*########### Speakers ###########*/
 .speaker {
      min-height: 150px;
-     margin: 30px 10px;
+     margin: 30px 0;
 }
 
 .speaker-avatar {
@@ -354,14 +362,6 @@ footer .license {
     border: solid 1px #000;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-}
-
-.speaker.left .speaker-avatar {
-    float: left;
-}
-
-.speaker.right .speaker-avatar {
-    float: right;
 }
 
 .speaker-popup {
@@ -381,22 +381,6 @@ footer .license {
      -webkit-transition: all 0.25s ease-out 0s;
 }
 
-.speaker-popup:hover {
-    -moz-transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    transform: translateX(10px);
-}
-
-.speaker.left .speaker-popup {
-    margin: 0 20px 0 180px;
-}
-
-.speaker.right .speaker-popup {
-    margin: 0 180px 0 20px;
-}
-
 .speaker-arrow {
     position: absolute;
     width: 0;
@@ -406,14 +390,93 @@ footer .license {
     top: 69px;
 }
 
-.speaker.left .speaker-arrow {
-    border-left: 0;
-    border-right: 15px solid #fff;
-    left: -15px;
+.speaker-contact {
+    border-top: 1px solid grey;
+    padding-top: 5px;
+    margin-top: 10px;
 }
 
-.speaker.right .speaker-arrow {
-    border-left: 15px solid #fff;
-    border-right: 0;
-    right: -15px;
+@media (min-width: 501px) {
+    .speaker.left .speaker-avatar {
+        float: left;
+    }
+
+    .speaker.right .speaker-avatar {
+        float: right;
+    }
+
+    .speaker.left .speaker-popup:hover {
+        -moz-transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    .speaker.right .speaker-popup:hover {
+        -moz-transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -o-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    .speaker.left .speaker-popup {
+        margin: 0 0 0 190px;
+    }
+
+    .speaker.right .speaker-popup {
+        margin: 0 190px 0 0;
+    }
+
+    .speaker.left .speaker-arrow {
+        border-left: 0;
+        border-right: 15px solid #fff;
+        left: -15px;
+    }
+
+    .speaker.right .speaker-arrow {
+        border-left: 15px solid #fff;
+        border-right: 0;
+        right: -15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .speaker {
+        text-align: center;
+    }
+
+    .speaker-avatar {
+        margin-bottom: 20px;
+    }
+
+    .speaker-popup {
+        text-align: left;
+    }
+
+    .speaker-arrow {
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 0;
+        border-bottom: 15px solid #fff;
+        top: -15px;
+        left: 50%;
+        margin-left: -12px;
+    }
+
+}
+
+/*########### Events ###########*/
+.events [class*="event"]:first-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    border-top: 1px solid grey;
+    padding-top: 40px;
+    margin-top: 10px;
 }
