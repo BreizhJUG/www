@@ -7,21 +7,8 @@
       <input type="text" placeholder="Rechercher..." class="speakers-search" ng-model="search.name">
     </div>
 
-    <div>
-      <div class="speaker" ng-repeat="speaker in speakers | filter : search" ng-class-odd="'left'" ng-class-even="'right'">
-        <img class="speaker-avatar" ng-src="{{ speaker.avatar }}"/>
-
-        <div class="speaker-popup">
-          <div class="speaker-arrow"></div>
-          <h4 class="speaker-name">{{ speaker.name }}</h4>
-
-          <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
-          <div ng-show="speaker.twitter || speaker.github">
-            <twitterlink name="{{ speaker.twitter }}"/>
-            <githublink name="{{ speaker.github }}"/>
-          </div>
-        </div>
-      </div>
+    <div ng-repeat="speaker in speakers | filter : search" ng-controller="speakerController">
+      <div ng-include src="'views/speaker.html'"></div>
     </div>
   </div>
 </div>
