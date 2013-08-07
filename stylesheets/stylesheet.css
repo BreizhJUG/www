@@ -128,19 +128,22 @@ header .nav li a {
 	background: #000;
 	}
 
-/*########### Twitter link ###########*/
+/*########### Twitter & Github link ###########*/
+.twitter, .github {
+    display: inline-block;
+}
+
 .twitter {
-    background: url(../images/twitter_icon.png) no-repeat 0 0;
-    height: 26px;
-    padding: 2px 0 0 45px;
     color: #139be8;
-    text-align: left;
-    display: block;
+}
+
+.github {
+    color: #000;
 }
 
 /* < 500px, we just show the image and hide the text */
 @media (max-width: 500px) {
-    .twitter span {
+    .twitter span, .github span {
         display: none;
     }
 }
@@ -317,9 +320,27 @@ footer .license {
     padding: 30px 20px 10px 20px;
 }
 
-#speakers h2 {
-    padding: 10px 0;
-    margin: 0;
+.speakers-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.speakers-search {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+@media (max-width: 450px) {
+    .speakers-title {
+        text-align: center;
+    }
+    .speakers-search {
+        position: relative;
+    }
 }
 
 .speaker {
@@ -395,13 +416,4 @@ footer .license {
     border-left: 15px solid #fff;
     border-right: 0;
     right: -15px;
-}
-
-.speaker-resume {
-    margin-bottom: 30px;
-}
-
-.speaker .twitter {
-    position: absolute;
-    bottom: 8px;
 }
