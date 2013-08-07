@@ -12,6 +12,10 @@ breizhjugApp.config(function ($routeProvider) {
             templateUrl: 'views/speakers.html',
             controller: 'speakersController'
         })
+        .when('/events', {
+            templateUrl: 'views/events.html',
+            controller: 'eventsController'
+        })
         .otherwise({
             redirectTo: '/home'
         });
@@ -39,7 +43,7 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 
     $scope.converter = new Markdown.getSanitizingConverter();
 
-    $scope.getSafeDescription = function(description) {
+    $scope.getSafeDescription = function (description) {
         if (description) {
             return $scope.converter.makeHtml(description);
         }
@@ -57,11 +61,6 @@ breizhjugApp.controller("homeHeadController", function ($scope) {
 breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers) {
     Events.next().then(function (evt) {
         $scope.event = evt;
-        if (evt.speakers && evt.speakers.length > 0) {
-            Speakers.fetchSome(evt.speakers).then(function (speakers) {
-                $scope.speakers = speakers;
-            });
-        }
     });
 });
 
@@ -98,10 +97,10 @@ breizhjugApp.controller("homeSponsorsController", function ($scope) {
 
 });
 
-breizhjugApp.controller("speakersController", function ($scope, Speakers) {
+breizhjugApp.controller("speakersController", function ($scope, Speakers, $location) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
-    $scope.getSafeDescription = function(description) {
+    $scope.getSafeDescription = function (description) {
         if (description) {
             return $scope.converter.makeHtml(description);
         }
@@ -111,6 +110,29 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers) {
     Speakers.fetch().success(function (resp) {
         $scope.speakers = resp;
     });
+});
+
+breizhjugApp.controller("speakerController", function ($scope, Speakers, $location) {
+    $scope.goToEvents = function (speaker) {
+        $location.path("/events").search("speaker=" + speaker.name);
+    };
+});
+
+breizhjugApp.controller("eventsController", function ($scope, Events, Speakers, $routeParams) {
+    $scope.converter = new Markdown.getSanitizingConverter();
+
+    $scope.getSafeDescription = function (description) {
+        if (description) {
+            return $scope.converter.makeHtml(description);
+        }
+        return description;
+    };
+
+    Events.fetch().then(function (resp) {
+        $scope.events = resp;
+    });
+
+    $scope.search = $routeParams.speaker;
 });
 
 breizhjugApp.factory("Speakers", function ($http, $q) {
@@ -123,43 +145,17 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
     return {
         fetch: fetch,
 
-        fetchOne: function (id) {
-            var defer = $q.defer();
-            fetch().success(function (resp) {
-                var speaker;
-                for (var i = 0; i < resp.length; i++) {
-                    var tmp = resp[i];
-                    if (tmp.id == id) {
-                        speaker = tmp;
-                        break;
-                    }
-                }
-                if (speaker) {
-                    defer.resolve(speaker);
-                } else {
-                    defer.reject('Not found');
-                }
-            }).error(function (resp) {
-                    defer.reject(resp);
-                });
-            return defer.promise;
-        },
-
-        fetchSome: function (ids) {
-            var defer = $q.defer();
+        fetchEvent: function (event) {
             fetch().success(function (resp) {
                 var speakers = [];
                 for (var i = 0; i < resp.length; i++) {
                     var tmp = resp[i];
-                    if (ids.indexOf(tmp.id) != -1) {
+                    if (event.speakers.indexOf(tmp.id) != -1) {
                         speakers.push(tmp);
                     }
                 }
-                defer.resolve(speakers);
-            }).error(function (resp) {
-                    defer.reject(resp);
-                });
-            return defer.promise;
+                event.speakers = speakers;
+            });
         }
     };
 });
@@ -175,11 +171,30 @@ breizhjugApp.factory("Team", function ($http) {
     };
 });
 
-breizhjugApp.factory("Events", function ($http, $q) {
+breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     var API_URI = 'data/events.json';
+    var events;
 
     var fetch = function () {
-        return $http.get(API_URI, {cache: true});
+        var defer = $q.defer();
+        if (events) {
+            defer.resolve(events);
+        } else {
+            $http.get(API_URI).success(function (resp) {
+                events = [];
+                for (var i = 0; i < resp.length; i++) {
+                    var evt = resp[i];
+                    if (evt.speakers && evt.speakers.length > 0) {
+                        Speakers.fetchEvent(evt);
+                    }
+                    events.push(evt);
+                }
+                defer.resolve(events);
+            }).error(function (resp) {
+                    defer.reject(resp);
+                });
+        }
+        return defer.promise;
     };
 
     return {
@@ -187,21 +202,17 @@ breizhjugApp.factory("Events", function ($http, $q) {
 
         next: function () {
             var defer = $q.defer();
-            fetch().success(function (resp) {
+            fetch().then(function (resp) {
                 defer.resolve(resp[resp.length - 1]);
-            }).error(function (resp) {
-                    defer.reject(resp);
-                });
+            });
             return defer.promise;
         },
 
         prev: function () {
             var defer = $q.defer();
-            fetch().success(function (resp) {
-                defer.resolve(resp.splice(0, resp.length - 1));
-            }).error(function (resp) {
-                    defer.reject(resp);
-                });
+            fetch().then(function (resp) {
+                defer.resolve(resp.slice(0, resp.length - 1));
+            });
             return defer.promise;
         }
     };
@@ -228,27 +239,25 @@ breizhjugApp.factory("Scroll", function () {
 
 });
 
-breizhjugApp.directive("twitterlink", function() {
+breizhjugApp.directive("twitterlink", function () {
     return {
         restrict: "E",
         scope: {
             name: "@"
         },
-        template:
-            "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
+        template: "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
         replace: true,
         transclude: false
     }
 });
 
-breizhjugApp.directive("githublink", function() {
+breizhjugApp.directive("githublink", function () {
     return {
         restrict: "E",
         scope: {
             name: "@"
         },
-        template:
-            "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>@{{ name }}</span></a>",
+        template: "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>{{ name }}</span></a>",
         replace: true,
         transclude: false
     }
