@@ -116,7 +116,7 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers, $locat
 
 breizhjugApp.controller("speakerController", function ($scope, Speakers, $location) {
     $scope.goToEvents = function (speaker) {
-        $location.path("/events").search("speaker=" + speaker.name);
+        $location.path("/events").search("q", speaker.name);
     };
 });
 
@@ -134,7 +134,9 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
         $scope.events = resp;
     });
 
-    $scope.search = $routeParams.speaker;
+    $scope.search = $routeParams.q;
+
+    $scope.reverseDate = true;
 });
 
 breizhjugApp.factory("Speakers", function ($http, $q) {

@@ -7,11 +7,13 @@
 
       <div class="page-search">
         <input type="text" placeholder="Rechercher..." ng-model="search">
+        <button class="btn btn-info" style="margin-top: -10px" ng-click="reverseDate = !reverseDate">Tri par date&nbsp;<i ng-show="!reverseDate" class="icon-arrow-up"></i><i
+                ng-show="reverseDate" class="icon-arrow-down"></i></button>
       </div>
     </div>
 
     <div class="events">
-      <div class="event" ng-repeat="event in events | eventsFilter : search">
+      <div class="event" ng-repeat="event in events | eventsFilter : search | orderBy:'date':reverseDate">
         <div class="row-fluid">
           <div class="span4">
             <img class="vignette" ng-src="{{ event.image }}"/>
