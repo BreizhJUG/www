@@ -1,6 +1,6 @@
 "use strict";
 
-var breizhjugApp = angular.module('breizhjugApp', []);
+var breizhjugApp = angular.module('breizhjugApp', ['ui.bootstrap']);
 
 breizhjugApp.config(function ($routeProvider) {
     $routeProvider
@@ -22,12 +22,14 @@ breizhjugApp.config(function ($routeProvider) {
 });
 
 breizhjugApp.controller("menuController", function ($scope, $route, $rootScope, $location, Scroll) {
+    $scope.isCollapsed = true;
+
     $scope.homeSectionClick = function (sectionId) {
         if ($route.current.templateUrl.indexOf('home') > 0) {
             Scroll.scrollTo(sectionId);
         } else {
             $rootScope.scrollTo = sectionId;
-            $location.path("/home");
+            $location.path("/home").search("");
         }
     };
 });
@@ -118,7 +120,7 @@ breizhjugApp.controller("speakerController", function ($scope, Speakers, $locati
     };
 });
 
-breizhjugApp.controller("eventsController", function ($scope, Events, Speakers, $routeParams) {
+breizhjugApp.controller("eventsController", function ($scope, Events, $routeParams) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
     $scope.getSafeDescription = function (description) {

@@ -20,7 +20,7 @@
     <header class="navbar navbar-fixed-top" ng-controller="menuController">
       <div class="navbar-inner">
         <div class="grid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <a class="btn btn-navbar" ng-click="isCollapsed = !isCollapsed">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -28,10 +28,10 @@
 
           <a class="brand" href ng-click="homeSectionClick('head')"><img src="images/logo-txt.png"></a>
 
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse" collapse="isCollapsed">
             <ul class="nav">
               <li class="dropdown">
-                <a href class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                <a href class="dropdown-toggle">Home<b class="caret"></b></a>
                 <ul id="menu-popup" class="dropdown-menu">
                   <li><a href ng-click="homeSectionClick('next')">événements</a></li>
                   <li><a href ng-click="homeSectionClick('news')">News</a></li>
@@ -73,7 +73,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         <script src="//code.angularjs.org/1.0.7/i18n/angular-locale_fr-fr.js"></script>
         <script src="bxslider/jquery.bxslider.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="javascripts/angularui/ui-bootstrap-custom-tpls-0.5.0.min.js"></script>
         <script src="javascripts/pagedown/Markdown.Converter.js"></script>
         <script src="javascripts/pagedown/Markdown.Sanitizer.js"></script>
         <script type="text/javascript" src="javascripts/main.js"></script>

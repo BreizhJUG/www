@@ -326,13 +326,16 @@ footer .license {
     padding: 20px 20px 10px 20px;
 }
 
+.page-title-container {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
 .page-title {
     font-size: 30px;
     font-weight: bold;
     line-height: 40px;
-    position: relative;
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 20px;
 }
 
 .page-search {
@@ -342,7 +345,7 @@ footer .license {
 }
 
 @media (max-width: 767px) {
-    .page-title {
+    .page-title-container {
         text-align: center;
     }
     .page-search {
