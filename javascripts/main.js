@@ -273,3 +273,27 @@ breizhjugApp.directive("maillink", function () {
         replace: true
     }
 });
+
+breizhjugApp.filter('eventsFilter', function () {
+    return function (events, searchText) {
+        var searchRegx = new RegExp(searchText, "i");
+        if (searchText == undefined) {
+            return events;
+        }
+        var result = [];
+        for (var i = 0; i < events.length; i++) {
+            var event = events[i];
+            if (event.name.search(searchRegx) != -1) {
+                result.push(event);
+            } else if (event.speakers) {
+                for (var j = 0; j < event.speakers.length; j++) {
+                    if (event.speakers[j].name.search(searchRegx) != -1) {
+                        result.push(event);
+                        break;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+});

@@ -6,12 +6,12 @@
       <span class="page-title">Événements</span>
 
       <div class="page-search">
-        <input type="text" placeholder="Filtrer par speaker" ng-model="search">
+        <input type="text" placeholder="Rechercher..." ng-model="search">
       </div>
     </div>
 
     <div class="events">
-      <div class="event" ng-repeat="event in events | filter : search">
+      <div class="event" ng-repeat="event in events | eventsFilter : search">
         <div class="row-fluid">
           <div class="span4">
             <img class="vignette" ng-src="{{ event.image }}"/>
