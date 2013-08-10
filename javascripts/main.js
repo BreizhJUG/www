@@ -56,7 +56,8 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 breizhjugApp.controller("homeHeadController", function ($scope) {
     // initialize the slider
     $('.home-head-slider').bxSlider({
-        auto: true
+        auto: true,
+        controls: false
     });
 });
 
@@ -75,11 +76,10 @@ breizhjugApp.controller("homeEventsController", function ($scope, Events) {
             $('.home-events-carousel').bxSlider({
                 slideWidth: 250,
                 minSlides: 1,
-                maxSlides: 5,
+                maxSlides: 50,
                 slideMargin: 5,
-                infiniteLoop: false,
-                hideControlOnEnd: true,
-                pager: false
+                pager: false,
+                moveSlides: 1
             });
         }, 1000);
     });

@@ -104,11 +104,6 @@ header .nav li a {
 }
 
 /*########### Others ###########*/
-#head {
-        background: #fff;
-    padding: 0;
-}
-
 .orange {
 	background: #ff6a00;
 	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
@@ -146,6 +141,57 @@ header .nav li a {
     .twitter span, .github span, .mail span {
         display: none;
     }
+}
+
+/*########### BxSlider - Custom CSS ###########*/
+.bx-container {
+    position: relative;
+}
+
+.bx-wrapper {
+    margin: 0;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/*########### Home - Head ###########*/
+#head {
+    background: #fff;
+}
+
+#head .bx-controls {
+    bottom: 20px;
+    right: 40px;
+    position: absolute;
+    z-index: 9998;
+}
+
+#head .bx-controls .bx-pager-item {
+    display: inline;
+    float: left;
+}
+
+#head .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#head .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#head .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
 }
 
 /*########### Home - Next event ###########*/
@@ -194,6 +240,40 @@ img.vignette {
 }
 
 /*########### Home - Last events ###########*/
+#home-events {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#home-events .bx-container {
+    padding: 0 70px;
+}
+
+#home-events .bx-container a.bx-prev,
+#home-events .bx-container a.bx-next {
+    background: #d4d4d4 url(../images/btn_prev_arrow.png) no-repeat center;
+    border-width: 0 2px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    height: 200px;
+    left: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 66px;
+}
+
+#home-events .bx-container a.bx-next {
+    background: #d4d4d4 url(../images/btn_next_arrow.png) no-repeat center;
+    left: auto;
+    right: 0;
+}
+
+#home-events .bx-container a.bx-prev:hover,
+#home-events .bx-container a.bx-next:hover {
+    background-color: #636363;
+}
+
 .home-events-carousel {
     margin: 0;
     padding: 0;
@@ -203,6 +283,7 @@ img.vignette {
     height: 200px;
     display: table-cell;
     vertical-align: middle;
+    background-color: #000;
 }
 
 .home-event-img {
