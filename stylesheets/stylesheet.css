@@ -194,27 +194,80 @@ img.vignette {
 }
 
 /*########### Home - Last events ###########*/
-#events li {
-        float: left;
-	list-style: none;
-	position: relative;
-	width: 266px;
-	margin-right: 10px;
+.home-events-carousel {
+    margin: 0;
+    padding: 0;
 }
 
-#events h4 {
+.home-event-img-container {
+    height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-event-img {
+    width: 100%;
+}
+
+.home-event-date {
+    font: bold 15px/15px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #000;
+    margin-top: 5px;
+}
+
+.home-event-title {
 	font: bold 16px/16px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	line-height: 16px;
+	line-height: 20px;
 	text-transform: uppercase;
 	color: #ff6a00;
 }
 
-#events .date {
-	font: bold 15px/15px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #000;
+.home-events-carousel p {
+    margin: 0;
+    padding: 0;
 }
-#events img {
-	width:250px;
+
+.home-event-ellipsis {
+    overflow: hidden;
+    height: 121px;
+    line-height: 20px;
+}
+
+.home-event-ellipsis:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: 126px;
+}
+
+.home-event-ellipsis > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+}
+
+.home-event-ellipsis:after {
+    content: "\02026\02003";
+
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+
+    float: right;
+    position: relative;
+    top: -26px;
+    left: 100%;
+    width: 4em;
+    margin-left: -4em;
+    padding-right: 5px;
+
+    text-align: right;
+
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
 }
 
 /*########### Home - News ###########*/

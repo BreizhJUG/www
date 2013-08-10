@@ -55,7 +55,7 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 
 breizhjugApp.controller("homeHeadController", function ($scope) {
     // initialize the slider
-    $('.headSlider').bxSlider({
+    $('.home-head-slider').bxSlider({
         auto: true
     });
 });
@@ -69,14 +69,14 @@ breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers
 breizhjugApp.controller("homeEventsController", function ($scope, Events) {
     Events.prev().then(function (resp) {
         $scope.events = resp;
-        // FIXME find a better way to achieve this, it's not even working properly when resizing the window.
+        // FIXME find a better way to achieve this
         setTimeout(function () {
             // initialize the slider
-            $('.eventsCarousel').bxSlider({
+            $('.home-events-carousel').bxSlider({
                 slideWidth: 250,
                 minSlides: 1,
                 maxSlides: 5,
-                slideMargin: 2,
+                slideMargin: 5,
                 infiniteLoop: false,
                 hideControlOnEnd: true,
                 pager: false

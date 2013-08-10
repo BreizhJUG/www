@@ -1,5 +1,5 @@
 <section id="head" ng-controller="homeHeadController">
-  <ul class="headSlider">
+  <ul class="home-head-slider">
     <li><img src="images/breizhjug-grand.png"/></li>
     <li><img src="images/BreizhCamp.png"/></li>
     <li><img src="images/BreizhKids.png"/></li>
@@ -62,19 +62,26 @@
   </div>
 </section>
 
-<section id="events" class="grey" ng-controller="homeEventsController">
+<section id="home-events" class="grey" ng-controller="homeEventsController">
   <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
-  <ul class="eventsCarousel">
-    <li ng-repeat="event in events">
-      <img ng-src="{{ event.image }}"/>
-      <div class="date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
-      <h4>{{ event.name }}</h4>
-      <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
-      <ul>
-        <li ng-repeat="link in event.links">
-          <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
-        </li>
-      </ul>
+  <ul class="home-events-carousel">
+    <li ng-repeat="event in events | orderBy:'date':true">
+      <div class="home-event-img-container">
+        <img class="home-event-img" ng-src="{{ event.image }}"/>
+      </div>
+      <div class="home-event-date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
+      <div class="home-event-ellipsis">
+        <div>
+          <h4 class="home-event-title">{{ event.name }}</h4>
+          <div ng-bind-html-unsafe="getSafeDescription(event.resume)"></div>
+        </div>
+      </div>
+      <a ng-href="#/events?q={{ event.name }}">Plus d'infos...</a>
+      <!--<ul>-->
+        <!--<li ng-repeat="link in event.links">-->
+          <!--<span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>-->
+        <!--</li>-->
+      <!--</ul>-->
     </li>
   </ul>
 
