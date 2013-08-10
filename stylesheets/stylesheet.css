@@ -165,8 +165,8 @@ header .nav li a {
 }
 
 #head .bx-controls {
-    bottom: 20px;
-    right: 40px;
+    bottom: -20px;
+    right: 30px;
     position: absolute;
     z-index: 9998;
 }
