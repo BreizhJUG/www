@@ -5,7 +5,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [2],
+        "speakersId": [2],
         "links": [
             {
                 "type": "film",
@@ -44,7 +44,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -58,7 +58,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -72,7 +72,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -86,7 +86,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -100,7 +100,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -114,7 +114,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -128,7 +128,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -142,7 +142,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -156,7 +156,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -170,7 +170,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -184,7 +184,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1],
+        "speakersId": [1],
         "links": [
             {
                 "type": "film",
@@ -198,7 +198,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
-        "speakers": [1]
+        "speakersId": [1]
     },
     {
         "name": "Sous le capot de la JVM",
@@ -206,7 +206,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/sous-le-capot.jpg",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
-        "speakers": [1]
+        "speakersId": [1]
     },
     {
         "name": "Sous le capot de la JVM",
@@ -214,6 +214,6 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/sous-le-capot.jpg",
         "resume": "**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
-        "speakers": [1]
+        "speakersId": [1]
     }
 ]

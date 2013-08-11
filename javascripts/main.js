@@ -2,6 +2,7 @@
 
 var breizhjugApp = angular.module('breizhjugApp', ['ui.bootstrap']);
 
+/*########### Routing config ###########*/
 breizhjugApp.config(function ($routeProvider) {
     $routeProvider
         .when('/home', {
@@ -21,6 +22,7 @@ breizhjugApp.config(function ($routeProvider) {
         });
 });
 
+/*########### Controllers ###########*/
 breizhjugApp.controller("menuController", function ($scope, $route, $rootScope, $location, Scroll) {
     $scope.isCollapsed = true;
 
@@ -139,6 +141,10 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
     $scope.reverseDate = true;
 });
 
+/*########### Services ###########*/
+/*
+ * Gives access to the speakers
+ */
 breizhjugApp.factory("Speakers", function ($http, $q) {
     var API_URI = 'data/speakers.json';
 
@@ -147,27 +153,35 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
     };
 
     return {
+        // return all the speakers
         fetch: fetch,
 
+        // fetch the speakers of the event
         fetchEvent: function (event) {
-            fetch().success(function (resp) {
-                var speakers = [];
-                for (var i = 0; i < resp.length; i++) {
-                    var tmp = resp[i];
-                    if (event.speakers.indexOf(tmp.id) != -1) {
-                        speakers.push(tmp);
+            if (event.speakersId && event.speakersId.length > 0) {
+                fetch().success(function (resp) {
+                    var speakers = [];
+                    for (var i = 0; i < resp.length; i++) {
+                        var tmp = resp[i];
+                        if (event.speakersId.indexOf(tmp.id) != -1) {
+                            speakers.push(tmp);
+                        }
                     }
-                }
-                event.speakers = speakers;
-            });
+                    event.speakers = speakers;
+                });
+            }
         }
     };
 });
 
+/*
+ * Gives access to the team's member
+ */
 breizhjugApp.factory("Team", function ($http) {
     var API_URI = 'data/team.json';
 
     return {
+        // return all the team's member
         fetch: function () {
             return $http.get(API_URI, {cache: true});
         }
@@ -175,6 +189,9 @@ breizhjugApp.factory("Team", function ($http) {
     };
 });
 
+/*
+ * Gives access to the events
+ */
 breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     var API_URI = 'data/events.json';
     var events;
@@ -188,9 +205,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
                 events = [];
                 for (var i = 0; i < resp.length; i++) {
                     var evt = resp[i];
-                    if (evt.speakers && evt.speakers.length > 0) {
-                        Speakers.fetchEvent(evt);
-                    }
+                    Speakers.fetchEvent(evt);
                     events.push(evt);
                 }
                 defer.resolve(events);
@@ -202,8 +217,10 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     };
 
     return {
+        // return all the events with their speakers fetched
         fetch: fetch,
 
+        // returns the next event (the last one from the events list)
         next: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
@@ -212,6 +229,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
             return defer.promise;
         },
 
+        // returns the previous events (all but last one)
         prev: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
@@ -222,14 +240,17 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     };
 });
 
+/*
+ * Service used to scroll to a section of the home page
+ */
 breizhjugApp.factory("Scroll", function () {
     var bodyElt = $('html, body');
     var menuSpacerElt = $("#menu-spacer");
     var menuPopupElt = $("#menu-popup");
 
     return {
+        // scroll to the section id passed in parameter
         scrollTo: function (sectionId) {
-            // scroll to the section
             var diff = menuSpacerElt.height();
             if (diff == 0 && menuPopupElt.is(":visible")) {
                 diff = menuPopupElt.height();
@@ -243,6 +264,10 @@ breizhjugApp.factory("Scroll", function () {
 
 });
 
+/*########### Directives ###########*/
+/*
+ * Creates a twitter link with the account id passed in attribute 'name'
+ */
 breizhjugApp.directive("twitterlink", function () {
     return {
         restrict: "E",
@@ -254,6 +279,9 @@ breizhjugApp.directive("twitterlink", function () {
     }
 });
 
+/*
+ * Creates a github link with the account id passed in attribute 'name'
+ */
 breizhjugApp.directive("githublink", function () {
     return {
         restrict: "E",
@@ -265,6 +293,9 @@ breizhjugApp.directive("githublink", function () {
     }
 });
 
+/*
+ * Creates a mail link with the address passed in attribute 'name'
+ */
 breizhjugApp.directive("maillink", function () {
     return {
         restrict: "E",
@@ -276,6 +307,10 @@ breizhjugApp.directive("maillink", function () {
     }
 });
 
+/*########### Filters ###########*/
+/*
+ * Filter events by name or speaker's name
+ */
 breizhjugApp.filter('eventsFilter', function () {
     return function (events, searchText) {
         var searchRegx = new RegExp(searchText, "i");
