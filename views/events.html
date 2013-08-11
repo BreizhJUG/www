@@ -26,11 +26,21 @@
               <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
               <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
             </ul>
+            <div ng-show="event.links">
+              <h5>Ressources :</h5>
+              <ul>
+                <li ng-repeat="link in event.links">
+                  <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row-fluid">
-          <div class="span12" ng-repeat="speaker in event.speakers" ng-controller="speakerController">
-            <div ng-include src="'views/speaker.html'"></div>
+          <div class="span12">
+            <div ng-repeat="speaker in event.speakers" ng-controller="speakerController">
+              <div ng-include src="'views/speaker.html'"></div>
+            </div>
           </div>
         </div>
       </div>
