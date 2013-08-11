@@ -56,11 +56,15 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 });
 
 breizhjugApp.controller("homeHeadController", function ($scope) {
-    // initialize the slider
-    $('.home-head-slider').bxSlider({
+    $scope.headers = [
+        {src:"images/breizhjug-grand.png"},
+        {src:"images/BreizhCamp.png"},
+        {src:"images/BreizhKids.png"},
+        {src:"images/GDG_Rennes.png"}];
+    $scope.carouselOptions = {
         auto: true,
         controls: false
-    });
+    };
 });
 
 breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers) {
@@ -72,18 +76,14 @@ breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers
 breizhjugApp.controller("homeEventsController", function ($scope, Events) {
     Events.prev().then(function (resp) {
         $scope.events = resp;
-        // FIXME find a better way to achieve this
-        setTimeout(function () {
-            // initialize the slider
-            $('.home-events-carousel').bxSlider({
-                slideWidth: 250,
-                minSlides: 1,
-                maxSlides: 50,
-                slideMargin: 5,
-                pager: false,
-                moveSlides: 1
-            });
-        }, 1000);
+        $scope.carouselOptions = {
+            slideWidth: 250,
+            minSlides: 1,
+            maxSlides: 50,
+            slideMargin: 5,
+            pager: false,
+            moveSlides: 1
+        };
     });
 });
 
@@ -305,6 +305,36 @@ breizhjugApp.directive("maillink", function () {
         template: "<a ng-show=\"name\" class=\"mail\" ng-href=\"mailto:{{ name }}\"><img src=\"/images/mail_icon.png\"/><span>{{ name }}</span></a>",
         replace: true
     }
+});
+
+/*
+ * Init a carousel
+ */
+breizhjugApp.directive('carousel',function($timeout) {
+    return {
+        restrict: 'E',
+        replace: true,
+        transclude: true,
+        scope: {
+            options: '='
+        },
+        template:  '<div class="bx-container">' +
+                     '<ul ng-transclude></ul>' +
+                   '</div>',
+        link: function(scope, elm, attrs) {
+            // we have to wait that the <li> are all rendered. 'options' is only set when we retrieve the elements we want to show
+            scope.$watch('options', function(options) {
+                if(options != undefined){
+                    // options have been set at the same time as the elements we want to show.
+                    // $timeout waits the current $digest to process.
+                    $timeout(function(){
+                        // the elements are rendered, we can init the slider
+                        $(elm.children()[0]).bxSlider(options);
+                    });
+                }
+            });
+        }
+    };
 });
 
 /*########### Filters ###########*/

@@ -274,7 +274,7 @@ img.vignette {
     background-color: #636363;
 }
 
-.home-events-carousel {
+#home-events .bx-container ul {
     margin: 0;
     padding: 0;
 }
@@ -303,7 +303,7 @@ img.vignette {
 	color: #ff6a00;
 }
 
-.home-events-carousel p {
+#home-events .bx-container p {
     margin: 0;
     padding: 0;
 }
