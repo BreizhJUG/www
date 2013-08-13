@@ -1,6 +1,10 @@
 <section id="head" ng-controller="homeHeadController">
   <carousel options="carouselOptions">
-    <li ng-repeat="header in headers"><img ng-src="{{ header.src }}"/></li>
+    <li ng-repeat="header in headers">
+      <div class="head-img-container">
+        <img ng-src="{{ header.src }}"/>
+      </div>
+    </li>
   </carousel>
 </section>
 

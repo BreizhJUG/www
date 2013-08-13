@@ -148,24 +148,25 @@ header .nav li a {
     position: relative;
 }
 
+.bx-container ul {
+    margin: 0;
+    padding: 0;
+}
+
 .bx-wrapper {
     margin: 0;
     padding: 0;
     *zoom: 1;
 }
 
-.bx-wrapper img {
-    max-width: 100%;
-    display: block;
-}
-
 /*########### Home - Head ###########*/
 #head {
     background: #fff;
+    padding: 0;
 }
 
 #head .bx-controls {
-    bottom: -20px;
+    bottom: 20px;
     right: 30px;
     position: absolute;
     z-index: 9998;
@@ -192,6 +193,12 @@ header .nav li a {
 #head .bx-wrapper .bx-pager.bx-default-pager a:hover,
 #head .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #000;
+}
+
+.head-img-container {
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
 }
 
 /*########### Home - Next event ###########*/
@@ -275,15 +282,9 @@ img.vignette {
     background-color: #636363;
 }
 
-#home-events .bx-container ul {
-    margin: 0;
-    padding: 0;
-}
-
 .home-event-img-container {
     height: 200px;
-    display: table-cell;
-    vertical-align: middle;
+    line-height: 200px;
     background-color: #000;
 }
 
