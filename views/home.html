@@ -1,10 +1,11 @@
 <section id="head" ng-controller="homeHeadController">
-  <ul class="headSlider">
-    <li><img src="images/breizhjug-grand.png"/></li>
-    <li><img src="images/BreizhCamp.png"/></li>
-    <li><img src="images/BreizhKids.png"/></li>
-    <li><img src="images/GDG_Rennes.png"/></li>
-  </ul>
+  <carousel options="carouselOptions">
+    <li ng-repeat="header in headers">
+      <div class="head-img-container">
+        <img ng-src="{{ header.src }}"/>
+      </div>
+    </li>
+  </carousel>
 </section>
 
 <section id="next" class="lightgrey" ng-controller="homeNextController">
@@ -47,12 +48,14 @@
 
 
       </div>
-      <div class="span8" ng-repeat="speaker in event.speakers" ng-controller="speakerController">
-        <div ng-include src="'views/speaker.html'"></div>
+      <div class="span8">
+        <div ng-repeat="speaker in event.speakers" ng-controller="speakerController">
+          <div ng-include src="'views/speaker.html'"></div>
+        </div>
       </div>
     </div>
     <div class="row-fluid" >
-      <div class="offset6 span6" style="text-align: right">
+      <div style="text-align: right">
         <form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank" id="annonce-subscribe">
           Recevez par email les annonces des prochains événements :
           <input type="submit" class="btn btn-primary" value="S'inscrire"/>
@@ -62,22 +65,23 @@
   </div>
 </section>
 
-<section id="events" class="grey" ng-controller="homeEventsController">
+<section id="home-events" class="grey" ng-controller="homeEventsController">
   <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
-  <ul class="eventsCarousel">
-    <li ng-repeat="event in events">
-      <img ng-src="{{ event.image }}"/>
-      <div class="date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
-      <h4>{{ event.name }}</h4>
-      <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
-      <ul>
-        <li ng-repeat="link in event.links">
-          <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
-        </li>
-      </ul>
+  <carousel options="carouselOptions">
+    <li ng-repeat="event in events | orderBy:'date':true">
+      <div class="home-event-img-container">
+        <img class="home-event-img" ng-src="{{ event.image }}"/>
+      </div>
+      <div class="home-event-date">{{ event.date | date:"dd MMMM yyyy"  }}</div>
+      <div class="home-event-ellipsis">
+        <div>
+          <h4 class="home-event-title">{{ event.name }}</h4>
+          <div ng-bind-html-unsafe="getSafeDescription(event.resume)"></div>
+        </div>
+      </div>
+      <a ng-href="#/events?q={{ event.name }}">Plus d'infos...</a>
     </li>
-  </ul>
-
+  </carousel>
 </section>
 
 <section id="news" class="white" ng-controller="homeNewsController">

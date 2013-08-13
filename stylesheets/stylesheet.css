@@ -104,11 +104,6 @@ header .nav li a {
 }
 
 /*########### Others ###########*/
-#head {
-        background: #fff;
-    padding: 0;
-}
-
 .orange {
 	background: #ff6a00;
 	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
@@ -129,7 +124,7 @@ header .nav li a {
 	}
 
 /*########### Twitter & Github link ###########*/
-.twitter, .github {
+.twitter, .github, .mail {
     display: inline-block;
 }
 
@@ -137,15 +132,73 @@ header .nav li a {
     color: #139be8;
 }
 
-.github {
+.github, .mail {
     color: #000;
 }
 
 /* < 500px, we just show the image and hide the text */
 @media (max-width: 500px) {
-    .twitter span, .github span {
+    .twitter span, .github span, .mail span {
         display: none;
     }
+}
+
+/*########### BxSlider - Custom CSS ###########*/
+.bx-container {
+    position: relative;
+}
+
+.bx-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bx-wrapper {
+    margin: 0;
+    padding: 0;
+    *zoom: 1;
+}
+
+/*########### Home - Head ###########*/
+#head {
+    background: #fff;
+    padding: 0;
+}
+
+#head .bx-controls {
+    bottom: 20px;
+    right: 30px;
+    position: absolute;
+    z-index: 9998;
+}
+
+#head .bx-controls .bx-pager-item {
+    display: inline;
+    float: left;
+}
+
+#head .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#head .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#head .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+.head-img-container {
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
 }
 
 /*########### Home - Next event ###########*/
@@ -155,8 +208,14 @@ header .nav li a {
 
 #next h3 {
 	color: #ff6a00;
-	margin-top: -15px;
 }
+
+@media (min-width: 768px) {
+    #next h3 {
+        margin-top: -10px;
+    }
+}
+
 #next h4 {
 	color: #000;
 }
@@ -177,6 +236,7 @@ img.vignette {
 }
 
 #annonce-subscribe {
+    display: inline-block;
 	background:#fff;
 	border: solid 1px #000;
 	padding: 5px;
@@ -188,27 +248,109 @@ img.vignette {
 }
 
 /*########### Home - Last events ###########*/
-#events li {
-        float: left;
-	list-style: none;
-	position: relative;
-	width: 266px;
-	margin-right: 10px;
+#home-events {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-#events h4 {
+#home-events .bx-container {
+    padding: 0 70px;
+}
+
+#home-events .bx-container a.bx-prev,
+#home-events .bx-container a.bx-next {
+    background: #d4d4d4 url(../images/btn_prev_arrow.png) no-repeat center;
+    border-width: 0 2px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    height: 200px;
+    left: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 66px;
+}
+
+#home-events .bx-container a.bx-next {
+    background: #d4d4d4 url(../images/btn_next_arrow.png) no-repeat center;
+    left: auto;
+    right: 0;
+}
+
+#home-events .bx-container a.bx-prev:hover,
+#home-events .bx-container a.bx-next:hover {
+    background-color: #636363;
+}
+
+.home-event-img-container {
+    height: 200px;
+    line-height: 200px;
+    background-color: #000;
+}
+
+.home-event-img {
+    width: 100%;
+}
+
+.home-event-date {
+    font: bold 15px/15px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #000;
+    margin-top: 5px;
+}
+
+.home-event-title {
 	font: bold 16px/16px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	line-height: 16px;
+	line-height: 20px;
 	text-transform: uppercase;
 	color: #ff6a00;
 }
 
-#events .date {
-	font: bold 15px/15px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #000;
+#home-events .bx-container p {
+    margin: 0;
+    padding: 0;
 }
-#events img {
-	width:250px;
+
+.home-event-ellipsis {
+    overflow: hidden;
+    height: 121px;
+    line-height: 20px;
+}
+
+.home-event-ellipsis:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: 126px;
+}
+
+.home-event-ellipsis > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+}
+
+.home-event-ellipsis:after {
+    content: "\02026\02003";
+
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+
+    float: right;
+    position: relative;
+    top: -26px;
+    left: 100%;
+    width: 4em;
+    margin-left: -4em;
+    padding-right: 5px;
+
+    text-align: right;
+
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
 }
 
 /*########### Home - News ###########*/
@@ -315,37 +457,42 @@ footer .license {
     }
 }
 
-/*########### Speakers ###########*/
-#speakers {
-    padding: 30px 20px 10px 20px;
+/*########### Common to specific pages ###########*/
+.page {
+    padding: 20px 20px 10px 20px;
 }
 
-.speakers-title {
+.page-title-container {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.page-title {
     font-size: 30px;
     font-weight: bold;
     line-height: 40px;
-    position: relative;
-    border-bottom: 1px solid #e5e5e5;
 }
 
-.speakers-search {
+.page-search {
     position: absolute;
     right: 0;
     top: 5px;
 }
 
-@media (max-width: 450px) {
-    .speakers-title {
+@media (max-width: 767px) {
+    .page-title-container {
         text-align: center;
     }
-    .speakers-search {
+    .page-search {
         position: relative;
     }
 }
 
+/*########### Speakers ###########*/
 .speaker {
      min-height: 150px;
-     margin: 30px 10px;
+     margin: 30px 0;
 }
 
 .speaker-avatar {
@@ -354,14 +501,6 @@ footer .license {
     border: solid 1px #000;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-}
-
-.speaker.left .speaker-avatar {
-    float: left;
-}
-
-.speaker.right .speaker-avatar {
-    float: right;
 }
 
 .speaker-popup {
@@ -381,22 +520,6 @@ footer .license {
      -webkit-transition: all 0.25s ease-out 0s;
 }
 
-.speaker-popup:hover {
-    -moz-transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    transform: translateX(10px);
-}
-
-.speaker.left .speaker-popup {
-    margin: 0 20px 0 180px;
-}
-
-.speaker.right .speaker-popup {
-    margin: 0 180px 0 20px;
-}
-
 .speaker-arrow {
     position: absolute;
     width: 0;
@@ -406,14 +529,107 @@ footer .license {
     top: 69px;
 }
 
-.speaker.left .speaker-arrow {
-    border-left: 0;
-    border-right: 15px solid #fff;
-    left: -15px;
+.speaker-contact {
+    border-top: 1px solid grey;
+    padding-top: 5px;
+    margin-top: 10px;
 }
 
-.speaker.right .speaker-arrow {
-    border-left: 15px solid #fff;
-    border-right: 0;
-    right: -15px;
+@media (min-width: 501px) {
+    .speaker.left .speaker-avatar {
+        float: left;
+    }
+
+    .speaker.right .speaker-avatar {
+        float: right;
+    }
+
+    .speaker.left .speaker-popup:hover {
+        -moz-transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    .speaker.right .speaker-popup:hover {
+        -moz-transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -o-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    .speaker.left .speaker-popup {
+        margin: 0 0 0 190px;
+    }
+
+    .speaker.right .speaker-popup {
+        margin: 0 190px 0 0;
+    }
+
+    .speaker.left .speaker-arrow {
+        border-left: 0;
+        border-right: 15px solid #fff;
+        left: -15px;
+    }
+
+    .speaker.right .speaker-arrow {
+        border-left: 15px solid #fff;
+        border-right: 0;
+        right: -15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .speaker {
+        text-align: center;
+    }
+
+    .speaker-avatar {
+        margin-bottom: 20px;
+    }
+
+    .speaker-popup {
+        text-align: left;
+    }
+
+    .speaker-arrow {
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 0;
+        border-bottom: 15px solid #fff;
+        top: -15px;
+        left: 50%;
+        margin-left: -12px;
+    }
+
+}
+
+/*########### Events ###########*/
+.events .event:first-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    border-top: 1px solid grey;
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+.event h3 {
+    color: #ff6a00;
+}
+
+@media (min-width: 768px) {
+    .event h3 {
+        margin-top: -10px;
+    }
+}
+
+.event-links {
+    margin: 20px 0 0 20px;
 }
