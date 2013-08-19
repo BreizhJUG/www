@@ -163,6 +163,9 @@ header .nav li a {
 
 img.vignette {
 	box-shadow: 5px 5px 5px;
+	transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg); /* IE 9 */
+	-webkit-transform: rotate(-2deg); /* Safari and Chrome */
 }
 
 #next .bio {

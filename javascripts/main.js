@@ -128,6 +128,11 @@ breizhjugApp.controller("eventsController", function ($scope, Events, Speakers, 
         return description;
     };
 
+    $scope.goToSpeaker = function (speaker) {
+        $location.path("/speakers").search("speaker=" + speaker.name);
+    };
+
+
     Events.fetch().then(function (resp) {
         $scope.events = resp;
     });
