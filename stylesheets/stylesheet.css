@@ -237,6 +237,11 @@ img.vignette {
 	color: #737373;
 }
 
+#team .grid {
+   	max-width: 100%;
+}
+
+
 #team h2 {
 	color: #fff;
 }
@@ -373,6 +378,7 @@ footer .license {
      padding: 2px 10px 10px 10px;
      position: relative;
      min-height: 138px;
+     text-align : justify;
 
      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
