@@ -22,6 +22,9 @@
             <li ng-repeat="speaker in event.speakers" ng-controller="eventsController">
               <span class="glyphicon glyphicon-bullhorn"></span> <a href ng-click="goToSpeaker(speaker)">{{ speaker.name }}</a>
             </li>
+            <li ng-repeat="link in event.links">
+              <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
+            </li>
           </ul>
         </div>
       </div>
