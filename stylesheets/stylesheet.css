@@ -90,6 +90,11 @@ header .nav li a {
 	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+.headSlider img {
+  	margin:auto;
+  	width:900px;
+}
+
 #menu-spacer {
     height: 53px;
 }
@@ -248,6 +253,7 @@ img.vignette {
 
 #team h4{
 	color: #ff6a00;
+	text-align:center;
 	min-height: 40px;
 }
 
