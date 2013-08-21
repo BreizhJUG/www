@@ -1,7 +1,8 @@
 "use strict";
 
-var breizhjugApp = angular.module('breizhjugApp', []);
+var breizhjugApp = angular.module('breizhjugApp', ['ui.bootstrap']);
 
+/*########### Routing config ###########*/
 breizhjugApp.config(function ($routeProvider) {
     $routeProvider
         .when('/home', {
@@ -21,13 +22,16 @@ breizhjugApp.config(function ($routeProvider) {
         });
 });
 
+/*########### Controllers ###########*/
 breizhjugApp.controller("menuController", function ($scope, $route, $rootScope, $location, Scroll) {
+    $scope.isCollapsed = true;
+
     $scope.homeSectionClick = function (sectionId) {
         if ($route.current.templateUrl.indexOf('home') > 0) {
             Scroll.scrollTo(sectionId);
         } else {
             $rootScope.scrollTo = sectionId;
-            $location.path("/home");
+            $location.path("/home").search("");
         }
     };
 });
@@ -52,10 +56,15 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 });
 
 breizhjugApp.controller("homeHeadController", function ($scope) {
-    // initialize the slider
-    $('.headSlider').bxSlider({
-        auto: true
-    });
+    $scope.headers = [
+        {src:"images/header/breizhjug.png"},
+        {src:"images/header/BreizhCamp.png"},
+        {src:"images/header/GDG_Rennes.png"},
+        {src:"images/header/BreizhKids.png"}];
+    $scope.carouselOptions = {
+        auto: true,
+        controls: false
+    };
 });
 
 breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers) {
@@ -67,19 +76,14 @@ breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers
 breizhjugApp.controller("homeEventsController", function ($scope, Events) {
     Events.prev().then(function (resp) {
         $scope.events = resp;
-        // FIXME find a better way to achieve this, it's not even working properly when resizing the window.
-        setTimeout(function () {
-            // initialize the slider
-            $('.eventsCarousel').bxSlider({
-                slideWidth: 250,
-                minSlides: 1,
-                maxSlides: 5,
-                slideMargin: 2,
-                infiniteLoop: false,
-                hideControlOnEnd: true,
-                pager: false
-            });
-        }, 1000);
+        $scope.carouselOptions = {
+            slideWidth: 250,
+            minSlides: 1,
+            maxSlides: 50,
+            slideMargin: 5,
+            pager: false,
+            moveSlides: 1
+        };
     });
 });
 
@@ -114,11 +118,11 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers, $locat
 
 breizhjugApp.controller("speakerController", function ($scope, Speakers, $location) {
     $scope.goToEvents = function (speaker) {
-        $location.path("/events").search("speaker=" + speaker.name);
+        $location.path("/events").search("q", speaker.name);
     };
 });
 
-breizhjugApp.controller("eventsController", function ($scope, Events, Speakers, $routeParams) {
+breizhjugApp.controller("eventsController", function ($scope, Events, $routeParams) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
     $scope.getSafeDescription = function (description) {
@@ -137,9 +141,15 @@ breizhjugApp.controller("eventsController", function ($scope, Events, Speakers, 
         $scope.events = resp;
     });
 
-    $scope.search = $routeParams.speaker;
+    $scope.search = $routeParams.q;
+
+    $scope.reverseDate = true;
 });
 
+/*########### Services ###########*/
+/*
+ * Gives access to the speakers
+ */
 breizhjugApp.factory("Speakers", function ($http, $q) {
     var API_URI = 'data/speakers.json';
 
@@ -148,27 +158,35 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
     };
 
     return {
+        // return all the speakers
         fetch: fetch,
 
+        // fetch the speakers of the event
         fetchEvent: function (event) {
-            fetch().success(function (resp) {
-                var speakers = [];
-                for (var i = 0; i < resp.length; i++) {
-                    var tmp = resp[i];
-                    if (event.speakers.indexOf(tmp.id) != -1) {
-                        speakers.push(tmp);
+            if (event.speakersId && event.speakersId.length > 0) {
+                fetch().success(function (resp) {
+                    var speakers = [];
+                    for (var i = 0; i < resp.length; i++) {
+                        var tmp = resp[i];
+                        if (event.speakersId.indexOf(tmp.id) != -1) {
+                            speakers.push(tmp);
+                        }
                     }
-                }
-                event.speakers = speakers;
-            });
+                    event.speakers = speakers;
+                });
+            }
         }
     };
 });
 
+/*
+ * Gives access to the team's member
+ */
 breizhjugApp.factory("Team", function ($http) {
     var API_URI = 'data/team.json';
 
     return {
+        // return all the team's member
         fetch: function () {
             return $http.get(API_URI, {cache: true});
         }
@@ -176,6 +194,9 @@ breizhjugApp.factory("Team", function ($http) {
     };
 });
 
+/*
+ * Gives access to the events
+ */
 breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     var API_URI = 'data/events.json';
     var events;
@@ -189,9 +210,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
                 events = [];
                 for (var i = 0; i < resp.length; i++) {
                     var evt = resp[i];
-                    if (evt.speakers && evt.speakers.length > 0) {
-                        Speakers.fetchEvent(evt);
-                    }
+                    Speakers.fetchEvent(evt);
                     events.push(evt);
                 }
                 defer.resolve(events);
@@ -203,8 +222,10 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     };
 
     return {
+        // return all the events with their speakers fetched
         fetch: fetch,
 
+        // returns the next event (the last one from the events list)
         next: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
@@ -213,6 +234,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
             return defer.promise;
         },
 
+        // returns the previous events (all but last one)
         prev: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
@@ -223,14 +245,17 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     };
 });
 
+/*
+ * Service used to scroll to a section of the home page
+ */
 breizhjugApp.factory("Scroll", function () {
     var bodyElt = $('html, body');
     var menuSpacerElt = $("#menu-spacer");
     var menuPopupElt = $("#menu-popup");
 
     return {
+        // scroll to the section id passed in parameter
         scrollTo: function (sectionId) {
-            // scroll to the section
             var diff = menuSpacerElt.height();
             if (diff == 0 && menuPopupElt.is(":visible")) {
                 diff = menuPopupElt.height();
@@ -244,6 +269,10 @@ breizhjugApp.factory("Scroll", function () {
 
 });
 
+/*########### Directives ###########*/
+/*
+ * Creates a twitter link with the account id passed in attribute 'name'
+ */
 breizhjugApp.directive("twitterlink", function () {
     return {
         restrict: "E",
@@ -251,11 +280,13 @@ breizhjugApp.directive("twitterlink", function () {
             name: "@"
         },
         template: "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
-        replace: true,
-        transclude: false
+        replace: true
     }
 });
 
+/*
+ * Creates a github link with the account id passed in attribute 'name'
+ */
 breizhjugApp.directive("githublink", function () {
     return {
         restrict: "E",
@@ -263,7 +294,78 @@ breizhjugApp.directive("githublink", function () {
             name: "@"
         },
         template: "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>{{ name }}</span></a>",
+        replace: true
+    }
+});
+
+/*
+ * Creates a mail link with the address passed in attribute 'name'
+ */
+breizhjugApp.directive("maillink", function () {
+    return {
+        restrict: "E",
+        scope: {
+            name: "@"
+        },
+        template: "<a ng-show=\"name\" class=\"mail\" ng-href=\"mailto:{{ name }}\"><img src=\"/images/mail_icon.png\"/><span>{{ name }}</span></a>",
+        replace: true
+    }
+});
+
+/*
+ * Init a carousel
+ */
+breizhjugApp.directive('carousel',function($timeout) {
+    return {
+        restrict: 'E',
         replace: true,
-        transclude: false
+        transclude: true,
+        scope: {
+            options: '='
+        },
+        template:  '<div class="bx-container">' +
+                     '<ul ng-transclude></ul>' +
+                   '</div>',
+        link: function(scope, elm, attrs) {
+            // we have to wait that the <li> are all rendered. 'options' is only set when we retrieve the elements we want to show
+            scope.$watch('options', function(options) {
+                if(options != undefined){
+                    // options have been set at the same time as the elements we want to show.
+                    // $timeout waits the current $digest to process.
+                    $timeout(function(){
+                        // the elements are rendered, we can init the slider
+                        $(elm.children()[0]).bxSlider(options);
+                    });
+                }
+            });
+        }
+    };
+});
+
+/*########### Filters ###########*/
+/*
+ * Filter events by name or speaker's name
+ */
+breizhjugApp.filter('eventsFilter', function () {
+    return function (events, searchText) {
+        var searchRegx = new RegExp(searchText, "i");
+        if (searchText == undefined) {
+            return events;
+        }
+        var result = [];
+        for (var i = 0; i < events.length; i++) {
+            var event = events[i];
+            if (event.name.search(searchRegx) != -1) {
+                result.push(event);
+            } else if (event.speakers) {
+                for (var j = 0; j < event.speakers.length; j++) {
+                    if (event.speakers[j].name.search(searchRegx) != -1) {
+                        result.push(event);
+                        break;
+                    }
+                }
+            }
+        }
+        return result;
     }
 });

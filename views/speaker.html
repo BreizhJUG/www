@@ -6,10 +6,13 @@
     <h4 class="speaker-name">{{ speaker.name }}</h4>
 
     <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
-    <div ng-show="speaker.twitter || speaker.github" style="margin-bottom: 10px;">
+
+    <a href ng-click="goToEvents(speaker)">Voir ses talks</a>
+
+    <div class="speaker-contact" ng-show="speaker.twitter || speaker.github || speaker.mail" style="margin-bottom: 10px;">
       <twitterlink name="{{ speaker.twitter }}"/>
       <githublink name="{{ speaker.github }}"/>
+      <maillink name="{{ speaker.mail }}"/>
     </div>
-    <a href ng-click="goToEvents(speaker)">Voir ses talks</a>
   </div>
 </div>

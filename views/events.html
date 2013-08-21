@@ -1,19 +1,25 @@
-<div class="lightgrey">
+<div class="lightgrey page">
 
   <div class="grid">
 
-    <div class="speakers-title">
-      <span>Evénements</span>
-      <input type="text" placeholder="Rechercher..." class="speakers-search" ng-model="search">
+    <div class="page-title-container">
+      <span class="page-title">Événements</span>
+
+      <div class="page-search">
+        <input type="text" placeholder="Rechercher..." ng-model="search">
+        <button class="btn btn-info" style="margin-top: -10px" ng-click="reverseDate = !reverseDate">Tri par date&nbsp;<i ng-show="!reverseDate" class="icon-arrow-up"></i><i
+                ng-show="reverseDate" class="icon-arrow-down"></i></button>
+      </div>
     </div>
 
-    <div ng-repeat="event in events | filter : search">
-      <div class="row-fluid" style="margin-top:20px">
-        <div class="span4" style="padding-top:20px">
-          <img class="vignette" ng-src="{{ event.image }}"/>
-        </div>
-        <div class="span8">
-          <h3>{{ event.name }}</h3>
+    <div class="events">
+      <div class="event" ng-repeat="event in events | eventsFilter : search | orderBy:'date':reverseDate">
+        <div class="row-fluid" style="margin-top:20px">
+          <div class="span4" style="padding-top:20px">
+            <img class="vignette" ng-src="{{ event.image }}"/>
+          </div>
+          <div class="span8">
+            <h3>{{ event.name }}</h3>
 
           <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
           <ul>
@@ -22,10 +28,15 @@
             <li ng-repeat="speaker in event.speakers" ng-controller="eventsController">
               <span class="glyphicon glyphicon-bullhorn"></span> <a href ng-click="goToSpeaker(speaker)">{{ speaker.name }}</a>
             </li>
-            <li ng-repeat="link in event.links">
-              <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
-            </li>
           </ul>
+          <div ng-show="event.links">
+            <h5>Ressources :</h5>
+            <ul>
+              <li ng-repeat="link in event.links">
+                <span class="glyphicon glyphicon-{{ link.type }}"></span> <a href="{{ link.url }}">{{ link.name || link.type }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
