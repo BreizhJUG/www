@@ -101,7 +101,7 @@ breizhjugApp.controller("homeSponsorsController", function ($scope) {
 
 });
 
-breizhjugApp.controller("speakersController", function ($scope, Speakers, $location) {
+breizhjugApp.controller("speakersController", function ($scope, Speakers, $routeParams) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
     $scope.getSafeDescription = function (description) {
@@ -114,6 +114,12 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers, $locat
     Speakers.fetch().success(function (resp) {
         $scope.speakers = resp;
     });
+
+    if ($routeParams.q == undefined) {
+        $scope.search = '';
+    }else{
+        $scope.search = $routeParams.q;
+    }
 });
 
 breizhjugApp.controller("speakerController", function ($scope, Speakers, $location) {
@@ -122,7 +128,7 @@ breizhjugApp.controller("speakerController", function ($scope, Speakers, $locati
     };
 });
 
-breizhjugApp.controller("eventsController", function ($scope, Events, $routeParams) {
+breizhjugApp.controller("eventsController", function ($scope, Events, $routeParams, $location) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
     $scope.getSafeDescription = function (description) {
@@ -133,7 +139,7 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
     };
 
     $scope.goToSpeaker = function (speaker) {
-        $location.path("/speakers").search("speaker=" + speaker.name);
+        $location.path("/speakers").search("q", speaker.name);
     };
 
 

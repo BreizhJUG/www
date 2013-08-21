@@ -6,11 +6,11 @@
       <span class="page-title">Speakers</span>
 
       <div class="page-search">
-        <input type="text" placeholder="Rechercher..." ng-model="search.name">
+        <input type="text" placeholder="Rechercher..." ng-model="search">
       </div>
     </div>
 
-    <div ng-repeat="speaker in speakers | filter : search" ng-controller="speakerController">
+    <div ng-repeat="speaker in speakers | filter : {name:search}" ng-controller="speakerController">
       <div ng-include src="'views/speaker.html'"></div>
     </div>
   </div>
