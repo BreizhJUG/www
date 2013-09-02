@@ -2,7 +2,7 @@
   <carousel options="carouselOptions">
     <li ng-repeat="header in headers">
       <div class="head-img-container">
-        <a href="{{header.href}}" ng-show="header.href">
+        <a href="{{header.href}}" ng-show="header.href" target="_blank">
            <img ng-src="{{ header.src }}" />
         </a>
         <img ng-src="{{ header.src }}" ng-hide="header.href"/>
