@@ -58,6 +58,7 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 breizhjugApp.controller("homeHeadController", function ($scope) {
     $scope.headers = [
         {src:"images/header/breizhjug.png"},
+        {src:"images/header/Devoxx.png"},
         {src:"images/header/BreizhCamp.png"},
         {src:"images/header/GDG_Rennes.png"},
         {src:"images/header/BreizhKids.png"}];
