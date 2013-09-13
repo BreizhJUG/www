@@ -58,7 +58,7 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 breizhjugApp.controller("homeHeadController", function ($scope) {
     $scope.headers = [
         {src:"images/header/breizhjug.png"},
-        {src:"images/header/Devoxx.png", href:"http://www.devoxx.com"},
+        {src:"images/header/Devoxx.png", href:"https://regbe.devoxx.com/public#DV13"},
         {src:"images/header/BreizhCamp.png", href:"http://www.breizhcamp.org"},
         {src:"images/header/GDG_Rennes.png"},
         {src:"images/header/BreizhKids.png"}];
