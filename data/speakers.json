@@ -3,13 +3,13 @@
         "id": 1,
         "name": "Rémi Forax",
         "avatar": "images/speakers/Forax_Remi.jpg",
-        "resume": "**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque."
+        "resume": "Maitre de conférence à l'université Paris Est - Marne la Vallée.<br/>Expert pour les JSRs 292 et 335.<br/>Tombé dans le Java quand il était petit."
     },
     {
         "id": 2,
         "name": "Thierry Lau",
         "avatar": "images/speakers/Thierry_Lau.jpg",
-        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque.",
+        "resume": "Développeur Front End chez [sfΞir], je suis passionné par HTML5, CSS3, JavaScript et plus particulièrement fan d'AngularJS car je suis persuadé qu'il aide à répondre à la problématique suivante : comment développer des applications Web modernes, maintenables de manière la plus simple, rapide et efficace possible ? Pour cela, je suis également intéressé aux outils qui viennent armer les développeurs Web modernes tels que Brunch, Grunt, Yeoman, Bower, Developer tools de Chrome etc ... Je suis également créateur et co-modérateur de la communauté française HTML5 * CSS3 [FR] sur Google + et j'anime également la page Google+ HTML5 * CSS3 - ʕ๏̮๏ʔ, deux endroits où vous pouvez venir partager avec moi la passion des technologies du Web.",
         "twitter": "laut3rry",
         "github": "lauterry",
         "mail": "thierlau@gmail.com"
@@ -20,5 +20,61 @@
         "avatar": "images/speakers/Paul_Sandoz.jpg",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
         "twitter": "paulsandoz"
+    },
+    {
+        "id": 4,
+        "name": "Audrey Neveu",
+        "avatar": "images/speakers/Audrey_Neveu.jpg",
+        "resume": "Développeur Java chez Sfeir, ce que j'aime le plus dans ce langage c'est l'incroyable énergie de la communauté qui gravite autour. Ayant découvert les JUGs en même temps que ma vocation de développeur, j'ai souhaité rendre à la communauté un peu de la richesse qu'elle m'avait apporté en y contribuant à mon tour. Après avoir rejoint Duchess France en 2010, j'ai choisi aujourd'hui de m'engager dans Programatoo et Devoxx4Kids, deux iniatives aux travers desquelles j'essaye de transmettre ma passion aux enfants, pour leur faire découvrir ce superbe métier qui est le nôtre.",
+        "twitter": "Audrey_Neveu"
+    },
+    {
+        "id": 5,
+        "name": "Claude Falguière",
+        "avatar": "images/speakers/Claude_Falguiere.jpg",
+        "resume": "Claude Falguière est consultante sénior chez Valtech Technology où elle intervient sur des missions d'architecture technique et d'analyse de performance d'applications Java/JEE. Elle est co-fondatrice de Duchess France http://jduchess.org/duchess-france/ et membre de l'équipe du Paris JUG http://parisjug.org. Vous pouvez la retrouver sur son blog http://cfalguiere.wordpress.com/ et sur twitter @cfalguiere.",
+        "twitter": "cfalguiere"
+    },
+    {
+        "id": 6,
+        "name": "Sébastien Brousse",
+        "avatar": "images/speakers/Sebastien_Brousse.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "twitter": "seb_brousse"
+    },
+    {
+        "id": 7,
+        "name": "Yolande Poirier",
+        "avatar": "images/speakers/Yolande_Poirier.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "twitter": "ypoirier"
+    },
+    {
+        "id": 8,
+        "name": "Nicolas Deloof",
+        "avatar": "images/speakers/Nicolas_Deloof.jpg",
+        "resume": "Nicolas De Loof has been a Java Architect for 14 years, working for French IT services companies. Techno-addict and open source developer, he joined the Apache Maven team in 2007, where he focused on the Google Web Toolkit plugin. Having many contacts in the French Java community, in 2008 he launched a Java User Group in Rennes: the BreizhJUG. He has also spoken at many conferences about Maven and Software Factory, and actively supports the Java community.",
+        "twitter": "ndeloof"
+    },
+    {
+        "id": 9,
+        "name": "Laurent Huet",
+        "avatar": "images/speakers/Laurent_Huet.jpg",
+        "resume": "Laurent Huet est responsable technique des agences ouest de Softeam après avoir été consultant / formateur JavaEE (depuis 2004). Avant mon parcours en SSII, il a commencé par des développements autour des bus de terrain dans le bâtiment pour piloter le chauffage, faire de la supervision, ... C'est donc naturellement qu'il revient faire du \"physical computing\" en utilisant les technologies Java/Web d'aujourd'hui.",
+        "twitter": "lhuet35"
+    },
+    {
+        "id": 10,
+        "name": "Manuel Boillod",
+        "avatar": "images/speakers/Manuel_Boillod.jpg",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "twitter": "mboillod"
+    },
+    {
+        "id": 11,
+        "name": "Tugdual Grall",
+        "avatar": "images/speakers/Tugdual_Grall.jpg",
+        "resume": "Tugdual « Tug » Grall, est Technical Evangelist chez Couchbase, et un développer passionné. Il travaille actuellement avec les communautés de developpers en Europe pour faciliter l’adoption du NoSQL. Tugdual contribue aux SDKs Java et NodeJS de Couchbase. Avant de rejoindre Couchbase, Tug était le CTP d’eXo la société qui a créé l’outil de développement sur le cloud www.codenvy.com et la pateforme sociale eXo Platform. Auparavant Tugdual a travaillé comme product manager et développeur dans l’équipe Oracle Fusion Middleware sur la plateforme Java EE. Tug a participé a de nombreuses conférences DevoxxFR, FOSDEM, Google I/O, JavaOne et de nombreux meetups/groupes utilisateurs. Tugdual est co-fondateur du NantesJUG qui organise depuis 2008 des réunions mensuelles autour l’écosystème Java. Lorsqu’il a le temps, il maintient un blog http://tugdualgrall.blogspot.com et une application déployée sur Google App Engine http://www.resultri.com. Vous pouvez le suivre sur http://twitter.com/tgrall",
+        "twitter": "tgrall"
     }
 ]
