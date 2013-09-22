@@ -91,11 +91,11 @@
         ]
     },
     {
-        "name": "Sous le capot de la JVM",
+        "name": "Sous le capot de la JVM : Les Lambdas",
         "date": "2013-10-03T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/sous-le-capot.jpg",
-        "resume": "**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque",
+        "resume": "**Les lambdas** vont être une avancée majeure du JDK 8. Pour nous en parler, nous recevrons Remi FORAX, membre de l’expert group pour le JCP sur les JSR 292 (invokedynamic) et JSR 335 (lamddas). Remi a participé à son implémentation dans le JDK 8, disponible depuis peu en version \"Developper Preview\" (https://jdk8.java.net/download.html). Son regard sur le \"pourquoi\" et le \"comment\" sera donc particulièrement intéressant.",
         "speakersId": [1],
         "links": []
     }
