@@ -399,6 +399,14 @@ img.vignette {
 	min-height: 40px;
 }
 
+#team .avatar{
+    text-align: center;
+}
+
+#team .popup {
+    text-align: justify;
+}
+
 @media (max-width: 767px) {
     #team .team {
         padding: 10px;
