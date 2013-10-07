@@ -47,7 +47,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/kids.png",
         "resume": "Pour notre prochain événement BreizhJUG, nous vous proposons de faire un retour sur DevoxxFrance, en compagnie des BreizhJuggers qui y étaient présent. Nous parlerons aussi bien du contenu, de l'organisation de cet événement d'exception, et du rôle de speaker fàce à une salle de 800 personnes. A l'occasion de ce JUG, nous recevrons également Yolande Poirier, que vous connaissez peut être plus sous le twitter @java, car elle est \"Outreach Manager\" pour Oracle. Elle nous présentera l'organisation de la communauté Java sous la direction d'Oracle, comment se faire entendre et contribuer.",
-        "speakersId": [1, 2],
+        "speakersId": [6, 8, 9],
         "links": [
             {
                 "type": "film",
