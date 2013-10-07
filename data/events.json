@@ -104,6 +104,11 @@
                 "name": "Vidéo, partie 1"
             },
             {
+                "type": "film",
+                "url": "http://www.youtube.com/watch?v=muEBh5-sfpU",
+                "name": "Vidéo, partie 2"
+            },
+            {
                 "type": "picture",
                 "url": "https://www.dropbox.com/s/m6ay4kj3qbgfk7i/Lambda%20from%20the%20trench.pdf",
                 "name": "Slides"
