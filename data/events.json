@@ -114,5 +114,14 @@
                 "name": "Slides"
             }
             ]
+    },
+    {
+        "name": "AngularJS",
+        "date": "2013-11-07T18:00:00+02:00",
+        "place": "ISTIC, campus de Beaulieu",
+        "image": "images/events/angularjs.jpg",
+        "resume": "...",
+        "speakersId": [12],
+        "links": []
     }
 ]
