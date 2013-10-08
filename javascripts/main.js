@@ -68,9 +68,9 @@ breizhjugApp.controller("homeHeadController", function ($scope) {
     };
 });
 
-breizhjugApp.controller("homeNextController", function ($scope, Events, Speakers) {
+breizhjugApp.controller("homeNextController", function ($scope, Events) {
     Events.next().then(function (evt) {
-        $scope.event = evt;
+        $scope.nextEvent = evt;
     });
 });
 
@@ -214,6 +214,12 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
             defer.resolve(events);
         } else {
             $http.get(API_URI).success(function (resp) {
+                // order from the newest to the oldest event
+                resp.sort(function (e1, e2) {
+                    if (e1.date < e2.date) return 1;
+                    else if (e1.date > e2.date) return -1;
+                    else return 0;
+                });
                 events = [];
                 for (var i = 0; i < resp.length; i++) {
                     var evt = resp[i];
@@ -229,23 +235,45 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
     };
 
     return {
-        // return all the events with their speakers fetched
+        // return all the events with their speakers fetched and ordered by date from the newest to the oldest
         fetch: fetch,
 
-        // returns the next event (the last one from the events list)
+        // returns the next event (event in future with the closest date)
         next: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
-                defer.resolve(resp[resp.length - 1]);
+                var next = null;
+                var currentDate = new Date();
+                for (var i = 0; i < resp.length; i++) {
+                    var current = resp[i];
+                    if (currentDate > new Date(current.date)) {
+                        break;
+                    }
+                    next = current;
+                }
+                defer.resolve(next);
             });
             return defer.promise;
         },
 
-        // returns the previous events (all but last one)
+        // returns the previous events (all event in past ordered by date)
         prev: function () {
             var defer = $q.defer();
             fetch().then(function (resp) {
-                defer.resolve(resp.slice(0, resp.length - 1));
+                if(!resp || resp.length == 0){
+                    defer.resolve([]);
+                }else{
+                    // events are ordered, we search for the first event in the past
+                    var index = 0;
+                    var currentDate = new Date();
+                    for (; index < resp.length; index++) {
+                        var current = resp[index];
+                        if (currentDate > new Date(current.date)) {
+                            break;
+                        }
+                    }
+                    defer.resolve(resp.slice(index, resp.length));
+                }
             });
             return defer.promise;
         }
