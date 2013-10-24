@@ -7,15 +7,33 @@ breizhjugApp.config(function ($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: 'views/home.html',
-            controller: 'homeController'
+            controller: 'homeController',
+            resolve: {
+                resolvedEvents: ['Events', function(Events){
+                    return Events.fetch();
+                }],
+                resolvedTeam: ['Team', function(Team){
+                    return Team.fetch();
+                }]
+            }
         })
         .when('/speakers', {
             templateUrl: 'views/speakers.html',
-            controller: 'speakersController'
+            controller: 'speakersController',
+            resolve: {
+                resolvedSpeakers: ['Speakers', function(Speakers){
+                    return Speakers.fetch();
+                }]
+            }
         })
         .when('/events', {
             templateUrl: 'views/events.html',
-            controller: 'eventsController'
+            controller: 'eventsController',
+            resolve: {
+                resolvedEvents: ['Events', function(Events){
+                    return Events.fetch();
+                }]
+            }
         })
         .otherwise({
             redirectTo: '/home'
@@ -42,7 +60,7 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
         $rootScope.scrollTo = null;
         setTimeout(function () {
             Scroll.scrollTo(sectionId);
-        }, 2000);
+        }, 500);
     }
 
     $scope.converter = new Markdown.getSanitizingConverter();
@@ -102,7 +120,7 @@ breizhjugApp.controller("homeSponsorsController", function ($scope) {
 
 });
 
-breizhjugApp.controller("speakersController", function ($scope, Speakers, $routeParams) {
+breizhjugApp.controller("speakersController", function ($scope, resolvedSpeakers, $routeParams) {
     $scope.converter = new Markdown.getSanitizingConverter();
 
     $scope.getSafeDescription = function (description) {
@@ -112,9 +130,7 @@ breizhjugApp.controller("speakersController", function ($scope, Speakers, $route
         return description;
     };
 
-    Speakers.fetch().success(function (resp) {
-        $scope.speakers = resp;
-    });
+    $scope.speakers = resolvedSpeakers.data;
 
     if ($routeParams.q == undefined) {
         $scope.search = '';
@@ -143,8 +159,7 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
         $location.path("/speakers").search("q", speaker.name);
     };
 
-
-    Events.fetch().then(function (resp) {
+    Events.fetch().then(function(resp) {
         $scope.events = resp;
     });
 
@@ -157,7 +172,7 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
 /*
  * Gives access to the speakers
  */
-breizhjugApp.factory("Speakers", function ($http, $q) {
+breizhjugApp.factory("Speakers", function ($http) {
     var API_URI = 'data/speakers.json';
 
     var fetch = function () {
@@ -166,23 +181,7 @@ breizhjugApp.factory("Speakers", function ($http, $q) {
 
     return {
         // return all the speakers
-        fetch: fetch,
-
-        // fetch the speakers of the event
-        fetchEvent: function (event) {
-            if (event.speakersId && event.speakersId.length > 0) {
-                fetch().success(function (resp) {
-                    var speakers = [];
-                    for (var i = 0; i < resp.length; i++) {
-                        var tmp = resp[i];
-                        if (event.speakersId.indexOf(tmp.id) != -1) {
-                            speakers.push(tmp);
-                        }
-                    }
-                    event.speakers = speakers;
-                });
-            }
-        }
+        fetch: fetch
     };
 });
 
@@ -213,23 +212,48 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
         if (events) {
             defer.resolve(events);
         } else {
-            $http.get(API_URI).success(function (resp) {
+            var promises = [];
+            var fetchedEvents;
+            var fetchedSpeakers;
+
+            // we fetch the events
+            promises.push($http.get(API_URI).success(function(resp) {
+                fetchedEvents = resp;
+            }));
+
+            // we also need to fetch the speakers
+            promises.push(Speakers.fetch().success(function(resp) {
+                fetchedSpeakers = resp;
+            }));
+
+            $q.all(promises).then(function () {
                 // order from the newest to the oldest event
-                resp.sort(function (e1, e2) {
+                fetchedEvents.sort(function (e1, e2) {
                     if (e1.date < e2.date) return 1;
                     else if (e1.date > e2.date) return -1;
                     else return 0;
                 });
+
                 events = [];
-                for (var i = 0; i < resp.length; i++) {
-                    var evt = resp[i];
-                    Speakers.fetchEvent(evt);
-                    events.push(evt);
+                for (var i = 0; i < fetchedEvents.length; i++) {
+                    var event = fetchedEvents[i];
+
+                    if (event.speakersId && event.speakersId.length > 0) {
+                        var speakers = [];
+                        for (var j = 0; j < fetchedSpeakers.length; j++) {
+                            var tmp = fetchedSpeakers[j];
+                            if (event.speakersId.indexOf(tmp.id) != -1) {
+                                speakers.push(tmp);
+                            }
+                        }
+                        event.speakers = speakers;
+                    }
+
+                    events.push(event);
                 }
+
                 defer.resolve(events);
-            }).error(function (resp) {
-                    defer.reject(resp);
-                });
+            });
         }
         return defer.promise;
     };
