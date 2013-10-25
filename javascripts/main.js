@@ -314,7 +314,7 @@ breizhjugApp.directive("twitterlink", function () {
         scope: {
             name: "@"
         },
-        template: "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"/images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
+        template: "<a ng-show=\"name\" class=\"twitter\" ng-href=\"http://www.twitter.com/{{ name }}\"><img src=\"images/twitter_icon.png\"/><span>@{{ name }}</span></a>",
         replace: true
     }
 });
@@ -328,7 +328,7 @@ breizhjugApp.directive("githublink", function () {
         scope: {
             name: "@"
         },
-        template: "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"/images/github_icon.png\"/><span>{{ name }}</span></a>",
+        template: "<a ng-show=\"name\" class=\"github\" ng-href=\"https://github.com/{{ name }}\"><img src=\"images/github_icon.png\"/><span>{{ name }}</span></a>",
         replace: true
     }
 });
@@ -342,7 +342,7 @@ breizhjugApp.directive("maillink", function () {
         scope: {
             name: "@"
         },
-        template: "<a ng-show=\"name\" class=\"mail\" ng-href=\"mailto:{{ name }}\"><img src=\"/images/mail_icon.png\"/><span>{{ name }}</span></a>",
+        template: "<a ng-show=\"name\" class=\"mail\" ng-href=\"mailto:{{ name }}\"><img src=\"images/mail_icon.png\"/><span>{{ name }}</span></a>",
         replace: true
     }
 });
