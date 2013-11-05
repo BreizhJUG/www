@@ -3,7 +3,7 @@
         "name": "NoSQL!",
         "date": "2013-01-10T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/kids.png",
+        "image": "images/events/NoSQL.png",
         "resume": "Nous attaquerons cette nouvelle année avec une soirée NoSQL en deux parties :<ul><li><b>MongoDB</b> présenté par Manuel Boillod</li><li><b>CouchBase</b> présenté par Tugdual Grall</li></ul> Profitez de cette nouvelle année pour prendre une bonne résolution : faire la promo du JUG auprès de vos collègues et amener de nouvelle têtes à nos sessions !",
         "speakersId": [10,11],
         "links": [
@@ -17,7 +17,7 @@
         "name": "Java.NEXT : Lambdas et Jigsaw",
         "date": "2013-02-07T18:00:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/kids.png",
+        "image": "images/events/Java8.jpg",
         "resume": "pour notre session de février, nous allons profiter de la venue de Paul Sandoz, ex spec-Lead de JAX-RS, aujourd'hui software engineer chez Oracle sur Java 8, pour vous proposer une soirée sur l'avenir de Java. Cette soirée se déroulera en deux étapes :<ol><li><b>de 18h00 à 19h00, un atelier sur la mise en oeuvre des lambdas Java 8</b></li>Pré-requis :<ul><li>un ordinateur</li><li>installer le JDK adéquat (http://jdk8.java.net/lambda/)</li><li>disposer d'un IDE compatible avec la programmation lambda (Netbeans ou Idea)</li></ul>L'atelier commencera à 18h00 précise, merci de prendre vos dispositions en conséquence<br/><li><b>de 19h00 à 20h30, une conférence sur la modularisation de la JVM avec le projet JigSaw</b></li>bien que repoussée à Java 9, pour cause de manque de maturité, cette évolution majeure de Java mérite qu'on s'y attarde, et devrait apporter un réel renouveau à la plateforme.</ol>",
         "speakersId": [3],
         "links": [
@@ -31,7 +31,7 @@
         "name": "Avant Première DevoxxFR",
         "date": "2013-03-14T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/kids.png",
+        "image": "images/events/minitel.jpg",
         "resume": "Pour la session de mars du BreizhJug, nous vous proposons un avant-gout de Devoxx, avec en avant première deux \"tools in action\" que Laurent Huet et Nicolas Deloof présenterons à cette conférence : <ul><li><b>Good Bad and Ugly Maven : a puzzler</b><br/>Maven, de renommée mondiale, est bourré de bugs, de non-sens et d'anti-patterns ... et malgré tout un standard de fait ! Au cours de cette session, nous vous proposons de tester vos connaissance autour de quelques puzzlers, avec explication à la clé et surtout nos conseils pour éviter ces travers sur vos projets.<br/></li><br/><li><b>3615 Cloud </b><br/>Dans cette session, vous allez découvrir comment \"marier l'internet français d'hier avec le Cloud d'aujourd'hui !\". De manière décalée, venez découvrir comment, avec un petit peu de hardware, on peut superviser ses instances du cloud avec un Minitel et une carte Raspberry Pi! Ce bricolage trans-générationnel servira de support pour présenter la programmation sur Raspberry, depuis le niveau hardware jusqu'à notre bonne vielle JVM</li></ul>",
         "speakersId": [8, 9],
         "links": [
@@ -45,7 +45,7 @@
         "name": "Retour DevoxxFR",
         "date": "2013-04-11T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/kids.png",
+        "image": "images/events/DevoxxFR.png",
         "resume": "Pour notre prochain événement BreizhJUG, nous vous proposons de faire un retour sur DevoxxFrance, en compagnie des BreizhJuggers qui y étaient présent. Nous parlerons aussi bien du contenu, de l'organisation de cet événement d'exception, et du rôle de speaker fàce à une salle de 800 personnes. A l'occasion de ce JUG, nous recevrons également Yolande Poirier, que vous connaissez peut être plus sous le twitter @java, car elle est \"Outreach Manager\" pour Oracle. Elle nous présentera l'organisation de la communauté Java sous la direction d'Oracle, comment se faire entendre et contribuer.",
         "speakersId": [6, 8, 9],
         "links": [
@@ -59,7 +59,7 @@
         "name": "AngularJS",
         "date": "2013-05-06T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/kids.png",
+        "image": "images/events/angularjs-mai.jpg",
         "resume": "Pour bien conclure cette année, et avant d'attaquer la préparation du BreizhCamp, notre session de mai sera consacrée à AngularJS, le framework web de nouvelle génération qui réconcilie les développeurs avec JavaScript. Nous recevrons Thierry LAU et Sébastien BROUSSE pour nous présenter les arcanes de ce framework, et nous convaincre que Struts, SpringMVC, Wicket, GWT et consorts font partie de la préhistoire.",
  	    "speakersId": [2,6],
         "links": [
