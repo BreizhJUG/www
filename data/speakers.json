@@ -18,54 +18,62 @@
         "id": 3,
         "name": "Paul Sandoz",
         "avatar": "images/speakers/Paul_Sandoz.jpg",
-        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "resume": "A reformed RESTerfarian who previously co-led JAX-RS and led the implementation Jersey, who moved up into the clouds with the industrious bees of CloudBees, and then boomeranged back to Oracle and deep down the Java stack to work on OpenJDK Lambda, Java modularity and Project Jigsaw.",
         "twitter": "paulsandoz"
     },
     {
         "id": 4,
         "name": "Audrey Neveu",
+        "avatar": "images/speakers/Audrey_Neveu.jpg",
         "resume": "Développeur Java chez Sfeir, ce que j'aime le plus dans ce langage c'est l'incroyable énergie de la communauté qui gravite autour. Ayant découvert les JUGs en même temps que ma vocation de développeur, j'ai souhaité rendre à la communauté un peu de la richesse qu'elle m'avait apporté en y contribuant à mon tour. Après avoir rejoint Duchess France en 2010, j'ai choisi aujourd'hui de m'engager dans Programatoo et Devoxx4Kids, deux iniatives aux travers desquelles j'essaye de transmettre ma passion aux enfants, pour leur faire découvrir ce superbe métier qui est le nôtre.",
         "twitter": "Audrey_Neveu"
     },
     {
         "id": 5,
         "name": "Claude Falguière",
+        "avatar": "images/speakers/Claude_Falguiere.jpg",
         "resume": "Claude Falguière est consultante sénior chez Valtech Technology où elle intervient sur des missions d'architecture technique et d'analyse de performance d'applications Java/JEE. Elle est co-fondatrice de Duchess France http://jduchess.org/duchess-france/ et membre de l'équipe du Paris JUG http://parisjug.org. Vous pouvez la retrouver sur son blog http://cfalguiere.wordpress.com/ et sur twitter @cfalguiere.",
         "twitter": "cfalguiere"
     },
     {
         "id": 6,
         "name": "Sébastien Brousse",
-        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "avatar": "images/speakers/Sebastien_Brousse.png",
+        "resume": "Sébastien Brousse est consultant chez Zenika Ouest sur les technologies liées aux ESB et aux architectures SOA. Il a exercé son expertise au sein de grands comptes comme le ministère de l'environnement. Défenseur de la qualité logicielle, il oeuvre aussi à promouvoir activement l'intégration continue et l'automatisation des processus de build.",
         "twitter": "seb_brousse"
     },
     {
         "id": 7,
         "name": "Yolande Poirier",
-        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "avatar": "images/speakers/Yolande_Poirier.jpg",
+        "resume": "Yolande Poirier est Community Outreach Manager for Java developers chez Oracle.",
         "twitter": "ypoirier"
     },
     {
         "id": 8,
         "name": "Nicolas Deloof",
+        "avatar": "images/speakers/Nicolas_Deloof.jpg",
         "resume": "Nicolas De Loof has been a Java Architect for 14 years, working for French IT services companies. Techno-addict and open source developer, he joined the Apache Maven team in 2007, where he focused on the Google Web Toolkit plugin. Having many contacts in the French Java community, in 2008 he launched a Java User Group in Rennes: the BreizhJUG. He has also spoken at many conferences about Maven and Software Factory, and actively supports the Java community.",
         "twitter": "ndeloof"
     },
     {
         "id": 9,
         "name": "Laurent Huet",
+        "avatar": "images/speakers/Laurent_Huet.jpg",
         "resume": "Laurent Huet est responsable technique des agences ouest de Softeam après avoir été consultant / formateur JavaEE (depuis 2004). Avant mon parcours en SSII, il a commencé par des développements autour des bus de terrain dans le bâtiment pour piloter le chauffage, faire de la supervision, ... C'est donc naturellement qu'il revient faire du \"physical computing\" en utilisant les technologies Java/Web d'aujourd'hui.",
         "twitter": "lhuet35"
     },
     {
         "id": 10,
         "name": "Manuel Boillod",
-        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque mauris eu lorem ultrices tempor. Nam sed odio eget lorem mollis tincidunt sit amet in neque. Aenean facilisis aliquam blandit. Vestibulum eget felis convallis, molestie massa sit amet, dictum mi. Curabitur vitae quam ac sapien rhoncus commodo. Vivamus vitae elit ac augue volutpat vehicula id eu nunc. Aenean egestas, justo non pellentesque accumsan, purus erat cursus massa, ut mattis dolor lorem non mi. Suspendisse consectetur viverra ante, vel ultrices neque auctor sit amet.",
+        "avatar": "images/speakers/Manuel_Boillod.jpg",
+        "resume": "Manuel Boillod est architecte Java chez Zenika Ouest et intervient sur toutes les couches des applications informatiques, de la base de données au développement web, de l'usine logicielle à l'infrastructure. Formateur certifié VMware sur Grails, il dispense également des formations autour des technologies Java telles que Spring, Hibernate, Wicket, ... En tant responsable technique sur plusieurs projets, il a l'habitude d'encadrer des équipes de développement ou d'accompagner les entreprises sur des phases de conseil, d'architecture ou d'avant-vente. Passionné par la technique, il est également JUG Leader à Nantes et anime des conférences techniques autour de Java et du NoSQL.",
         "twitter": "mboillod"
     },
     {
         "id": 11,
         "name": "Tugdual Grall",
+        "avatar": "images/speakers/Tugdual_Grall.png",
         "resume": "Tugdual « Tug » Grall, est Technical Evangelist chez Couchbase, et un développer passionné. Il travaille actuellement avec les communautés de developpers en Europe pour faciliter l’adoption du NoSQL. Tugdual contribue aux SDKs Java et NodeJS de Couchbase. Avant de rejoindre Couchbase, Tug était le CTP d’eXo la société qui a créé l’outil de développement sur le cloud www.codenvy.com et la pateforme sociale eXo Platform. Auparavant Tugdual a travaillé comme product manager et développeur dans l’équipe Oracle Fusion Middleware sur la plateforme Java EE. Tug a participé a de nombreuses conférences DevoxxFR, FOSDEM, Google I/O, JavaOne et de nombreux meetups/groupes utilisateurs. Tugdual est co-fondateur du NantesJUG qui organise depuis 2008 des réunions mensuelles autour l’écosystème Java. Lorsqu’il a le temps, il maintient un blog http://tugdualgrall.blogspot.com et une application déployée sur Google App Engine http://www.resultri.com. Vous pouvez le suivre sur http://twitter.com/tgrall",
         "twitter": "tgrall"
     },
@@ -75,5 +83,47 @@
 	"avatar": "images/speakers/Thierry-Chatel.png",
         "resume": "Thierry est consultant et formateur indépendant, spécialisé dans l’architecture des applications web et sur le framework AngularJS. Il découvrit AngularJS alors que c’était un projet en version beta chez Google, encore totalement inconnu. Mais étant très attaché aux bonnes pratiques d’architecture et de développement, il ne pouvait qu’être séduit par le potentiel du framework et son apport considérable au développement d’applications web. Persuadé qu’il s’agit d’une révolution majeure dans le secteur, Thierry contribue depuis deux ans à faire connaître AngularJS par de nombreuses conférences, grâce au blog technique [FrAngular](http://www.frangular.com/) et à la communauté [AngularJS France](https://plus.google.com/communities/109984348857296908402) sur Google+. Et son activité professionnelle alterne entre les [formations à AngularJS](http://www.methotic.com/formation-angularjs), les audits d’applications en cours de développement, et le conseil sur leur architecture et les bonnes pratiques à mettre en oeuvre.",
         "twitter": "ThierryChatel"
+    },
+    {
+        "id": 13,
+        "name": "Eric Hébert",
+	"avatar": "images/speakers/Eric_Hebert.jpg",
+        "resume": "JavaEE Architect chez Logica-CGI et scrum master, Eric mène des projets à fortes technologies en démarche agile le plus possible. Actuellement 'Software Factory Manager' du socle IHM HTML5 pour NICE du Crédit Agricole à Nantes, il travaille avec une équipe distribuée de 35 développeurs, 5 managers, 6 sites géographiques, 1 équipe locale de 15 personnes pour produire toutes les 3 semaines une release pour 4 plate-formes différentes. Basé sur maven avec plus de 150 plugins Maven et toutes les technos HTML5 du moment, cela occupe bien ses journées...",
+        "twitter": "ehebert35"
+    },
+    {
+        "id": 14,
+        "name": "Thierry Leriche",
+	"avatar": "images/speakers/Thierry_Leriche.jpg",
+        "resume": "Thierry est consultant freelance (www.icauda.com) avec une douzaine d'années d'expérience. Il intervient principalement sur des projets Web (JEE) sur de l’architecture et/ou du développement.Il s’investi dans la formation des plus jeunes mais aussi de mes collègues et amis. Il est d’ailleurs professeur de Génie Logiciel à l'ESIEA et coach sur des projets de formation humaine. Quand il a un peu de temps, entre deux biberons, il est aussi rédacteur pour developpez.com",
+        "twitter": "thierryleriche"
+    },
+    {
+        "id": 15,
+        "name": "Yoann Dubreuil",
+	    "avatar": "images/speakers/Yoann_Dubreuil.jpg",
+        "resume": "",
+        "twitter": "YoannDubreuil"
+    },
+    {
+        "id": 16,
+        "name": "Julien Dubois",
+	    "avatar": "images/speakers/Julien_Dubois.gif",
+        "resume": "Julien Dubois est directeur du pôle conseil chez Ippon Technologies, société spécialisée dans le développement et l’architecture d’applications Java. Il y dirige une équipe de consultants et architectes de haut niveau, et intervient régulièrement chez les clients de la société. Julien est connu dans le monde Java pour avoir co-écrit le livre \"Spring par la pratique\", avoir dirigé la filiale française de SpringSource, et pour parler régulièrement à des conférences.",
+        "twitter": "juliendubois"
+    },
+    {
+        "id": 17,
+        "name": "Stéphane Épardaud",
+	    "avatar": "images/speakers/Stephane_Epardaud.jpg",
+        "resume": "Depuis les hautes montagnes de Nice, Stéphane travaille pour Red Hat sur le project Ceylon.Hacker passionné de Java, C, Perl ou Scheme. Versé dans les standards web et des bases de données, il a travaillé sur divers projets tel qu’un éditeur XML WYSIWYG, une libraire de multi-threading en C, un langage pour agents mobiles en Scheme (compilateur et machines virtuelles), ainsi que des services web 2.0 RESTful et des interfaces web riches en HTML 5 / Javascript.<br/>Avide de partage de connaissance, il va souvent parler dans des conférences tels que Scheme Workshop 2004, l´IUT de Nice en 2008, Polytech’Nice en 2009, le Mars JUG, le Paris JUG et le Riviera Java User Group qu’il a crée avec Nicolas Leroux. Acteur passionné de l´open source depuis le début, il contribute au projet RESTEasy et crée les projets jax-doclets, stamps.js, quelques modules de Play! Framework et travaille sur les projets Ceylon pour Red Hat.",
+        "twitter": "UnFroMage"
+    },
+    {
+        "id": 18,
+        "name": "David Festal",
+	    "avatar": "images/speakers/David_Festal.jpg",
+        "resume": "Après quelques années de C, C++, et autres, David développe en Java depuis l’an 2000, dans des domaines variés tels que les environnements distribués, l’intégration de systèmes, l’analyse et la transformation de langages.<br/>Dans le cadre de SERLI, la SSII où il travaille depuis 15 ans, il a été impliqué dans plusieurs projets OpenSource, parmi lesquels on trouve Sonar, et plus récemment Ceylon.<br/>Affecté à plein temps sur le projet Ceylon par SERLI pendant plusieurs mois, il a principalement travaillé sur le plugin Eclipse pour Ceylon, en posant les bases de ce qui est devenu maintenant « Ceylon IDE ».",
+        "twitter": "dfserli"
     }
 ]
