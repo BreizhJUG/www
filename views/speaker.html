@@ -10,9 +10,9 @@
     <a href ng-click="goToEvents(speaker)">Voir ses talks</a>
 
     <div class="speaker-contact" ng-show="speaker.twitter || speaker.github || speaker.mail">
-      <twitterlink name="{{ speaker.twitter }}"/>
-      <githublink name="{{ speaker.github }}"/>
-      <maillink name="{{ speaker.mail }}"/>
+      <div twitterlink name="{{ speaker.twitter }}"/>
+      <div githublink name="{{ speaker.github }}"/>
+      <div maillink name="{{ speaker.mail }}"/>
     </div>
   </div>
 </div>

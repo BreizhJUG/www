@@ -203,7 +203,7 @@ breizhjugApp.factory("Team", function ($http) {
 /*
  * Gives access to the events
  */
-breizhjugApp.factory("Events", function ($http, $q, Speakers) {
+breizhjugApp.factory("Events", function ($http, $q, Speakers, DateParser) {
     var API_URI = 'data/events.json';
     var events;
 
@@ -242,7 +242,8 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
                         var speakers = [];
                         for (var j = 0; j < fetchedSpeakers.length; j++) {
                             var tmp = fetchedSpeakers[j];
-                            if (event.speakersId.indexOf(tmp.id) != -1) {
+                            // IE8 don't know indexOf
+                            if ($.inArray(tmp.id, event.speakersId) > -1) {
                                 speakers.push(tmp);
                             }
                         }
@@ -270,7 +271,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
                 var currentDate = new Date();
                 for (var i = 0; i < resp.length; i++) {
                     var current = resp[i];
-                    if (currentDate > new Date(current.date)) {
+                    if (currentDate > DateParser.parse(current.date)) {
                         break;
                     }
                     next = current;
@@ -292,7 +293,7 @@ breizhjugApp.factory("Events", function ($http, $q, Speakers) {
                     var currentDate = new Date();
                     for (; index < resp.length; index++) {
                         var current = resp[index];
-                        if (currentDate > new Date(current.date)) {
+                        if (currentDate > DateParser.parse(current.date)) {
                             break;
                         }
                     }
@@ -328,13 +329,56 @@ breizhjugApp.factory("Scroll", function () {
 
 });
 
+/*
+ * Service to parse date for IE8.
+ * Found here : http://stackoverflow.com/questions/11020658/javascript-json-date-parse-in-ie7-ie8-returns-nan
+ */
+breizhjugApp.factory("DateParser", function () {
+    var parse;
+
+    var D = new Date('2011-06-02T09:34:29+02:00');
+    if(!D || +D!== 1307000069000){
+        parse = function(s){
+            var day, tz,
+                rx=/^(\d{4}\-\d\d\-\d\d([tT ][\d:\.]*)?)([zZ]|([+\-])(\d\d):(\d\d))?$/,
+                p= rx.exec(s) || [];
+            if(p[1]){
+                day= p[1].split(/\D/);
+                for(var i= 0, L= day.length; i<L; i++){
+                    day[i]= parseInt(day[i], 10) || 0;
+                };
+                day[1]-= 1;
+                day= new Date(Date.UTC.apply(Date, day));
+                if(!day.getDate()) return NaN;
+                if(p[5]){
+                    tz= (parseInt(p[5], 10)*60);
+                    if(p[6]) tz+= parseInt(p[6], 10);
+                    if(p[4]== '+') tz*= -1;
+                    if(tz) day.setUTCMinutes(day.getUTCMinutes()+ tz);
+                }
+                return day;
+            }
+            return NaN;
+        }
+    }
+    else{
+        parse = function(s){
+            return new Date(s);
+        }
+    }
+
+    return {
+        parse : parse
+    }
+});
+
 /*########### Directives ###########*/
 /*
  * Creates a twitter link with the account id passed in attribute 'name'
  */
 breizhjugApp.directive("twitterlink", function () {
     return {
-        restrict: "E",
+        restrict: "A",
         scope: {
             name: "@"
         },
@@ -348,7 +392,7 @@ breizhjugApp.directive("twitterlink", function () {
  */
 breizhjugApp.directive("githublink", function () {
     return {
-        restrict: "E",
+        restrict: "A",
         scope: {
             name: "@"
         },
@@ -362,7 +406,7 @@ breizhjugApp.directive("githublink", function () {
  */
 breizhjugApp.directive("maillink", function () {
     return {
-        restrict: "E",
+        restrict: "A",
         scope: {
             name: "@"
         },
@@ -376,7 +420,7 @@ breizhjugApp.directive("maillink", function () {
  */
 breizhjugApp.directive('carousel',function($timeout) {
     return {
-        restrict: 'E',
+        restrict: 'A',
         replace: true,
         transclude: true,
         scope: {
