@@ -1,5 +1,5 @@
 <section id="head" ng-controller="homeHeadController">
-  <carousel options="carouselOptions">
+  <div carousel options="carouselOptions">
     <li ng-repeat="header in headers">
       <div class="head-img-container">
         <a href="{{header.href}}" ng-show="header.href" target="_blank">
@@ -8,7 +8,7 @@
         <img ng-src="{{ header.src }}" ng-hide="header.href"/>
       </div>
     </li>
-  </carousel>
+  </div>
 </section>
 
 <div id="home-all-events">
@@ -34,22 +34,17 @@
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
           <div style="overflow: hidden;">
-            <g:plus action="share" href="http://www.breizhjug.org" annotation="inline"></g:plus>
+            <div class="g-plus" data-action="share" data-href="http://www.breizhjug.org"></div>
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
           </div>
 
-            <!-- Placez cette ballise après la dernière balise Partager. -->
-            <script type="text/javascript">
-                window.___gcfg = {lang: 'fr'};
-
-                (function() {
-                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                    po.src = 'https://apis.google.com/js/plusone.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                })();
-            </script>
-
-            <a href='mailto:?subject=Breizhjug%20:%20{{ nextEvent.name }}&body={{ nextEvent.date | date:"EEEE dd MMMM HH:mm" }}'>Partager par mail</a>
-
+          <a href='mailto:?subject=Breizhjug%20:%20{{ nextEvent.name }}&body={{ nextEvent.date | date:"EEEE dd MMMM HH:mm" }}'>Partager par mail</a>
 
         </div>
         <div class="span8">
@@ -71,7 +66,7 @@
 
   <section id="home-events" class="grey" ng-controller="homeEventsController">
     <h2><span class="glyphicon glyphicon-fast-backward"></span> événements passés <span class="glyphicon glyphicon-fast-forward"></span></h2>
-    <carousel options="carouselOptions">
+    <div carousel options="carouselOptions">
       <li ng-repeat="event in events">
         <div class="home-event-img-container">
           <img class="home-event-img" ng-src="{{ event.image }}"/>
@@ -85,7 +80,7 @@
         </div>
         <a ng-href="#/events?q={{ event.name }}">Plus d'infos...</a>
       </li>
-    </carousel>
+    </div>
   </section>
 </div>
 
@@ -134,7 +129,7 @@
         <h4>{{ member.name }}</h4>
         <div class="popup">
           <p ng-bind-html-unsafe="getSafeDescription(member.resume)"></p>
-          <twitterlink name="{{ member.twitter }}"/>
+          <div twitterlink name="{{ member.twitter }}"/>
         </div>
       </div>
     </div>
