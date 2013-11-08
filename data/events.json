@@ -8,12 +8,12 @@
         "speakersId": [12],
         "links": [
             {
-                "type": "qrcode",
+                "type": "barcode",
                 "url": "https://github.com/tchatel/last-tweets-angularjs",
                 "name": "les tweets sur AngularJS"
             },
             {
-                "type": "qrcode",
+                "type": "barcode",
                 "url": "https://github.com/tchatel/angular-notifications",
                 "name": "les notifications"
             },
