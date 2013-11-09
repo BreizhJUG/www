@@ -125,5 +125,19 @@
 	    "avatar": "images/speakers/David_Festal.jpg",
         "resume": "Après quelques années de C, C++, et autres, David développe en Java depuis l’an 2000, dans des domaines variés tels que les environnements distribués, l’intégration de systèmes, l’analyse et la transformation de langages.<br/>Dans le cadre de SERLI, la SSII où il travaille depuis 15 ans, il a été impliqué dans plusieurs projets OpenSource, parmi lesquels on trouve Sonar, et plus récemment Ceylon.<br/>Affecté à plein temps sur le projet Ceylon par SERLI pendant plusieurs mois, il a principalement travaillé sur le plugin Eclipse pour Ceylon, en posant les bases de ce qui est devenu maintenant « Ceylon IDE ».",
         "twitter": "dfserli"
+    },
+    {
+    	"id":"19"
+    	"name":"Cedric Champeau",
+    	"avatar":"https://pbs.twimg.com/profile_images/2040810093/minimoi2.jpg",
+    	"resume":"Cédric Champeau est committer sur Groovy Core. Il a rejoint SpringSource, une division de VMware, afin de participer au développement du langage après avoir passé plusieurs années à l'exploiter de manière industrielle chez un éditeur logiciel, Lingway, dans de multiples contextes (DSL, scripting, workflows, ...). Il est notamment derrière le type checker et la compilation statique ajoutés dans Groovy 2.",
+    	"twitter":"CedricChampeau"
+    },
+    {
+    	"id":"20"
+    	"name":"Nicolas De Loof",
+    	"avatar":"images/speakers/Nicolas_DeLoof.png",
+    	"resume":"'Java Architect' pendant 14 ans dans une grande SSII, Techno-addict et contributeur open-source, J'ai rejoins l'équipe Apache Maven en 2007, développant le plugin GWT, et plus tard la communauté Jenkins. \nProfitant de nombreuses relations dans la communauté Java, je fonde le BreizhJUG en 2008, puis le BreizhCamp.\n\nEn 2011 je quitte le monde du service pour celui du as-a-Service - je rejoins CloudBees sur un project ambitieux : faire tourner Java dans le Cloud, du code source à la production.",
+    	"twitter":"ndeloof"
     }
 ]
