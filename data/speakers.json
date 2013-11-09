@@ -38,7 +38,7 @@
     {
         "id": 6,
         "name": "Sébastien Brousse",
-        "avatar": "images/speakers/Sebastien_Brousse.png",
+        "avatar": "images/speakers/Sebastien_Brousse.jpg",
         "resume": "Sébastien Brousse est consultant chez Zenika Ouest sur les technologies liées aux ESB et aux architectures SOA. Il a exercé son expertise au sein de grands comptes comme le ministère de l'environnement. Défenseur de la qualité logicielle, il oeuvre aussi à promouvoir activement l'intégration continue et l'automatisation des processus de build.",
         "twitter": "seb_brousse"
     },
@@ -73,14 +73,14 @@
     {
         "id": 11,
         "name": "Tugdual Grall",
-        "avatar": "images/speakers/Tugdual_Grall.png",
+        "avatar": "images/speakers/Tugdual_Grall.jpg",
         "resume": "Tugdual « Tug » Grall, est Technical Evangelist chez Couchbase, et un développer passionné. Il travaille actuellement avec les communautés de developpers en Europe pour faciliter l’adoption du NoSQL. Tugdual contribue aux SDKs Java et NodeJS de Couchbase. Avant de rejoindre Couchbase, Tug était le CTP d’eXo la société qui a créé l’outil de développement sur le cloud www.codenvy.com et la pateforme sociale eXo Platform. Auparavant Tugdual a travaillé comme product manager et développeur dans l’équipe Oracle Fusion Middleware sur la plateforme Java EE. Tug a participé a de nombreuses conférences DevoxxFR, FOSDEM, Google I/O, JavaOne et de nombreux meetups/groupes utilisateurs. Tugdual est co-fondateur du NantesJUG qui organise depuis 2008 des réunions mensuelles autour l’écosystème Java. Lorsqu’il a le temps, il maintient un blog http://tugdualgrall.blogspot.com et une application déployée sur Google App Engine http://www.resultri.com. Vous pouvez le suivre sur http://twitter.com/tgrall",
         "twitter": "tgrall"
     },
     {
         "id": 12,
         "name": "Thierry Chatel",
-	"avatar": "images/speakers/Thierry-Chatel.png",
+	"avatar": "images/speakers/Thierry-Chatel.jpg",
         "resume": "Thierry est consultant et formateur indépendant, spécialisé dans l’architecture des applications web et sur le framework AngularJS. Il découvrit AngularJS alors que c’était un projet en version beta chez Google, encore totalement inconnu. Mais étant très attaché aux bonnes pratiques d’architecture et de développement, il ne pouvait qu’être séduit par le potentiel du framework et son apport considérable au développement d’applications web. Persuadé qu’il s’agit d’une révolution majeure dans le secteur, Thierry contribue depuis deux ans à faire connaître AngularJS par de nombreuses conférences, grâce au blog technique [FrAngular](http://www.frangular.com/) et à la communauté [AngularJS France](https://plus.google.com/communities/109984348857296908402) sur Google+. Et son activité professionnelle alterne entre les [formations à AngularJS](http://www.methotic.com/formation-angularjs), les audits d’applications en cours de développement, et le conseil sur leur architecture et les bonnes pratiques à mettre en oeuvre.",
         "twitter": "ThierryChatel"
     },
@@ -136,7 +136,7 @@
     {
     	"id": 20,
     	"name":"Nicolas De Loof",
-    	"avatar":"images/speakers/Nicolas_DeLoof.png",
+    	"avatar":"images/speakers/Nicolas_DeLoof.jpg",
     	"resume":"'Java Architect' pendant 14 ans dans une grande SSII, Techno-addict et contributeur open-source, J'ai rejoins l'équipe Apache Maven en 2007, développant le plugin GWT, et plus tard la communauté Jenkins. \nProfitant de nombreuses relations dans la communauté Java, je fonde le BreizhJUG en 2008, puis le BreizhCamp.\n\nEn 2011 je quitte le monde du service pour celui du as-a-Service - je rejoins CloudBees sur un project ambitieux : faire tourner Java dans le Cloud, du code source à la production.",
     	"twitter":"ndeloof"
     }

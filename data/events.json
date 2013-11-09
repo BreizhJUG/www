@@ -64,7 +64,7 @@
         "name": "BreizhKids",
         "date": "2013-06-15T16:00:00+02:00",
         "place": "Supinfo Rennes",
-        "image": "images/events/kids.png",
+        "image": "images/events/kids.jpg",
         "resume": "L'informatique et la robotique sont des terrains de jeu fabuleux pour les enfants mais parfois difficile d'accès. Il existe des logiciels ludiques et pédagogiques open source permettant de découvrir les techniques de programmation et commencer à réaliser ses propres programmes facilement.<br/>Les informaticiennes qui animeront l'atelier ont déjà partagé leur expérience avec des jeunes dans le cadre d'événements tels que Programmatoo ou Devoxx4Kids.<br/>Mais... pourquoi donc apprendre la programmation quand on a moins de 14 ans ?<ul><li>Parce qu'on aime jouer</li><li>Parce qu'on veut comprendre ce que nos parents font comme métier !</li><li>Parce qu'un ordinateur ne permet pas que de naviguer sur internet ou jouer à minecraft !</li><li>Parce que c'est tout à fait à notre portée, et pourtant on n'en fait pas à l'école !</li></ul>Le BreizhKids c'est tout ça à la fois : un atelier où les enfants pourront jouer ensemble, accompagnés par les adultes, pour mieux comprendre l'outil informatique en découvrant la programmation avec des outils adaptés à leur âge.Zenika a la gentillesse de nous prêter des PC de formation pour que les bambins puissent découvrir les joies de la programmation, et nous seront gracieusement hébergés par SupInfo - 8, Place du Colombier à Rennes (Quartier Colombier). <br/>Les ateliers débuteront à 15h et seront animés par Audrey Neveu et Claude Falguière. Il est prévu de faire des ateliers en 2 groupes de 10 enfants sur une durée de 2h30 maximum avec un goûter au milieu pour ne pas vous les rendre complètement exténués.",
         "speakersId": [4,5],
         "links": [
@@ -97,7 +97,7 @@
         "name": "Retour DevoxxFR",
         "date": "2013-04-11T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/DevoxxFR.png",
+        "image": "images/events/DevoxxFR.jpg",
         "resume": "Pour notre prochain événement BreizhJUG, nous vous proposons de faire un retour sur DevoxxFrance, en compagnie des BreizhJuggers qui y étaient présent. Nous parlerons aussi bien du contenu, de l'organisation de cet événement d'exception, et du rôle de speaker fàce à une salle de 800 personnes. A l'occasion de ce JUG, nous recevrons également Yolande Poirier, que vous connaissez peut être plus sous le twitter @java, car elle est \"Outreach Manager\" pour Oracle. Elle nous présentera l'organisation de la communauté Java sous la direction d'Oracle, comment se faire entendre et contribuer.",
         "speakersId": [6, 8, 9, 15],
         "links": [
@@ -110,7 +110,7 @@
         "name": "Avant Première DevoxxFR",
         "date": "2013-03-14T18:30:00+02:00",
         "place": "ISTIC, campus de Beaulieu",
-        "image": "images/events/minitel.jpg",
+        "image": "images/events/minitel-h300.jpg",
         "resume": "Pour la session de mars du BreizhJug, nous vous proposons un avant-gout de Devoxx, avec en avant première deux \"tools in action\" que Laurent Huet et Nicolas Deloof présenterons à cette conférence : <ul><li><b>Good Bad and Ugly Maven : a puzzler</b><br/>Maven, de renommée mondiale, est bourré de bugs, de non-sens et d'anti-patterns ... et malgré tout un standard de fait ! Au cours de cette session, nous vous proposons de tester vos connaissance autour de quelques puzzlers, avec explication à la clé et surtout nos conseils pour éviter ces travers sur vos projets.<br/></li><br/><li><b>3615 Cloud </b><br/>Dans cette session, vous allez découvrir comment \"marier l'internet français d'hier avec le Cloud d'aujourd'hui !\". De manière décalée, venez découvrir comment, avec un petit peu de hardware, on peut superviser ses instances du cloud avec un Minitel et une carte Raspberry Pi! Ce bricolage trans-générationnel servira de support pour présenter la programmation sur Raspberry, depuis le niveau hardware jusqu'à notre bonne vielle JVM</li></ul>",
         "speakersId": [8, 9],
         "links": [
