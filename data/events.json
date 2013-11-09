@@ -5,7 +5,7 @@
         "place": "ISTIC, campus de Beaulieu",
         "image": "images/events/battle.jpg",
         "resume": "'Maven télécharge l'internet', tout le monde l'a entendu au moins une fois. Ce n'est pas le seul reproche qu'on lui fait d'ailleurs. Pour cette session, nous comparerons Maven aux autres outils de builds, avec un focus tout particulier sur Gradle.\n Nous verrons aussi comment se comportent les autres langages de programmation, et comment certains tirent des leçons des errements de Java.",
-        "speakersId": [19,20],
+        "speakersId": [19,8],
         "links": []
     },
     {
