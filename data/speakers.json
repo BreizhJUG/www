@@ -129,7 +129,7 @@
     {
     	"id": 19,
     	"name":"Cedric Champeau",
-    	"avatar":"https://pbs.twimg.com/profile_images/2040810093/minimoi2.jpg",
+    	"avatar":"images/speakers/Cedric_Champeau.jpg",
     	"resume":"Cédric Champeau est committer sur Groovy Core. Il a rejoint SpringSource, une division de VMware, afin de participer au développement du langage après avoir passé plusieurs années à l'exploiter de manière industrielle chez un éditeur logiciel, Lingway, dans de multiples contextes (DSL, scripting, workflows, ...). Il est notamment derrière le type checker et la compilation statique ajoutés dans Groovy 2.",
     	"twitter":"CedricChampeau"
     },
