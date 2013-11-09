@@ -1,5 +1,14 @@
 [
     {
+        "name": "Build Battle",
+        "date": "2013-12-05T18:00:00+01:00",
+        "place": "ISTIC, campus de Beaulieu",
+        "image": "images/events/battle.jpg",
+        "resume": "'Maven télécharge l'internet', tout le monde l'a entendu au moins une fois. Ce n'est pas le seul reproche qu'on lui fait d'ailleurs. Pour cette session, nous comparerons Maven aux autres outils de builds, avec un focus tout particulier sur Gradle.\n Nous verrons aussi comment se comportent les autres langages de programmation, et comment certains tirent des leçons des errements de Java.",
+        "speakersId": [19,20],
+        "links": []
+    },
+    {
         "name": "AngularJS",
         "date": "2013-11-07T18:00:00+01:00",
         "place": "ISTIC, campus de Beaulieu",
