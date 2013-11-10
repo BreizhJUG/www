@@ -367,8 +367,19 @@ breizhjugApp.factory("DateParser", function () {
         }
     }
 
+    var toUTCDate = function (date) {
+        return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
+    };
+
     return {
-        parse : parse
+        parse: parse,
+        parseToUTC: function (s) {
+            return toUTCDate(parse(s));
+        },
+        plusHours: function (date, hours) {
+            return new Date(date.getFullYear(), date.getMonth(), date.getDate(),
+                date.getHours() + hours, date.getMinutes(), date.getSeconds(), date.getMilliseconds())
+        }
     }
 });
 
@@ -439,6 +450,46 @@ breizhjugApp.directive('carousel',function($timeout) {
                         // the elements are rendered, we can init the slider
                         $(elm.children()[0]).bxSlider(options);
                     });
+                }
+            });
+        }
+    };
+});
+
+/*
+ * Build a google calendar link from event
+ */
+breizhjugApp.directive('calendar', function (DateParser, $filter) {
+    return {
+        restrict: 'A',
+        scope: {
+            event: '='
+        },
+        link: function (scope, elm) {
+            scope.$watch('event', function () {
+                if (!scope.event) {
+                    return;
+                }
+
+                var text = " " + $filter('date')(scope.event.date, "EEEE dd MMMM 'à' HH'h'mm");
+
+                var eventDateUTCStart = DateParser.parseToUTC(scope.event.date);
+                if (eventDateUTCStart.getTime() > Date.now()) {
+                    var gcalFormat = "yyyyMMdd'T'HHmmss'Z'";
+
+                    var eventDateUTCEnd = DateParser.plusHours(eventDateUTCStart, 2);
+
+                    var link = "http://www.google.com/calendar/event?action=TEMPLATE"
+                        + "&text=" + scope.event.name
+                        + "&dates=" + $filter('date')(eventDateUTCStart, gcalFormat) + "/" + $filter('date')(eventDateUTCEnd, gcalFormat)
+                        + "&details=" + scope.event.resume
+                        + "&location=" + scope.event.place
+                        + "&trp=false&sprop=BreizhJUG&sprop=name:http%3A%2F%2Fwww.breizhjug.org";
+
+                    elm[0].innerHTML = "<a href=\"" + link + "\" target=\"_blank\">" + text + "</a>";
+
+                } else {
+                    elm[0].innerHTML = text;
                 }
             });
         }

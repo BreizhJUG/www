@@ -23,7 +23,7 @@
           <h3>{{ nextEvent.name }}</h3>
           <p ng-bind-html-unsafe="getSafeDescription(nextEvent.resume)"></p>
           <ul>
-            <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ nextEvent.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
+            <li><span class="glyphicon glyphicon-time"></span><span calendar event="nextEvent"></span></li>
             <li>
               <span class="glyphicon glyphicon-map-marker"></span>
               <a href="https://maps.google.fr/maps?q={{ nextEvent.place }}&iwloc=A" target="_blank">{{ nextEvent.place }}</a>

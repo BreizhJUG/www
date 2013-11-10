@@ -23,7 +23,7 @@
 
             <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
             <ul>
-              <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
+              <li><span class="glyphicon glyphicon-time"></span><span calendar event="event" ></span></li>
               <li>
                 <span class="glyphicon glyphicon-map-marker"></span>
                 <a href="https://maps.google.fr/maps?q={{ event.place }}&iwloc=A" target="_blank">{{ event.place }}</a>
