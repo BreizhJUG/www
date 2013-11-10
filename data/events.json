@@ -2,7 +2,7 @@
     {
         "name": "Build Battle",
         "date": "2013-12-05T18:00:00+01:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/battle.jpg",
         "resume": "'Maven télécharge l'internet', tout le monde l'a entendu au moins une fois. Ce n'est pas le seul reproche qu'on lui fait d'ailleurs. Pour cette session, nous comparerons Maven aux autres outils de builds, avec un focus tout particulier sur Gradle.\n Nous verrons aussi comment se comportent les autres langages de programmation, et comment certains tirent des leçons des errements de Java.",
         "speakersId": [19,8],
@@ -11,7 +11,7 @@
     {
         "name": "AngularJS",
         "date": "2013-11-07T18:00:00+01:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/angularjs.jpg",
         "resume": "Oubliez JSF, Flex, GWT, Backbone et jQuery(1) : l’avenir des applications web passe par AngularJS. Ce framework de Google est le premier à rendre la plate-forme HTML/JavaScript/CSS directement efficace pour le développement d’applications. Plus besoin de générer les pages web côté serveur, d’avoir un plugin Flash, de générer le JavaScript depuis un autre langage, ou de se perdre dans les manipulations du DOM. Après 15 ans d’errements et de solutions artificielles frôlant parfois la limite de l’absurdité, on peut enfin développer la couche de présentation des applications web de façon naturelle, c’est-à-dire directement côté client et nativement en JavaScript, et avec le même niveau de qualité et de productivité que sur les développements côté serveur. Au programme de ce soir, démonstration des possibilités du framework AngularJS et mise en perspective de son rôle dans l’architecture des applications web modernes. (1) N’oubliez quand même pas complètement jQuery qui vous sera utile pour écrire vos propres composants AngularJS.",
         "speakersId": [12],
@@ -39,7 +39,7 @@
     },{
         "name": "Sous le capot de la JVM : Les Lambdas",
         "date": "2013-10-03T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/sous-le-capot.jpg",
         "resume": "**Les lambdas** vont être une avancée majeure du JDK 8. Pour nous en parler, nous recevrons Remi FORAX, membre de l’expert group pour le JCP sur les JSR 292 (invokedynamic) et JSR 335 (lamddas). Remi a participé à son implémentation dans le JDK 8, disponible depuis peu en version \"Developper Preview\" (https://jdk8.java.net/download.html). Son regard sur le \"pourquoi\" et le \"comment\" sera donc particulièrement intéressant.",
         "speakersId": [1],
@@ -63,7 +63,7 @@
     },{
         "name": "BreizhKids",
         "date": "2013-06-15T16:00:00+02:00",
-        "place": "Supinfo Rennes",
+        "place": "SUPINFO, Rennes",
         "image": "images/events/kids.jpg",
         "resume": "L'informatique et la robotique sont des terrains de jeu fabuleux pour les enfants mais parfois difficile d'accès. Il existe des logiciels ludiques et pédagogiques open source permettant de découvrir les techniques de programmation et commencer à réaliser ses propres programmes facilement.<br/>Les informaticiennes qui animeront l'atelier ont déjà partagé leur expérience avec des jeunes dans le cadre d'événements tels que Programmatoo ou Devoxx4Kids.<br/>Mais... pourquoi donc apprendre la programmation quand on a moins de 14 ans ?<ul><li>Parce qu'on aime jouer</li><li>Parce qu'on veut comprendre ce que nos parents font comme métier !</li><li>Parce qu'un ordinateur ne permet pas que de naviguer sur internet ou jouer à minecraft !</li><li>Parce que c'est tout à fait à notre portée, et pourtant on n'en fait pas à l'école !</li></ul>Le BreizhKids c'est tout ça à la fois : un atelier où les enfants pourront jouer ensemble, accompagnés par les adultes, pour mieux comprendre l'outil informatique en découvrant la programmation avec des outils adaptés à leur âge.Zenika a la gentillesse de nous prêter des PC de formation pour que les bambins puissent découvrir les joies de la programmation, et nous seront gracieusement hébergés par SupInfo - 8, Place du Colombier à Rennes (Quartier Colombier). <br/>Les ateliers débuteront à 15h et seront animés par Audrey Neveu et Claude Falguière. Il est prévu de faire des ateliers en 2 groupes de 10 enfants sur une durée de 2h30 maximum avec un goûter au milieu pour ne pas vous les rendre complètement exténués.",
         "speakersId": [4,5],
@@ -77,7 +77,7 @@
     },{
         "name": "AngularJS",
         "date": "2013-05-06T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/angularjs-mai.jpg",
         "resume": "Pour bien conclure cette année, et avant d'attaquer la préparation du BreizhCamp, notre session de mai sera consacrée à AngularJS, le framework web de nouvelle génération qui réconcilie les développeurs avec JavaScript. Nous recevrons Thierry LAU et Sébastien BROUSSE pour nous présenter les arcanes de ce framework, et nous convaincre que Struts, SpringMVC, Wicket, GWT et consorts font partie de la préhistoire.",
         "speakersId": [2,6],
@@ -96,7 +96,7 @@
     },{
         "name": "Retour DevoxxFR",
         "date": "2013-04-11T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/DevoxxFR.jpg",
         "resume": "Pour notre prochain événement BreizhJUG, nous vous proposons de faire un retour sur DevoxxFrance, en compagnie des BreizhJuggers qui y étaient présent. Nous parlerons aussi bien du contenu, de l'organisation de cet événement d'exception, et du rôle de speaker fàce à une salle de 800 personnes. A l'occasion de ce JUG, nous recevrons également Yolande Poirier, que vous connaissez peut être plus sous le twitter @java, car elle est \"Outreach Manager\" pour Oracle. Elle nous présentera l'organisation de la communauté Java sous la direction d'Oracle, comment se faire entendre et contribuer.",
         "speakersId": [6, 8, 9, 15],
@@ -109,7 +109,7 @@
     },{
         "name": "Avant Première DevoxxFR",
         "date": "2013-03-14T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/minitel-h300.jpg",
         "resume": "Pour la session de mars du BreizhJug, nous vous proposons un avant-gout de Devoxx, avec en avant première deux \"tools in action\" que Laurent Huet et Nicolas Deloof présenterons à cette conférence : <ul><li><b>Good Bad and Ugly Maven : a puzzler</b><br/>Maven, de renommée mondiale, est bourré de bugs, de non-sens et d'anti-patterns ... et malgré tout un standard de fait ! Au cours de cette session, nous vous proposons de tester vos connaissance autour de quelques puzzlers, avec explication à la clé et surtout nos conseils pour éviter ces travers sur vos projets.<br/></li><br/><li><b>3615 Cloud </b><br/>Dans cette session, vous allez découvrir comment \"marier l'internet français d'hier avec le Cloud d'aujourd'hui !\". De manière décalée, venez découvrir comment, avec un petit peu de hardware, on peut superviser ses instances du cloud avec un Minitel et une carte Raspberry Pi! Ce bricolage trans-générationnel servira de support pour présenter la programmation sur Raspberry, depuis le niveau hardware jusqu'à notre bonne vielle JVM</li></ul>",
         "speakersId": [8, 9],
@@ -122,7 +122,7 @@
     },{
         "name": "Java.NEXT : Lambdas et Jigsaw",
         "date": "2013-02-07T18:00:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/Java8.jpg",
         "resume": "pour notre session de février, nous allons profiter de la venue de Paul Sandoz, ex spec-Lead de JAX-RS, aujourd'hui software engineer chez Oracle sur Java 8, pour vous proposer une soirée sur l'avenir de Java. Cette soirée se déroulera en deux étapes :<ol><li><b>de 18h00 à 19h00, un atelier sur la mise en oeuvre des lambdas Java 8</b></li>Pré-requis :<ul><li>un ordinateur</li><li>installer le JDK adéquat (http://jdk8.java.net/lambda/)</li><li>disposer d'un IDE compatible avec la programmation lambda (Netbeans ou Idea)</li></ul>L'atelier commencera à 18h00 précise, merci de prendre vos dispositions en conséquence<br/><li><b>de 19h00 à 20h30, une conférence sur la modularisation de la JVM avec le projet JigSaw</b></li>bien que repoussée à Java 9, pour cause de manque de maturité, cette évolution majeure de Java mérite qu'on s'y attarde, et devrait apporter un réel renouveau à la plateforme.</ol>",
         "speakersId": [3],
@@ -135,7 +135,7 @@
     },{
         "name": "NoSQL!",
         "date": "2013-01-10T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/NoSQL.jpg",
         "resume": "Nous attaquerons cette nouvelle année avec une soirée NoSQL en deux parties :<ul><li><b>MongoDB</b> présenté par Manuel Boillod</li><li><b>CouchBase</b> présenté par Tugdual Grall</li></ul> Profitez de cette nouvelle année pour prendre une bonne résolution : faire la promo du JUG auprès de vos collègues et amener de nouvelle têtes à nos sessions !",
         "speakersId": [10, 11],
@@ -148,7 +148,7 @@
     },{
         "name": "Hard",
         "date": "2012-12-06T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/hard.jpg",
         "resume": "Changement de registre pour notre prochaine session du BreizhJug : nous allons parler Hard !<br/>Je ne parle évidement pas de faire un BreizhJug en cuir et chaines, mais bien de Hard-Ware, que nous avons parfois tendance à oublier lorsque nous programmons nos patterns sur des architectures hautement abstraites. Aussi, nous vous proposons:<ul><li>la mise en place d'un feu tricolore Jenkins par Eric Hebert</li><li>même sujet, mais en version \"Do It Yourself\" par nicolas de loof</li><li>plus velu, une présentation de BeagleBone pour mettre du code dans le hard</li></ul>",
         "speakersId": [13, 8, 9],
@@ -161,7 +161,7 @@
     },{
         "name": "Lombock & Guava",
         "date": "2012-11-05T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/lombock.jpg",
         "resume": "Guava est une librairie open source créée et maintenue par les équipes de Google. Inspirée des outils internes du géant, Guava propose de nombreux mécanismes (prog fonctionnelle) pour manipuler les collections, créer des caches customisés, faciliter la gestion de la concurrence et les IOs. De son coté, Lombok est également un projet Open Source. Lombok et Lombok-pg simplifient sensiblement l’écriture de code classique (builders, delegates, etc.) et des nombreuses méthodes purement techniques et indispensables (getters, setters, hashCode, equals, etc.) qui polluent nos objets.<br/>Durant cette présentation, après un rapide constat de la verbosité de nos beans, nous feront un tour d’horizon de Lombok et Guava. Nous verrons comment ils nous aident à écrire du code concis et de qualité.",
         "speakersId": [14],
@@ -174,7 +174,7 @@
     },{
         "name": "HTML5, Spring, NoSQL et mobilité",
         "date": "2012-10-08T18:00:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/tatami.jpg",
         "resume": "Au programme, nous recevons Julien Dubois, qui était déjà passé nous voir il y a quelques temps pour une session sur Spring, et qui revient ici pour un sujet plus large : HTML5, Spring, NoSQL et mobilité <br/>En nous basant sur l'application Tatami https://github.com/ippontech/tatami nous ferons le point sur les dernières technologies permettant de créer des applications Web modernes :<ul><li>HTML5, Backbone.js, JQuery et Twitter Bootstrap</li><li>Spring 3.1</li><li>NoSQL avec Cassandra et ehcache</li><li>La mobilité : application dédiée avec JQuery Mobile vs responsive design avec Backbone.js</li></ul>Nous étudierons les aspects positifs (et négatifs!) de chaque technologie, ainsi que leurs impacts en termes de productivité des développement et de performance de l'application finale. Attention, cette session comporte de vrais morceaux de code à l'intérieur !",
         "speakersId": [16],
@@ -187,7 +187,7 @@
     },{
         "name": "Marre de Java",
         "date": "2012-06-04T18:30:00+02:00",
-        "place": "ISTIC, campus de Beaulieu",
+        "place": "ISTIC, Rennes",
         "image": "images/events/ceylon.png",
         "resume": "nous vous proposons de venir découvrir Ceylon, langage développé par RedHat, avec pour objectif d'apporter à Java un langage simple, expressif, concis et structuré de manière homogène. Conçu par Gavin King, a qui on doit déjà Hibernate, ce langage vient sur un terrain déjà bien occupé, aussi cette session sera l'occasion de voir plus clair dans cet écosystème étonnant des langages alternatifs.",
         "speakersId": [17, 18],
@@ -198,11 +198,11 @@
             }
         ]
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 
 ]

@@ -24,7 +24,10 @@
             <p ng-bind-html-unsafe="getSafeDescription(event.resume)"></p>
             <ul>
               <li><span class="glyphicon glyphicon-time"></span> <a href="#">{{ event.date | date:"EEEE dd MMMM 'à' HH'h'mm" }}</a></li>
-              <li><span class="glyphicon glyphicon-map-marker"></span> <a href="#">{{ event.place }}</a></li>
+              <li>
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <a href="https://maps.google.fr/maps?q={{ event.place }}&iwloc=A" target="_blank">{{ event.place }}</a>
+              </li>
               <li ng-repeat="speaker in event.speakers" ng-controller="eventsController">
                 <span class="glyphicon glyphicon-bullhorn"></span> <a href ng-click="goToSpeaker(speaker)">{{ speaker.name }}</a>
               </li>
