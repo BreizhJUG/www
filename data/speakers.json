@@ -80,21 +80,22 @@
     {
         "id": 12,
         "name": "Thierry Chatel",
-	"avatar": "images/speakers/Thierry-Chatel.jpg",
+        "avatar": "images/speakers/Thierry-Chatel.jpg",
         "resume": "Thierry est consultant et formateur indépendant, spécialisé dans l’architecture des applications web et sur le framework AngularJS. Il découvrit AngularJS alors que c’était un projet en version beta chez Google, encore totalement inconnu. Mais étant très attaché aux bonnes pratiques d’architecture et de développement, il ne pouvait qu’être séduit par le potentiel du framework et son apport considérable au développement d’applications web. Persuadé qu’il s’agit d’une révolution majeure dans le secteur, Thierry contribue depuis deux ans à faire connaître AngularJS par de nombreuses conférences, grâce au blog technique [FrAngular](http://www.frangular.com/) et à la communauté [AngularJS France](https://plus.google.com/communities/109984348857296908402) sur Google+. Et son activité professionnelle alterne entre les [formations à AngularJS](http://www.methotic.com/formation-angularjs), les audits d’applications en cours de développement, et le conseil sur leur architecture et les bonnes pratiques à mettre en oeuvre.",
-        "twitter": "ThierryChatel"
+        "twitter": "ThierryChatel",
+        "github": "tchatel"
     },
     {
         "id": 13,
         "name": "Eric Hébert",
-	"avatar": "images/speakers/Eric_Hebert.jpg",
+        "avatar": "images/speakers/Eric_Hebert.jpg",
         "resume": "JavaEE Architect chez Logica-CGI et scrum master, Eric mène des projets à fortes technologies en démarche agile le plus possible. Actuellement 'Software Factory Manager' du socle IHM HTML5 pour NICE du Crédit Agricole à Nantes, il travaille avec une équipe distribuée de 35 développeurs, 5 managers, 6 sites géographiques, 1 équipe locale de 15 personnes pour produire toutes les 3 semaines une release pour 4 plate-formes différentes. Basé sur maven avec plus de 150 plugins Maven et toutes les technos HTML5 du moment, cela occupe bien ses journées...",
         "twitter": "ehebert35"
     },
     {
         "id": 14,
         "name": "Thierry Leriche",
-	"avatar": "images/speakers/Thierry_Leriche.jpg",
+        "avatar": "images/speakers/Thierry_Leriche.jpg",
         "resume": "Thierry est consultant freelance (www.icauda.com) avec une douzaine d'années d'expérience. Il intervient principalement sur des projets Web (JEE) sur de l’architecture et/ou du développement.Il s’investi dans la formation des plus jeunes mais aussi de mes collègues et amis. Il est d’ailleurs professeur de Génie Logiciel à l'ESIEA et coach sur des projets de formation humaine. Quand il a un peu de temps, entre deux biberons, il est aussi rédacteur pour developpez.com",
         "twitter": "thierryleriche"
     },
