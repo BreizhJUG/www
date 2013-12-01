@@ -21,7 +21,7 @@
         </div>
         <div class="span8">
           <h3>{{ nextEvent.name }}</h3>
-          <p ng-bind-html-unsafe="getSafeDescription(nextEvent.resume)"></p>
+          <p ng-bind-html="getSafeDescription(nextEvent.resume)"></p>
           <ul>
             <li><span class="glyphicon glyphicon-time"></span><span calendar event="nextEvent"></span></li>
             <li>
@@ -78,7 +78,7 @@
         <div class="home-event-ellipsis">
           <div>
             <h4 class="home-event-title">{{ event.name }}</h4>
-            <div ng-bind-html-unsafe="getSafeDescription(event.resume)"></div>
+            <div ng-bind-html="getSafeDescription(event.resume)"></div>
           </div>
         </div>
         <a ng-href="#/events?q={{ event.name }}">Plus d'infos...</a>
@@ -131,7 +131,7 @@
         </div>
         <h4>{{ member.name }}</h4>
         <div class="popup">
-          <p ng-bind-html-unsafe="getSafeDescription(member.resume)"></p>
+          <p ng-bind-html="getSafeDescription(member.resume)"></p>
           <div twitterlink name="{{ member.twitter }}"/>
         </div>
       </div>

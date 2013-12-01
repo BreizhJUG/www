@@ -5,7 +5,7 @@
     <div class="speaker-arrow"></div>
     <h4 class="speaker-name">{{ speaker.name }}</h4>
 
-    <div class="speaker-resume" ng-bind-html-unsafe="getSafeDescription(speaker.resume)"></div>
+    <div class="speaker-resume" ng-bind-html="getSafeDescription(speaker.resume)"></div>
 
     <a href ng-click="goToEvents(speaker)">Voir ses talks</a>
 

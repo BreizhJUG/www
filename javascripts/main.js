@@ -1,6 +1,6 @@
 "use strict";
 
-var breizhjugApp = angular.module('breizhjugApp', ['ui.bootstrap']);
+var breizhjugApp = angular.module('breizhjugApp', ['ngRoute', 'ui.bootstrap']);
 
 /*########### Routing config ###########*/
 breizhjugApp.config(function ($routeProvider) {
@@ -41,6 +41,17 @@ breizhjugApp.config(function ($routeProvider) {
 });
 
 /*########### Controllers ###########*/
+breizhjugApp.controller("rootController", function ($scope, $sce) {
+    $scope.converter = new Markdown.getSanitizingConverter();
+
+    $scope.getSafeDescription = function (description) {
+        if (description) {
+            return $sce.trustAsHtml($scope.converter.makeHtml(description));
+        }
+        return description;
+    };
+});
+
 breizhjugApp.controller("menuController", function ($scope, $route, $rootScope, $location, Scroll) {
     $scope.isCollapsed = true;
 
@@ -62,15 +73,6 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
             Scroll.scrollTo(sectionId);
         }, 500);
     }
-
-    $scope.converter = new Markdown.getSanitizingConverter();
-
-    $scope.getSafeDescription = function (description) {
-        if (description) {
-            return $scope.converter.makeHtml(description);
-        }
-        return description;
-    };
 });
 
 breizhjugApp.controller("homeHeadController", function ($scope) {
@@ -121,15 +123,6 @@ breizhjugApp.controller("homeSponsorsController", function ($scope) {
 });
 
 breizhjugApp.controller("speakersController", function ($scope, resolvedSpeakers, $routeParams) {
-    $scope.converter = new Markdown.getSanitizingConverter();
-
-    $scope.getSafeDescription = function (description) {
-        if (description) {
-            return $scope.converter.makeHtml(description);
-        }
-        return description;
-    };
-
     $scope.speakers = resolvedSpeakers.data;
 
     if ($routeParams.q == undefined) {
@@ -146,15 +139,6 @@ breizhjugApp.controller("speakerController", function ($scope, Speakers, $locati
 });
 
 breizhjugApp.controller("eventsController", function ($scope, Events, $routeParams, $location) {
-    $scope.converter = new Markdown.getSanitizingConverter();
-
-    $scope.getSafeDescription = function (description) {
-        if (description) {
-            return $scope.converter.makeHtml(description);
-        }
-        return description;
-    };
-
     $scope.goToSpeaker = function (speaker) {
         $location.path("/speakers").search("q", speaker.name);
     };
@@ -196,7 +180,6 @@ breizhjugApp.factory("Team", function ($http) {
         fetch: function () {
             return $http.get(API_URI, {cache: true});
         }
-
     };
 });
 
