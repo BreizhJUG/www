@@ -6,19 +6,21 @@
       <span class="page-title">Événements</span>
 
       <div class="page-search">
-        <input type="text" placeholder="Rechercher..." ng-model="search">
-        <button class="btn btn-info" style="margin-top: -10px" ng-click="reverseDate = !reverseDate">Tri par date&nbsp;<i ng-show="!reverseDate" class="icon-arrow-up"></i><i
-                ng-show="reverseDate" class="icon-arrow-down"></i></button>
+        <input type="text" placeholder="Rechercher..." ng-model="search" class="form-control page-search-input">
+        <button class="btn btn-info" style="margin-top: -10px" ng-click="reverseDate = !reverseDate">
+          <span>Tri par date&nbsp;</span>
+          <span class="glyphicon" ng-class="reverseDate ? 'glyphicon-arrow-down' : 'glyphicon-arrow-up'"></span>
+        </button>
       </div>
     </div>
 
     <div class="events">
       <div class="event" ng-repeat="event in events | eventsFilter : search | orderBy:'date':reverseDate">
-        <div class="row-fluid" style="margin-top:20px">
-          <div class="span4" style="padding-top:20px">
-            <img class="vignette" ng-src="{{ event.image }}"/>
+        <div class="row" style="margin-top:20px">
+          <div class="col-md-4" style="padding-top:20px">
+            <img class="vignette img-responsive" ng-src="{{ event.image }}"/>
           </div>
-          <div class="span8">
+          <div class="col-md-8">
             <h3>{{ event.name }}</h3>
 
             <p ng-bind-html="getSafeDescription(event.resume)"></p>

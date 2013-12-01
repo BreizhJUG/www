@@ -39,9 +39,6 @@ body {
 	padding: 0;
 }
 
-.row {
-	clear: both;
-}
 img {
     vertical-align: middle;
 }
@@ -69,17 +66,12 @@ header {
 
 header .navbar-inner {
     background: #fff;
-    padding: 0 !important;
+    padding: 2px 0 !important;
 }
 
 header .brand {
     padding: 2px 0 0 0 !important;
     margin: 0 40px 0 30px !important;
-}
-
-header .caret {
-    margin-left: 4px !important;
-    margin-top: 6px !important;
 }
 
 header .nav li a {
@@ -90,13 +82,8 @@ header .nav li a {
 	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.headSlider img {
-  	margin:auto;
-  	width:900px;
-}
-
 #menu-spacer {
-    height: 53px;
+    height: 54px;
 }
 
 @media (max-width: 979px) {
@@ -204,6 +191,11 @@ header .nav li a {
     height: 300px;
     line-height: 300px;
     text-align: center;
+}
+
+.head-img-container img {
+    height: auto;
+    max-width: 100%;
 }
 
 /*########### Home - Next event ###########*/
@@ -414,9 +406,8 @@ img.vignette {
 }
 
 @media (min-width: 768px){
-    .fivecolumns .span2 {
-        width: 17.6%;
-        margin-left: 3%;
+    .fivecolumns .col-md-2 {
+        width: 20%;
     }
 }
 
@@ -488,6 +479,7 @@ footer .license {
     position: relative;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .page-title {
@@ -500,6 +492,12 @@ footer .license {
     position: absolute;
     right: 0;
     top: 5px;
+}
+
+.page-search-input {
+    display: inline;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
