@@ -114,7 +114,7 @@
         "place": "ISTIC, Rennes",
         "image": "images/events/hard.jpg",
         "resume": "Changement de registre pour notre prochaine session du BreizhJug : nous allons parler Hard !<br/>Je ne parle évidement pas de faire un BreizhJug en cuir et chaines, mais bien de Hard-Ware, que nous avons parfois tendance à oublier lorsque nous programmons nos patterns sur des architectures hautement abstraites. Aussi, nous vous proposons:<ul><li>la mise en place d'un feu tricolore Jenkins par Eric Hebert</li><li>même sujet, mais en version \"Do It Yourself\" par nicolas de loof</li><li>plus velu, une présentation de BeagleBone pour mettre du code dans le hard</li></ul>",
-        "speakersId": [13, 8, 9]
+        "speakersId": [13, 8, 20, 9]
     },{
         "name": "Lombock & Guava",
         "date": "2012-11-05T18:30:00+02:00",

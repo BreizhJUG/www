@@ -129,9 +129,16 @@
     },
     {
     	"id": 19,
-    	"name":"Cedric Champeau",
+    	"name":"Cédric Champeau",
     	"avatar":"images/speakers/Cedric_Champeau.jpg",
     	"resume":"Cédric Champeau est committer sur Groovy Core. Il a rejoint SpringSource, une division de VMware, afin de participer au développement du langage après avoir passé plusieurs années à l'exploiter de manière industrielle chez un éditeur logiciel, Lingway, dans de multiples contextes (DSL, scripting, workflows, ...). Il est notamment derrière le type checker et la compilation statique ajoutés dans Groovy 2.",
     	"twitter":"CedricChampeau"
+    },
+    {
+    	"id": 20,
+    	"name":"Nicolas Ledez",
+    	"avatar":"images/speakers/Nicolas_Ledez.jpg",
+    	"resume":"Nicolas Ledez est architecte systéme chez Orange Business Services IT&L@bs.De formation industrielle puis informatique, il travaille dans l'IT depuis 12 ans. Il anime également Rennes On Rails, le forum Grafotech "Cloud", le groupe DevOps et Devcamp. Ses développements sont surtout réalisés pour automatiser les tâches rébarbatives. Il code en principalement Ruby. Vous pouvez également le retrouver sur son blog.",
+    	"twitter":"nledez"
     }
 ]
