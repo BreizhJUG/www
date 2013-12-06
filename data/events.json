@@ -5,7 +5,33 @@
         "place": "ISTIC, Rennes",
         "image": "images/events/battle.jpg",
         "resume": "'Maven télécharge l'internet', tout le monde l'a entendu au moins une fois. Ce n'est pas le seul reproche qu'on lui fait d'ailleurs. Pour cette session, nous comparerons Maven aux autres outils de builds, avec un focus tout particulier sur Gradle.\n Nous verrons aussi comment se comportent les autres langages de programmation, et comment certains tirent des leçons des errements de Java.",
-        "speakersId": [19,8]
+        "speakersId": [19,8],
+        "links": [
+            {
+                "type": "barcode",
+                "url": "https://github.com/melix/breizhjug-dec-13",
+                "name": "Repo du talk"
+            },
+            {
+                "type": "barcode",
+                "url": "http://www.gradle.org/documentation",
+                "name": "Documentation de Gradle"
+            },
+            {
+                "type": "barcode",
+                "url": "http://tools.android.com/tech-docs/new-build-system/user-guide",
+                "name": "Plugin Android"
+            },
+            {
+                "type": "film",
+                "url": "http://www.youtube.com/watch?v=5a91dBLX8Qc",
+                "name": "Must-see, introduction à Gradle par Hans Dockter"
+            },
+            {
+                "type": "picture",
+                "url": "http://melix.github.io/breizhjug-dec-13/",
+                "name": "slides"
+            }]
     },
     {
         "name": "AngularJS",
