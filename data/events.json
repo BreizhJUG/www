@@ -1,4 +1,12 @@
-[
+[    {
+        "name": "BigData",
+        "date": "2014-01-09T18:00:00+01:00",
+        "place": "ISTIC, Rennes",
+        "image": "images/events/big-data.jpg",
+        "resume": "plug de détails ... bientôt.",
+        "speakersId": [21],
+        "links": []
+    },
     {
         "name": "Build Battle",
         "date": "2013-12-05T18:00:00+01:00",
