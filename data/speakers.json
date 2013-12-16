@@ -140,5 +140,12 @@
     	"avatar":"images/speakers/Nicolas_Ledez.jpg",
     	"resume":"Nicolas Ledez est architecte systéme chez Orange Business Services IT&L@bs. De formation industrielle puis informatique, il travaille dans l'IT depuis 12 ans. Il anime également Rennes On Rails, le forum Grafotech \"Cloud\", le groupe DevOps et Devcamp. Ses développements sont surtout réalisés pour automatiser les tâches rébarbatives. Il code en principalement Ruby. Vous pouvez également le retrouver sur son blog.",
     	"twitter":"nledez"
+    },
+    {
+    	"id": 21,
+    	"name":"Florian Douetteau",
+    	"avatar":"images/speakers/Florian_Douetteau.jpg",
+    	"resume":"Florian Douetteau est le président de Dataiku, éditeur français d'une plateforme de Data Science. Florian a participé au succès d’une des startups françaises phare des années 2000 : Exalead, leader français des technologies de moteur de recherche, jusqu'à la cession à Dassault Système en 2010 pour 135 M€. Florian a travaillé chez Exalead pendant 11 ans, donc 4 en tant que Directeur de la R&D avec des responsabilités telles que la définition de la stratégie produit, le pilotage d’une équipe de 55 ingénieurs R&D et la réalisation des versions successives du produit. Florian a plus récemment été Directeur Technique (CTO) d’une société de Social Gaming (IsCool Entertainement), et également Data Scientist Freelance chez Critéo.",
+    	"twitter":"fdouetteau"
     }
 ]
