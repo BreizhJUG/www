@@ -3,7 +3,7 @@
         "date": "2014-01-09T18:00:00+01:00",
         "place": "ISTIC, Rennes",
         "image": "images/events/big-data.jpg",
-        "resume": "plug de détails ... bientôt.",
+        "resume": "Soirée Big Data. \n * Les Paradoxes du Big Data \n * Overview d’Hadoop et de ses Usages \n * Le Machine Learning : qu’est-ce que c’est et comment l’utiliser \n * Un cas pratique de projet Data.",
         "speakersId": [21],
         "links": []
     },
