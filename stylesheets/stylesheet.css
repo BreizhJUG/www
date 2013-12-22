@@ -243,7 +243,7 @@ img.vignette {
 	border-radius:4px;
 	box-shadow: 2px 2px 2px;
 	position:relative;
-	top:50px;
+	top:30px;
 	left:0;
 }
 
@@ -444,6 +444,11 @@ img.vignette {
     z-index: 1000;
 
     transition: all 1s;
+}
+
+#sponsors .donate {
+    margin-top: 20px;
+    text-align: center;
 }
 
 /*########### Footer ###########*/
