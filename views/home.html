@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4" style="padding-top:60px">
+        <div class="col-md-4 social" style="padding-top:60px">
           <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.breizhjug.org" data-text='{{ nextEvent.date | date:"EEEE dd MMMM HH:mm" }} au BreizhJug : {{ nextEvent.name }}'  data-lang="fr" data-size="large">Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
@@ -50,14 +50,14 @@
           <a href='mailto:?subject=Breizhjug%20:%20{{ nextEvent.name }}&body={{ nextEvent.date | date:"EEEE dd MMMM HH:mm" }}'>Partager par mail</a>
 
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 speakers">
           <div ng-repeat="speaker in nextEvent.speakers" ng-controller="speakerController">
             <div ng-include src="'views/speaker.html'"></div>
           </div>
         </div>
       </div>
       <div class="row" >
-        <div style="text-align: right">
+        <div style="text-align: right" class="register">
           <form action="mailto:breizhjug-annonces+subscribe@googlegroups.com" method="post" enctype="text/plain" target="_blank" id="annonce-subscribe">
             Recevez par email les annonces des prochains événements :
             <input type="submit" class="btn btn-primary" value="S'inscrire"/>
@@ -138,29 +138,4 @@
     </div>
   </div>
 
-</section>
-
-<section id="sponsors" class="blue" ng-controller="homeSponsorsController">
-  <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
-  <div class="grid">
-    <div class="row">
-      <div class="col-md-4 sponsor">
-        <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.jpg" alt="Zenika" class="img-responsive"/></a>
-      </div>
-      <div class="col-md-4 sponsor">
-        <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam" class="img-responsive"/></a>
-      </div>
-      <div class="col-md-4 sponsor">
-        <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic" class="img-responsive"/></a>
-      </div>
-    </div>
-  </div>
-  <div class="donate">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="WSDMQ2Y99X9TS">
-      <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
-      <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-    </form>
-  </div>
 </section>

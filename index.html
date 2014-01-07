@@ -6,7 +6,8 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,6 +58,31 @@
     <![endif]-->
 
     <div ng-view></div>
+
+    <section id="sponsors" class="blue" ng-controller="homeSponsorsController">
+      <h2><span class="glyphicon glyphicon-random"></span> nos partenaires</h2>
+      <div class="grid">
+        <div class="row">
+          <div class="col-md-4 sponsor">
+            <a href="http://www.zenika.com" target="_blank"><img src="images/sponsors/zenika.jpg" alt="Zenika" class="img-responsive"/></a>
+          </div>
+          <div class="col-md-4 sponsor">
+            <a href="http://www.softeam.fr" target="_blank"><img src="images/sponsors/SOFTEAM.png" alt="Softeam" class="img-responsive"/></a>
+          </div>
+          <div class="col-md-4 sponsor">
+            <a href="http://www.istic.univ-rennes1.fr/" target="_blank"><img src="images/sponsors/ISTIC.png" alt="Istic" class="img-responsive"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="donate">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="WSDMQ2Y99X9TS">
+          <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+          <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+    </section>
 
     <footer class="black">
         BreizhJUG est une association loi 1901 - <a href="mailto:team@breizhjug.org">team@breizhjug.org</a>
