@@ -16,6 +16,11 @@
         "speakersId": [19,8],
         "links": [
             {
+                "type": "film",
+                "url": "http://youtu.be/hVn3C2YHVD4",
+                "name": "Vidéo de la session"
+            },
+            {
                 "type": "barcode",
                 "url": "https://github.com/melix/breizhjug-dec-13",
                 "name": "Repo du talk"
