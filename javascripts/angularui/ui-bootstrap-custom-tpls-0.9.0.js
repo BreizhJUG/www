@@ -155,15 +155,9 @@ angular.module('ui.bootstrap.collapse', ['ui.bootstrap.transition'])
             expand();
           }
         });
-
       }
     };
   }]);
-
-//TODO:
-//- refactor to remove code duplication
-//- corner cases - what happens in animation is in progress?
-//- tests based on the DOM state / classes
 
 /*
  * dropdownToggle - Provides dropdown menu functionality in place of bootstrap js
