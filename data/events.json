@@ -2,6 +2,7 @@
         "name": "La révolution Docker",
         "date": "2014-02-06T18:00:00+01:00",
         "place": "ISTIC, Rennes",
+        "eventbrite" : "10347332149",
         "image": "images/events/docker.png",
         "resume": "En très peu de temps, Docker a su s'imposer comme un standard __de facto__ dans le monde du Cloud (et pas seulement), ne laissant aucun fournisseur impassible. A mi-chemin entre IaaS et PaaS, Docker brouille les cartes et ouvre de nouvelles opportunités. \n Au cours de ce talk, nous vous présenterons ce qu'est techniquement Docker, son impact sur nos pratiques de déploiment et d'exploitation et comment vous pouvez le mettre à profit pour vos propres usages.",
         "speakersId": [8],
