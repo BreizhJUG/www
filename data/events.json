@@ -19,8 +19,12 @@
                 "type": "film",
                 "url": "http://youtu.be/Wl8T2b7q39I",
                 "name": "Vidéo de la session"
+            },
+            {
+                "type": "picture",
+                "url": "http://fr.slideshare.net/Dataiku/dataiku-pages-jaunes-breizhjug-presentation-complete-janvier-2014",
+                "name": "slides"
             }]
-                
     },
     {
         "name": "Build Battle",
