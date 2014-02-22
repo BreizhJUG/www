@@ -4,7 +4,7 @@
         "place": "ISTIC, Rennes",
         "eventbrite" : "10709112243",
         "image": "images/events/RestX.png",
-        "resume": "TODO.",
+        "resume": "Avec l'essor des frameworks comme Angular, les développeurs Java que nous sommes se laissent de plus en plus séduire par le JS pour développer des IHM.\n\nMais pour le serveur, le monde Java garde quand même l'avantage avec son typage, sa maintenabilité et ses performances.\nDans cette mouvance, on voit de nouveaux outils apparaître pour développer des micro-services REST de manière productive et efficace.\nAu cours de cette session, je vous propose quelques révisions sur les principes des services REST, pour voir ensuite au travers de nombreuses démos comment RESTX, un outil open source, innovant et made in France peut vous aider à construire, documenter et tester l'API REST idéale pour vos applications web de demain.\n\nPour plus d'infos sur RESTX, jetez un oeil à [restx.io](http://restx.io/)",
         "speakersId": [6],
         "links": []                
     },{
