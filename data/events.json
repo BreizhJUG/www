@@ -1,4 +1,11 @@
 [    {
+        "name": "Les Patterns de Cache",
+        "date": "2014-04-03T18:00:00+01:00",
+        "place": "ISTIC, Rennes",
+        "image": "images/events/RestX.png",
+        "resume": "Comment diminuer le temps de traitement d’un batch ? Le temps d’exécution d'une requête ? Le cache est un des outils du développeur pour résoudre ses problématiques quotidiennes et les concepts qui gravitent autour sont nombreux. Si les mots Cache Aside, Write-Behind, Read-Through ne vous sont pas familiers, cela fait pourtant parti des architectures qu’il est facile à mettre en place et qui dans certains contextes peuvent diminuer de manière drastique la durée d’un batch ou d’une requête. Nous aborderons également les différents moyens de scaler horizontalement et verticalement le cache (réplication, miroir, partitionnement) en nous appuyant sur différentes librairies existantes (GemFire, Coherence, Terracotta, Ehcache, Infinispan, Hazelcast) mais également NoSQL et plus généralement les In Memory Data Grid (IMDG)",
+        "speakersId": [22]                        
+    },{
         "name": "Soyons RESTful avec RESTX",
         "date": "2014-02-27T18:00:00+01:00",
         "place": "ISTIC, Rennes",

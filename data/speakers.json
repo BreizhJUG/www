@@ -147,5 +147,14 @@
     	"avatar":"images/speakers/Florian_Douetteau.jpg",
     	"resume":"Florian Douetteau est le président de Dataiku, éditeur français d'une plateforme de Data Science. Florian a participé au succès d’une des startups françaises phare des années 2000 : Exalead, leader français des technologies de moteur de recherche, jusqu'à la cession à Dassault Système en 2010 pour 135 M€. Florian a travaillé chez Exalead pendant 11 ans, donc 4 en tant que Directeur de la R&D avec des responsabilités telles que la définition de la stratégie produit, le pilotage d’une équipe de 55 ingénieurs R&D et la réalisation des versions successives du produit. Florian a plus récemment été Directeur Technique (CTO) d’une société de Social Gaming (IsCool Entertainement), et également Data Scientist Freelance chez Critéo.",
     	"twitter":"fdouetteau"
+    },
+    {
+    	"id": 22,
+    	"name":"Mathilde Lemée",
+    	"avatar":"images/speakers/Mathilde_Lemee.jpg",
+    	"resume":"Après des années en tant que freelance, Mathilde Lemée a rejoint Software AG (Terracota) en 2012 en tant qu’ingénieur Java R&D sur les sujets ehcache et bigmemory.
+Elle a confondé les Duchess France pour connecter et rendre visible les femmes travaillant dans le monde Java, en 2012 elle a organisé de nombreux évènements (Hadoop, Mahout, Mockito, Cache …).
+Elle blog sur <a href="http://www.java-freelance.fr/">java-freelance.fr</a> sur les performances, les meilleures pratiques et les tests. Elle contribue régulièrement à des projets open source et a créé FluentLenium, un surcouche de Selenium pour fournir une api fluide comme le font des projets comme Play!2. Elle intervient aussi régulièrement dans des conférences Java en Europe (Paris JUG, Devoxx France, Mix-it, Softshake) et édite un jeux mobile éducatif (<a href="http://www.aetys.fr/">Aetys.fr</a>) pour IPad/iPhone et Android.",
+    	"twitter":"MathildeLemee"
     }
 ]
