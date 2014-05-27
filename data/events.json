@@ -1,4 +1,13 @@
 [  {
+        "name": "ElasticSearch",
+        "date": "2014-06-05T18:00:00+02:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "11760850019",
+        "image": "images/events/Cache.jpg",
+        "resume": "Vous utilisez encore des requêtes SQL pour faire des recherches ? Vos utilisateurs vous reprochent de ne pas pouvoir chercher sur toutes les rubriques ? Votre temps de réponse moyen est supérieur à la demi-seconde avec seulement quelques millions de documents ? Il vous faut 3 jours pour produire des statistiques sur vos données ? Vous rêvez d’offrir une recherche 'à la google sur les données de votre SI ?\n\nNe cherchez plus ! Cette conférence est faite pour vous.\nDavid présentera au cours de la soirée pourquoi et comment il est passé de la recherche SQL à Elasticsearch en détaillant les apports de ce moteur par rapport à une solution pure Lucene :\n  - Pourquoi Elasticsearch ?\n  - L'indexation\n  - La recherche\n  - Les agrégations et le principe de navigation par facettes\n  - La scalabilité horizontale\n  - L'analyse et le mapping\n  - La percolation\n  - La communauté", 
+        "speakersId": [23],
+        "links": []
+    },{
         "name": "Les Patterns de Cache",
         "date": "2014-04-03T18:00:00+02:00",
         "place": "ISTIC, Rennes",
