@@ -161,5 +161,19 @@
     	"avatar":"http://www.gravatar.com/avatar/20049a614b7f6838dc87b4bc39c42079.png",
     	"resume":"David Pilato est 'technical advocate' chez Elasticsearch.com, après avoir passé les deux années précédentes à promouvoir le projet open-source Elasticsearch, dont il anime la communauté française. Fidèle des JUG, il a donné une conférence sur le sujet lors de la première édition de Devoxx France en avril 2012 et sillonne désormais les routes de France pour partager sa passion.\nIl a implémenté un certain nombre de plugins pour l'écosystème Elasticsearch (Rivers RSS, FileSystem et DropBox, Factories Spring).\n\nIl a également implémenté Elasticsearch pour plusieurs projets, dont une importante administration française. Il est le co-auteur du projet open-source [Scrutmydocs.org](http://www.scrutmydocs.org/) basé sur Elasticsearch qui permet de disposer d'un moteur de recherche 'à la google' des documents de vos disques durs.",
     	"twitter":"dadoonet"
+    },
+    {   
+    	"id": 24,
+    	"name":"David Gageot",
+    	"avatar":"http://retour1024.fr/assets/img/hw_profile15_logo.jpg",
+    	"resume":"Bonjour, je suis David Gageot, développeur indépendant. Ma passion ? L'écriture de logiciels pointus mais simples. J'ai pour leitmotiv d'être un facilitateur qui, par ma créativité et mon expertise, aide les équipes à être plus innovantes et plus efficaces.\nJe participe à des projets Java depuis 1998, comme responsable R&D chez l'éditeur Adesoft puis directeur technique chez Valtech Technology, CTO chez Algodeal, un fond d'investissement quantitatif puis développeur chez SonarSource, la société derrière Sonar.\nVous suivez peut-être mon blog [JavaBien!](http://blog.javabien.net/) depuis 2004..",
+    	"twitter":"dgageot"
+    },
+    {   
+    	"id": 25,
+    	"name":"Jean-Laurent de Morlhon",
+    	"avatar":"http://morlhon.net/img/jl_400x492.png",
+    	"resume":"Programmeur Freelance, co-createur de CodeStory, CTO de Serpodile. #craftsmanship #testing #coffeescript",
+    	"twitter":"morlhon"
     }
 ]
