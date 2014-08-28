@@ -1,4 +1,14 @@
-[  {
+[ {
+        "name": "MODERN WEB WITH JAVA",
+        "date": "2014-11-09T18:00:00+02:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "12847313661",
+        "image": "images/events/code-story.png",
+        "resume": "Venez participer à cet atelier de 2 heures. L'objectif est simple : apprendre à développer une application web moderne en Java. Rapidement, de manière pragmatique et en toute confiance.\nAvec l'assistance et les démos live de David Gageot et Jean-Laurent de Morlhon.\nAu menu : du Java 8, un poil d'Angular, un soupçon de CoffeeScript, du MongoDB, du pair-programming, des tests IHM, des hotkeys de malade, des plugins de fou et un cycle de développement ultra rapide. Oui vous ne rêvez pas on parle bien de Java.\nLundi, au boulot, vous ne verrez plus votre projet java de la même manière.\n\n Cet atelier est limité à 30 places, et fonctionne en binômes avec votre propre matériel.",
+        "speakersId": [24,25],
+        "links": []
+        
+    },{
         "name": "ElasticSearch",
         "date": "2014-06-05T18:00:00+02:00",
         "place": "ISTIC, Rennes",
