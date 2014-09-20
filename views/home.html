@@ -1,13 +1,6 @@
-<section id="head" ng-controller="homeHeadController">
-  <div carousel options="carouselOptions">
-    <li ng-repeat="header in headers">
-      <div class="head-img-container">
-        <a href="{{header.href}}" ng-show="header.href" target="_blank">
-           <img ng-src="{{ header.src }}" />
-        </a>
-        <img ng-src="{{ header.src }}" ng-hide="header.href"/>
-      </div>
-    </li>
+<section id="head">
+  <div>
+    <a href="http://www.devoxx.be"><img src="devoxx2014.png"></a>
   </div>
 </section>
 
