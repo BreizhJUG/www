@@ -1,4 +1,14 @@
-[ {
+[ 
+    {
+        "name": "OpenStack 101",
+        "date": "2014-10-09T18:00:00+02:00",
+        "place": "Supinfo, Rennes",
+        "eventbrite": "13380512473",
+        "image": "images/events/openstack.png",
+        "resume": "Vous avez déjà entendu parler d'OpenStack ? Vous connaissez de nom mais ce n'est pas très clair ? OpenStack, c'est LA solution Open Source d'infrastructure Cloud. Elle sert de fondation à des grands clouds publics, mais peut aussi être utilisée pour créer son propre cloud privé. Que vous soyez développeur ou administrateur système, venez découvrir ce qu'offre OpenStack et comment il fonctionne.\n\nAttention, pour une fois nous serons hébergés dans les locaux de Supinfo (ex 'Thomson')",
+        "speakersId": [15],
+        "links": []    
+    },{
         "name": "MODERN WEB WITH JAVA",
         "date": "2014-09-11T18:00:00+02:00",
         "place": "ISTIC, Rennes",
@@ -6,8 +16,11 @@
         "image": "images/events/code-story.png",
         "resume": "Venez participer à cet atelier de 2 heures. L'objectif est simple : apprendre à développer une application web moderne en Java. Rapidement, de manière pragmatique et en toute confiance.\nAvec l'assistance et les démos live de David Gageot et Jean-Laurent de Morlhon.\nAu menu : du Java 8, un poil d'Angular, un soupçon de CoffeeScript, du MongoDB, du pair-programming, des tests IHM, des hotkeys de malade, des plugins de fou et un cycle de développement ultra rapide. Oui vous ne rêvez pas on parle bien de Java.\nLundi, au boulot, vous ne verrez plus votre projet java de la même manière.\n\n Cet atelier est limité à 30 places, et fonctionne en binômes avec votre propre matériel.",
         "speakersId": [24,25],
-        "links": []
-        
+        "links": [{
+                "type":"barcode",
+                "url":"https://github.com/dgageot/lab",
+                "name":"code du lab"
+                }]
     },{
         "name": "ElasticSearch",
         "date": "2014-06-05T18:00:00+02:00",
