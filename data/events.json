@@ -7,7 +7,11 @@
         "image": "images/events/openstack.png",
         "resume": "Vous avez déjà entendu parler d'OpenStack ? Vous connaissez de nom mais ce n'est pas très clair ? OpenStack, c'est LA solution Open Source d'infrastructure Cloud. Elle sert de fondation à des grands clouds publics, mais peut aussi être utilisée pour créer son propre cloud privé. Que vous soyez développeur ou administrateur système, venez découvrir ce qu'offre OpenStack et comment il fonctionne.\n\nAttention, pour une fois nous serons hébergés dans les locaux de Supinfo (ex 'Thomson')",
         "speakersId": [15],
-        "links": []    
+        "links": [{
+            "type" :"picture",
+            "url": "https://github.com/ydubreuil/breizhjug-openstack/raw/master/Openstack.odp",
+            "name": "slides"
+        }]    
     },{
         "name": "MODERN WEB WITH JAVA",
         "date": "2014-09-11T18:00:00+02:00",
