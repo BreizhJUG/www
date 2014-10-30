@@ -1,5 +1,14 @@
 [ 
     {
+        "name": "Big Data",
+        "date": "2014-11-06T18:30:00+02:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "",
+        "image": "images/events/elephant.jpg",
+        "resume": "Hadoop, Mapreduce, Yarn, Pig et tant d’autres avec surtout le fameux “Big Data” qu’il est de bon ton de placer en soirée pour faire bonne impression :)\nBref. Revenons au commencement : Comment et pourquoi Hadoop est né ? Quelles sont les bases techniques ? Nous ferons un tour d’horizon de Hadoop, son histoire, son intérêt et ses principes, sur le désormais célèbre map-reduce et la parallélisation massive, sur ses enjeux. On verra ensuite comment la plateforme a évolué ces dernières années, gagnant en flexibilité et possibilités.",
+        "speakersId": [26],
+        "links": []
+    },{
         "name": "OpenStack 101",
         "date": "2014-10-09T18:30:00+02:00",
         "place": "Supinfo, Rennes",
@@ -11,7 +20,7 @@
             "type" :"picture",
             "url": "https://github.com/ydubreuil/breizhjug-openstack/raw/master/Openstack.odp",
             "name": "slides"
-        }]    
+        }]
     },{
         "name": "MODERN WEB WITH JAVA",
         "date": "2014-09-11T18:00:00+02:00",
