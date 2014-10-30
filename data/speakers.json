@@ -175,5 +175,12 @@
     	"avatar":"http://morlhon.net/img/jl_400x492.png",
     	"resume":"Programmeur Freelance, co-createur de CodeStory, CTO de Serpodile. #craftsmanship #testing #coffeescript",
     	"twitter":"morlhon"
+    },
+    {
+    	"id": 26,
+    	"name":"David Morin",
+    	"avatar":"images/speakers/David_Morin.jpg",
+    	"resume":"Développeur Java avant tout, David s'intéresse à tout ce qui tourne autour de la JVM avec un vif intérêt pour les aspects performance et scalabilité. Il découvre Hadoop en 2011 et se passionne pour son écosystème dynamique. David travaille pour Cityzen Data, une start-up fournissant une plateforme scalable, sécurisée et éthique pour les données de capteurs.",
+    	"twitter":"davAtBzh"
     }
 ]
