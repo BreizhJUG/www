@@ -11,6 +11,10 @@
             "type": "film",
             "url": "http://youtu.be/35JN755MbHo",
             "name": "Vidéo de la session"
+        },{
+            "type": "picture",
+            "url": "http://bit.ly/13VcLSH",
+            "name": "Slides"
         }]
     },{
         "name": "OpenStack 101",
