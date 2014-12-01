@@ -1,5 +1,13 @@
-[ 
+[
     {
+        "name": "Android Wear : Ceci n'est pas une montre !",
+        "date": "2014-12-11T18:30:00+02:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "14694631037",
+        "image": "images/events/android-watch.png",
+        "resume": "Le but de cette présentation est de bien cerner la plateforme et l'usage approprié. On parlera donc des principes en terme d'UX et d'utilisation de l'API.",
+        "speakersId": [27]
+    },{
         "name": "Big Data",
         "date": "2014-11-06T18:30:00",
         "place": "ISTIC, Rennes",
