@@ -182,5 +182,12 @@
     	"avatar":"images/speakers/David_Morin.jpg",
     	"resume":"Développeur Java avant tout, David s'intéresse à tout ce qui tourne autour de la JVM avec un vif intérêt pour les aspects performance et scalabilité. Il découvre Hadoop en 2011 et se passionne pour son écosystème dynamique. David travaille pour Cityzen Data, une start-up fournissant une plateforme scalable, sécurisée et éthique pour les données de capteurs.",
     	"twitter":"davAtBzh"
+    },
+    {
+        "id": 27,
+        "name":"Damien Cavaillès",
+        "avatar":"images/speakers/Damien_Cavailles.jpg",
+        "resume":"Développeur passionné par l'entreprenariat, Damine s'occupe du mobile chez TripnDrive. Il est aussi organisateur et facilitateur de Startup Weekend, en particulier sur la verticale Makers !",
+        "twitter":"TheDamfr"
     }
 ]
