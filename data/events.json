@@ -15,6 +15,16 @@
         "image": "images/events/android-watch.png",
         "resume": "Le but de cette présentation est de bien cerner la plateforme et l'usage approprié. On parlera donc des principes en terme d'UX et d'utilisation de l'API.",
         "speakersId": [27]
+        "links": [{
+            "type": "film",
+            "url": "http://youtu.be/Ny3Dom2ggoA",
+            "name": "Vidéo de la session"
+        },{
+            "type": "picture",
+            "url": "https://github.com/BreizhJUG/www/raw/gh-pages/slides/AndroidWear.pdf",
+            "name": "Slides"
+        }]
+        
     },{
         "name": "Big Data",
         "date": "2014-11-06T18:30:00",
