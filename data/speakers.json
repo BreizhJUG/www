@@ -110,7 +110,7 @@
         "id": 16,
         "name": "Julien Dubois",
 	    "avatar": "images/speakers/Julien_Dubois.jpg",
-        "resume": "Julien Dubois est directeur du pôle conseil chez Ippon Technologies, société spécialisée dans le développement et l’architecture d’applications Java. Il y dirige une équipe de consultants et architectes de haut niveau, et intervient régulièrement chez les clients de la société. Julien est connu dans le monde Java pour avoir co-écrit le livre \"Spring par la pratique\", avoir dirigé la filiale française de SpringSource, et pour parler régulièrement à des conférences.",
+        "resume": "Julien Dubois est directeur de l'innovation chez Ippon Technologies, société spécialisée dans le développement et l’architecture d’applications Java. Il y travaille sur les dernières tendances technologiques, afin de proposer à ses clients les projets les plus novateurs. Julien est connu dans le monde Java pour avoir co-écrit le livre \"Spring par la pratique\", avoir dirigé la filiale française de SpringSource, et plus récemment pour avoir lancé JHipster, le n°1 des générateurs d'applications Spring Boot + AngularJS.",
         "twitter": "juliendubois"
     },
     {
@@ -155,21 +155,21 @@
     	"resume":"Après des années en tant que freelance, Mathilde Lemée a rejoint Software AG (Terracota) en 2012 en tant qu’ingénieur Java R&D sur les sujets ehcache et bigmemory.\nElle a confondé les Duchess France pour connecter et rendre visible les femmes travaillant dans le monde Java, en 2012 elle a organisé de nombreux évènements (Hadoop, Mahout, Mockito, Cache …).\nElle blog sur [java-freelance.fr](http://www.java-freelance.fr) sur les performances, les meilleures pratiques et les tests. Elle contribue régulièrement à des projets open source et a créé FluentLenium, un surcouche de Selenium pour fournir une api fluide comme le font des projets comme Play!2. Elle intervient aussi régulièrement dans des conférences Java en Europe (Paris JUG, Devoxx France, Mix-it, Softshake) et édite un jeux mobile éducatif ([Aetys.fr](http://www.aetys.fr/)) pour IPad/iPhone et Android.",
     	"twitter":"MathildeLemee"
     },
-    {   
+    {
     	"id": 23,
     	"name":"David Pilato",
     	"avatar":"http://www.gravatar.com/avatar/20049a614b7f6838dc87b4bc39c42079.png",
     	"resume":"David Pilato est 'technical advocate' chez Elasticsearch.com, après avoir passé les deux années précédentes à promouvoir le projet open-source Elasticsearch, dont il anime la communauté française. Fidèle des JUG, il a donné une conférence sur le sujet lors de la première édition de Devoxx France en avril 2012 et sillonne désormais les routes de France pour partager sa passion.\nIl a implémenté un certain nombre de plugins pour l'écosystème Elasticsearch (Rivers RSS, FileSystem et DropBox, Factories Spring).\n\nIl a également implémenté Elasticsearch pour plusieurs projets, dont une importante administration française. Il est le co-auteur du projet open-source [Scrutmydocs.org](http://www.scrutmydocs.org/) basé sur Elasticsearch qui permet de disposer d'un moteur de recherche 'à la google' des documents de vos disques durs.",
     	"twitter":"dadoonet"
     },
-    {   
+    {
     	"id": 24,
     	"name":"David Gageot",
     	"avatar":"http://retour1024.fr/assets/img/hw_profile15_logo.jpg",
     	"resume":"Bonjour, je suis David Gageot, développeur indépendant. Ma passion ? L'écriture de logiciels pointus mais simples. J'ai pour leitmotiv d'être un facilitateur qui, par ma créativité et mon expertise, aide les équipes à être plus innovantes et plus efficaces.\nJe participe à des projets Java depuis 1998, comme responsable R&D chez l'éditeur Adesoft puis directeur technique chez Valtech Technology, CTO chez Algodeal, un fond d'investissement quantitatif puis développeur chez SonarSource, la société derrière Sonar.\nVous suivez peut-être mon blog [JavaBien!](http://blog.javabien.net/) depuis 2004..",
     	"twitter":"dgageot"
     },
-    {   
+    {
     	"id": 25,
     	"name":"Jean-Laurent de Morlhon",
     	"avatar":"http://morlhon.net/img/jl_400x492.png",
