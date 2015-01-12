@@ -189,5 +189,20 @@
         "avatar":"images/speakers/Damien_Cavailles.jpg",
         "resume":"Développeur passionné par l'entreprenariat, Damien s'occupe du mobile chez TripnDrive. Il est aussi organisateur et facilitateur de Startup Weekend, en particulier sur la verticale Makers !",
         "twitter":"TheDamfr"
+    },
+    {
+    	"id":28,
+    	"name":"Duy Hai Doan",
+    	"avatar":"http://www.gravatar.com/avatar/ffa96040bb4211cad1c66f385d8cb77b?size=320",
+    	"resume":"DuyHai Doan est évangéliste technique pour Datastax, l’entreprise commerciale derrière Apache Cassandra.\nIl partage son temps entre donner des présentations/meetups/talks sur Cassandra, développer sur des projets open-source pour la communauté et aider les projets utilisant Cassandra.\nAvant Datastax, Duy Hai a été développeur freelance Java/Cassandra",
+    	"twitter":"doanduyhai"
+    },
+    {
+    	"id":29,
+    	"name":"Amira LAKHAL",
+    	"avatar":"http://www.duchess-france.org/wp-content/uploads/2012/11/049d377466738d7fff90a23581e0f85d.jpeg",
+    	"resume":"Amira LAKHAL est Agile Java Scala développeur chez Valtech.\nElle est passionnée par l’agilité et les langages fonctionnels.\nElle est membre des Duchess France.",
+    	"twitter":"Miralak"
     }
 ]
+
