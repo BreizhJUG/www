@@ -203,6 +203,13 @@
     	"avatar":"http://www.duchess-france.org/wp-content/uploads/2012/11/049d377466738d7fff90a23581e0f85d.jpeg",
     	"resume":"Amira LAKHAL est Agile Java Scala développeur chez Valtech.\nElle est passionnée par l’agilité et les langages fonctionnels.\nElle est membre des Duchess France.",
     	"twitter":"Miralak"
+    },
+    {
+    	"id":30,
+    	"name":"Quentin ADAM",
+    	"avatar":"https://pbs.twimg.com/profile_images/2019491025/IMG_0759s_400x400.jpg",
+    	"resume":"Passionate developer, work with java, scala, nodejs, html5 and lots of linux stuff. Geek and entrepreneur, CEO of Clever Cloud, PaaS provider to help developers to be more efficient and more happy. I can speak about technology, organization or process for your dev team.",
+    	"twitter":"waxzce"
     }
 ]
 
