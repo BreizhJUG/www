@@ -1,5 +1,25 @@
 [
     {
+        "name": "HTTP 2.0",
+        "date": "2015-04-02T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "15495594741",
+        "image": "images/events/http2.jpeg",
+        "resume": "Why HTTP/2 will enhance the web",
+        "speakersId": [30],
+        "links": []
+    },
+    {
+        "name": "WebComponents",
+        "date": "2015-03-05T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "15495659936",
+        "image": "images/events/webcomponents.jpeg",
+        "resume": "Des concepts comme l’encapsulation, la réutilisation de composants, le data-binding ou le templating sont maintenant monnaie courante dans la plupart de frameworks web… mais chacun le fait à sa façon ! Et c’est là que les Web Components débarquent. Un nouveau standard en cours d’élaboration au W3C, qui va permettre d’avoir une approche par composants au développement web.\nDans cette présentation Horacio parlera de ce standard en construction et des implémentations actuelles, du projet Polymer de Google, des X-Tags de Mozilla et de comment, avec AngularJS, on peut déjà avoir un bon aperçu de ce que nous attend.",
+        "speakersId": [31],
+        "links": []
+    },
+    {
         "name": "Cassandra",
         "date": "2015-02-05T18:30:00",
         "place": "ISTIC, Rennes",
