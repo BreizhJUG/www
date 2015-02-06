@@ -39,6 +39,11 @@
             "type": "picture",
             "url": "http://fr.slideshare.net/doanduyhai/killrchat-data-modeling",
             "name": "KillrChat"
+        },{
+            "type": "barcode",
+            "url": "https://github.com/doanduyhai/killrchat",
+            "name": "le code de KillrChat"
+            
         }]
     },
     {
