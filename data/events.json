@@ -7,19 +7,7 @@
         "image": "images/events/http2.jpeg",
         "resume": "HTTP is the protocol who rules the WEB. 20 years old, the version 2, major upgrade is now cooked and nearly ready to be used by real peoples. So, how new the new HTTP version is? What is the new features added to the protocol? Is it great to used? Does it will be used or be the next ipv6 like giant internet migration? Overview of HTTP2 and why it's great.",
         "speakersId": [30],
-        "links": [{
-            "type": "film",
-            "url": "http://youtu.be/Z23w98tnXXc",
-            "name": "Vidéo de la session"
-        },{
-            "type": "picture",
-            "url": "http://www.slideshare.net/doanduyhai/cassandra-introduction-breizhjugc",
-            "name": "Slides"
-        },{
-            "type": "picture",
-            "url": "http://www.slideshare.net/doanduyhai/killrchat-data-modeling",
-            "name": "KillrChat"
-        }]
+        "links": []
     },
     {
         "name": "WebComponents",
@@ -39,7 +27,19 @@
         "image": "images/events/cassandra.jpeg",
         "resume": "Le 'Cassandra Tour' est dédié à la présentation de Cassandra, la base NoSQL orientée colonnes derrière les grandes entreprises comme Netflix, Sony Entertainment, Apple. Les présentations seront assurées par DuyHai DOAN, évangéliste technique Cassandra chez Datastax.\nLa présentation se découpe en deux parties.\n\n* la première partie est une présentation générale de Cassandra, de son modèle de données et les bonnes pratiques de modélisation: comment passer du monde SQL au monde NoSQL.\n* La deuxième partie présentera les outils pour aider le développeur Java à travailler efficacement avec Cassandra.",
         "speakersId": [28,29],
-        "links": []
+        "links": [{
+            "type": "film",
+            "url": "http://youtu.be/Z23w98tnXXc",
+            "name": "Vidéo de la session"
+        },{
+            "type": "picture",
+            "url": "http://www.slideshare.net/doanduyhai/cassandra-introduction-breizhjugc",
+            "name": "Slides"
+        },{
+            "type": "picture",
+            "url": "http://www.slideshare.net/doanduyhai/killrchat-data-modeling",
+            "name": "KillrChat"
+        }]
     },
     {
         "name": "JHipster",
