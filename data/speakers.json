@@ -217,6 +217,13 @@
     	"avatar":"https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAAAAAA/6leVZjtmcrg/s128-c-k/photo.jpg",
     	"resume":"Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek. Works at @CityzenData. Founder & leader of @FinistJUG & @FinistGDG",
     	"twitter":"lostinbrittany"
+    },
+    {
+    	"id":32,
+    	"name":"Clément Delafargue",
+    	"avatar":"http://penazen-consulting.com/images/clement_delafargue.jpg",
+    	"resume":"Clément Delafargue est consultant indépendant. Diplômé de l’École Centrale de Nantes, il travaille dans le web depuis 2002. Il intervient à la fois sur les problématiques frontend et backend, sur de nombreuses technologies (Javascript (client et server-side), Ruby, Java, Scala) avec une attention particulière à la programmation fonctionnelle. ",
+    	"twitter":"clementd"
     }
 ]
 
