@@ -17,7 +17,19 @@
         "image": "images/events/webcomponents.jpeg",
         "resume": "Des concepts comme l’encapsulation, la réutilisation de composants, le data-binding ou le templating sont maintenant monnaie courante dans la plupart de frameworks web… mais chacun le fait à sa façon ! Et c’est là que les Web Components débarquent. Un nouveau standard en cours d’élaboration au W3C, qui va permettre d’avoir une approche par composants au développement web.\nDans cette présentation Horacio parlera de ce standard en construction et des implémentations actuelles, du projet Polymer de Google, des X-Tags de Mozilla et de comment, avec AngularJS, on peut déjà avoir un bon aperçu de ce que nous attend.",
         "speakersId": [31],
-        "links": []
+        "links": [{
+            "type": "film",
+            "url": "http://youtu.be/7ObA5u6SxiA",
+            "name": "Partie 1 : WebComponents"
+        }, {
+            "type": "film",
+            "url": "http://youtu.be/cN7ugOEteSo",
+            "name": "Partie 2 : Polymer"
+        }, {
+            "type": "picture",
+            "url": "https://www.dropbox.com/s/cj0und04kpfp9mz/Web%20Components%20avec%20Polymer.pdf?dl=0",
+            "name": "slides"
+        }]
     },
     {
         "name": "Cassandra",
