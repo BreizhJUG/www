@@ -1,5 +1,15 @@
 [
     {
+        "name": "Design Patterns Reloaded",
+        "date": "2015-04-28T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "16544195133",
+        "image": "http://static.guim.co.uk/sys-images/Film/Pix/pictures/2008/06/06/matrixreloaded460.jpg",
+        "resume": "Design Pattern par le Gang Of Four à plus de 20 ans, en année chat ou en informatique, c'est pas très loin d'une éternité. Je profilte de la sortie de Java 8, pour revisiter les principaux design-pattern et leurs faire un petit toilettage à la sauce Lambda.",
+        "speakersId": [1],
+        "links": []
+    },
+    {
         "name": "HTTP/2 : why upgrading the web ?",
         "date": "2015-04-02T18:30:00",
         "place": "ISTIC, Rennes",
