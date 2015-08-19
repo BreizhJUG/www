@@ -1,5 +1,14 @@
 [
     {
+        "name": "Continuous Delivery avec Jenkins et Docker",
+        "date": "2015-09-10T18:00:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "18224179010",
+        "image": "images/events/docker-jenkins.png",
+        "resume": "le 'Continuous Delivery' est un sacré buzz word, et 'Docker' encore plus, mais les blog que j'ai pu lire sur sujet ne proposent qu'un pipelines naif et minimaliste : compile, test, push docker image, et voilà.\nEn 2015 Jenkins adresse clairement plus que de l'Integration Continue, et avec le support récent du workflow plugin nous pouvons orchestrer avec un DSL des pipelines de grande complexité. L'integration avec Docker lui donne encore plus de puissance.\nPendant cette session, je vais construire un pipeline de CD from scratch pour montrer l'utilisation du workflow et sa flexibilité, ainsi que le support de Docker.",
+        "speakersId": [8,15],
+        "links": []
+    },{
         "name": "Design Patterns Reloaded",
         "date": "2015-04-28T18:00:00",
         "place": "ISTIC, Rennes",
