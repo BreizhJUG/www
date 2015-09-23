@@ -5,7 +5,7 @@
         "place": "ISTIC, Rennes",
         "eventbrite": "18758746917",
         "image": "images/events/gwt.png",
-        "resume": "Un temps annoncé en perte de vitessse, GWT amorce en 2015 un retour en force conforté par une nouvelle organisation et de profondes modifications de l'environnement de développement. Les outils les plus complexes de Google (Google SpreadSheet, Google Inbox, ....) ont été portés en GWT. Le support de Java 8, des lambdas expression du Super Dev Mode et des Web Component en font la technologie de choix pour le développeur Java. Cette session résume les nouveautés de la dernière version et dessine la roadmap des années à venir. Le tout illustré d'exemples de code et de démonstrations.",
+        "resume": "Un temps annoncé en perte de vitesse, GWT amorce en 2015 un retour en force conforté par une nouvelle organisation et de profondes modifications de l'environnement de développement. Les outils les plus complexes de Google (Google SpreadSheet, Google Inbox, ....) ont été portés en GWT. Le support de Java 8, des lambdas expression du Super Dev Mode et des Web Component en font la technologie de choix pour le développeur Java. Cette session résume les nouveautés de la dernière version et dessine la roadmap des années à venir. Le tout illustré d'exemples de code et de démonstrations.",
         "speakersId": [33],
         "links": []
     },{
