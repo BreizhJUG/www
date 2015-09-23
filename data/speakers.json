@@ -224,6 +224,13 @@
     	"avatar":"http://penazen-consulting.com/images/clement_delafargue.jpg",
     	"resume":"Clément Delafargue est consultant indépendant. Diplômé de l’École Centrale de Nantes, il travaille dans le web depuis 2002. Il intervient à la fois sur les problématiques frontend et backend, sur de nombreuses technologies (Javascript (client et server-side), Ruby, Java, Scala) avec une attention particulière à la programmation fonctionnelle. ",
     	"twitter":"clementd"
+    },
+    {
+    	"id":33,
+    	"name":"Sami Jaber",
+    	"avatar":"https://lh3.googleusercontent.com/-RcWq4LbM8NA/AAAAAAAAAAI/AAAAAAAAC7Y/LUh91Pp8_PQ/photo.jpg",
+    	"resume":"Fondateur de DNG Consulting, formateur et consultant expert JEE et .NET. Auteur de Programmation GWT 2.",
+    	"twitter":"samijaber"
     }
 ]
 
