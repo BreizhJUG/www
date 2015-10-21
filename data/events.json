@@ -1,5 +1,14 @@
 [
     {
+        "name": "Java 8 eXperiments",
+        "date": "2015-10-29T19:00:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "",
+        "image": "http://www.eclipse.org/xtend/images/java8_logo.png",
+        "resume": "Dans cette présentation, je vous propose de découvrir ensemble ce qu’il est vraiment possible d’exprimer avec Java 8 et que peu ont testé. Est-il possible de limiter le nombre de sous-classes pour une classe ? Si on peut désormais mettre un comportement dans une interface, peut-on y mettre un état ? Live coding à l’appui, voici certaines des questions auxquelles nous allons essayer de répondre ou qu’on ne devrait jamais aborder.",
+        "speakersId": [34],
+        "links": []
+    },    {
         "name": "GWT n'est pas mort !",
         "date": "2015-10-08T18:00:00",
         "place": "ISTIC, Rennes",
