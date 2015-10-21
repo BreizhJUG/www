@@ -231,6 +231,14 @@
     	"avatar":"https://lh3.googleusercontent.com/-RcWq4LbM8NA/AAAAAAAAAAI/AAAAAAAAC7Y/LUh91Pp8_PQ/photo.jpg",
     	"resume":"Fondateur de DNG Consulting, formateur et consultant expert JEE et .NET. Auteur de Programmation GWT 2.",
     	"twitter":"samijaber"
+    },
+    {
+    	"id":34,
+    	"name":"François Sarradin",
+    	"avatar":"https://pbs.twimg.com/profile_images/594904959071694848/jF340Hcf_400x400.jpg",
+	"resume":"Manager technique capitalisation chez Ippon Technologies, je suis passionné par tout ce qui touche de près ou de loin au développement (craftsmanship, agilité, big data, devops) et en particulier à la programmation fonctionnelle. Je m’occupe aussi du site http://www.brownbaglunch.fr/.",
+	"twitter":"fsarradin"
+	
     }
 ]
 
