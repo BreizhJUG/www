@@ -238,7 +238,14 @@
     	"avatar":"https://pbs.twimg.com/profile_images/594904959071694848/jF340Hcf_400x400.jpg",
 	"resume":"Manager technique capitalisation chez Ippon Technologies, je suis passionné par tout ce qui touche de près ou de loin au développement (craftsmanship, agilité, big data, devops) et en particulier à la programmation fonctionnelle. Je m’occupe aussi du site http://www.brownbaglunch.fr/.",
 	"twitter":"fsarradin"
-	
+
+    },
+    {
+        "id":35,
+        "name":"Grégory Le Bonniec",
+        "avatar":"images/speakers/Gregory_Le_Bonniec.jpg",
+        "resume":"Grégory Le Bonniec est consultant Java et co-créateur de la société [Ellixo](http://www.ellixo.com] basée à Rennes. Son parcours professionnel l'a amené à travailler pour de nombreux secteurs métiers avec l'écosystème Java comme dénominateur commun ; depuis plusieurs annnées, avec notamment sa découverte des architectures SOA, il s'est concentré sur les briques backend. Cela l'a amené tout naturellement à s'intéresser aujourd'hui aux architectures Microservices et Spring Boot en particulier.",
+        "twitter":"greg_le_bonniec"
     }
 ]
 

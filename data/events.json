@@ -1,5 +1,14 @@
 [
     {
+        "name": "Spring Boot in Love",
+        "date": "2015-12-10T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "19634571532",
+        "image": "images/events/springboot.png",
+        "resume": "Depuis plusieurs années, l'écosystème Spring était devenu lourd : trop de librairies, trop Java EE…​ Spring Boot lui a rendu sa simplicité d’origine que ce soit pour injecter des dépendances, développer une API, intégrer des middlewares ou configurer son application pour le cloud. Venez faire le tour du projet qui a permis que Spring soit de nouveau aujourd’hui une évidence.",
+        "speakersId": [35],
+        "links": []
+    },{
         "name": "Java 8 eXperiments",
         "date": "2015-10-29T19:00:00",
         "place": "ISTIC, Rennes",
@@ -8,7 +17,7 @@
         "resume": "Dans cette présentation, je vous propose de découvrir ensemble ce qu’il est vraiment possible d’exprimer avec Java 8 et que peu ont testé. Est-il possible de limiter le nombre de sous-classes pour une classe ? Si on peut désormais mettre un comportement dans une interface, peut-on y mettre un état ? Live coding à l’appui, voici certaines des questions auxquelles nous allons essayer de répondre ou qu’on ne devrait jamais aborder.",
         "speakersId": [34],
         "links": []
-    },    {
+    },{
         "name": "GWT n'est pas mort !",
         "date": "2015-10-08T18:00:00",
         "place": "ISTIC, Rennes",
