@@ -244,7 +244,7 @@
         "id":35,
         "name":"Grégory Le Bonniec",
         "avatar":"images/speakers/Gregory_Le_Bonniec.jpg",
-        "resume":"Grégory Le Bonniec est consultant Java et co-créateur de la société [Ellixo](http://www.ellixo.com] basée à Rennes. Son parcours professionnel l'a amené à travailler pour de nombreux secteurs métiers avec l'écosystème Java comme dénominateur commun ; depuis plusieurs annnées, avec notamment sa découverte des architectures SOA, il s'est concentré sur les briques backend. Cela l'a amené tout naturellement à s'intéresser aujourd'hui aux architectures Microservices et Spring Boot en particulier.",
+        "resume":"Grégory Le Bonniec est consultant Java et co-créateur de la société [Ellixo](http://www.ellixo.com) basée à Rennes. Son parcours professionnel l'a amené à travailler pour de nombreux secteurs métiers avec l'écosystème Java comme dénominateur commun ; depuis plusieurs annnées, avec notamment sa découverte des architectures SOA, il s'est concentré sur les briques backend. Cela l'a amené tout naturellement à s'intéresser aujourd'hui aux architectures Microservices et Spring Boot en particulier.",
         "twitter":"greg_le_bonniec"
     }
 ]
