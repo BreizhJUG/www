@@ -7,7 +7,7 @@
     },
     {
         "id": 2,
-        "name": "Thierry Lau",
+        "name": "Thierry Lau",	
         "avatar": "images/speakers/Thierry_Lau.jpg",
         "resume": "Développeur Front End chez [sfΞir], je suis passionné par HTML5, CSS3, JavaScript et plus particulièrement fan d'AngularJS car je suis persuadé qu'il aide à répondre à la problématique suivante : comment développer des applications Web modernes, maintenables de manière la plus simple, rapide et efficace possible ? Pour cela, je suis également intéressé aux outils qui viennent armer les développeurs Web modernes tels que Brunch, Grunt, Yeoman, Bower, Developer tools de Chrome etc ... Je suis également créateur et co-modérateur de la communauté française HTML5 * CSS3 [FR] sur Google + et j'anime également la page Google+ HTML5 * CSS3 - ʕ๏̮๏ʔ, deux endroits où vous pouvez venir partager avec moi la passion des technologies du Web.",
         "twitter": "laut3rry",
@@ -246,6 +246,12 @@
         "avatar":"images/speakers/Gregory_Le_Bonniec.jpg",
         "resume":"Grégory Le Bonniec est consultant Java et co-créateur de la société [Ellixo](http://www.ellixo.com) basée à Rennes. Son parcours professionnel l'a amené à travailler pour de nombreux secteurs métiers avec l'écosystème Java comme dénominateur commun ; depuis plusieurs annnées, avec notamment sa découverte des architectures SOA, il s'est concentré sur les briques backend. Cela l'a amené tout naturellement à s'intéresser aujourd'hui aux architectures Microservices et Spring Boot en particulier.",
         "twitter":"greg_le_bonniec"
-    }
-]
+    },
+    {
+        "id":36,
+        "name":"Youen Chene",
+        "avatar":"images/speakers/Youen_Chene_200x200.jpg",
+        "resume":"Passionné d’informatique et de programmation depuis le CE2 (génération MO5/TO7), Youen est un des activistes au sein du Normandy JUG (@normandyjug), Devoxx4Kids et Codeurs en Seine (@codeursenseine).<br/>Après 7 ans de prestation et de consulting en région parisienne, il est passé développeur-manager chez Masternaut puis maintenant CTO chez [Creative Data](http://www.creativedata.fr/) (où est développée [Saagie, la plateforme data prête à l’emploi](http://www.saagie.com/)).<br/>Blog : http://www.youenchene.fr",
+        "twitter":"youen_chene"
+    }]
 
