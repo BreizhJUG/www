@@ -3,7 +3,7 @@
         "name": "Big Data pour les Javaistes et le reste d’entre nous!",
         "date": "2016-01-12T18:30:00",
         "place": "ISTIC, Rennes",
-        "eventbrite": "",
+        "eventbrite": "20140455645",
         "image": "images/events/big-data.jpg",
         "resume": "Le Big Data, c’est pour nombre d’entre vous c’est une pile de buzz words sur des slides. Pourtant le big data c’est en place chez les startups depuis longtemps et cela fonctionnait même avant que Spark envahisse les sujets de conférences.<br/>Pendant une heure, on fera un tour d’horizon des différentes technologies (pas forcément à la mode) qui vous permettront de profiter des avantages des outils du Big Data.<br/>Pour chaque technologie, on verra les points principaux et surtout un exemple avec du code. Au programme : hdfs, impala, spark, scoop, R etc... ",
         "speakersId": [36],
