@@ -1,5 +1,14 @@
 [
     {
+        "name": "Go pour les développeurs Java",
+        "date": "2016-02-04T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "",
+        "image": "images/events/golang.jpg",
+        "resume": "Go, vous en avez sans doute entendu parler. Mais avez-vous consacrer un peu de temps de votre veille technologique dessus?<br/>Si la réponse est non alors cette conférence vous interessera. Langage, Concurrence, Composition, Réflection, Tools, Vendoring, nous ferons un tour d'horizon de tout ce qui compose ce langage en faisant des parrallèles au langage Java. L'objectif de cette conférence sera de vous montrer la philisophie qui se retrouve dans le langage et un peu plus encore.",
+        "speakersId": [37],
+        "links": []
+    },{
         "name": "Big Data pour les Javaistes et le reste d’entre nous!",
         "date": "2016-01-12T18:30:00",
         "place": "ISTIC, Rennes",
