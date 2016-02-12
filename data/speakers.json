@@ -260,5 +260,12 @@
         "avatar":"images/speakers/Marc_Audefroy.png",
         "resume":"Marc est un développeur passionné depuis son tout jeune âge. Il a travaillé pendant 2 ans en tant que développeur iOS à Niji et est aujourd'hui DevOps à OVH.  Sa passion ne se limite pas aux langages, elle s'exprime également aux travers des communautés techniques Rennaises. Vous le trouverez sans doute aux CocoaHeads, MUGOuest, Devcamp (Co-fondateur), DeVinciCode (Co-fondateur), RennesJS ou plus récemment Golang Rennes (Fondateur).",
         "twitter":"MarcAudefroy"
+    },
+    {
+        "id":38,
+        "name":"Clément Escoffier",
+        "avatar":"images/speakers/ClementEscoffier.jpg",
+        "resume":"Qui suis-je ? Bonne question. J'ai été chercheur à l’université de Grenoble, architecte chez Axway, directeur de l'innovation dans une boite allemande.... Actuellement je suis core developer sur Vert.x, et je travaille pour Red Hat. J’ai touché à beaucoup de domaines: OSGi, mobile, continuous delivery, devops, HTML5… Mon but ? Fournir des outils, des méthodes pour rendre le développement plus efficace mais également plus agréable et plus fun. Je suis un contributeur actif sur de nombreux projets Open Source comme Apache Felix, iPOJO, Wisdom Framework et bien évidement Vert.x.",
+        "twitter":"clementplop"
     }]
 
