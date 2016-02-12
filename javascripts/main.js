@@ -464,9 +464,9 @@ breizhjugApp.directive('calendar', function (DateParser, $filter) {
                     var eventDateUTCEnd = DateParser.plusHours(eventDateUTCStart, 2);
 
                     var link = "http://www.google.com/calendar/event?action=TEMPLATE"
-                        + "&text=" + scope.event.name
+                        + "&text=" + encodeURIComponent(scope.event.name)
                         + "&dates=" + $filter('date')(eventDateUTCStart, gcalFormat) + "/" + $filter('date')(eventDateUTCEnd, gcalFormat)
-                        + "&details=" + scope.event.resume
+                        + "&details=" + encodeURIComponent(scope.event.resume)
                         + "&location=" + scope.event.place
                         + "&trp=false&sprop=BreizhJUG&sprop=name:http%3A%2F%2Fwww.breizhjug.org";
 
