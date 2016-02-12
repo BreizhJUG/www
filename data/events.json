@@ -1,5 +1,14 @@
 [
     {
+        "name": "Vert.x - Sprechen vous reactive fanta'stico ?",
+        "date": "2016-03-03T18:30:00",
+        "place": "ISTIC, Rennes",
+        "eventbrite": "",
+        "image": "images/events/vertx.png",
+        "resume": "Vous devez bâtir une application qui passe à l’échelle, à base de micro-services ou plus classique, tolérante aux pannes, mais vous ne savez pas par ou commencer ? La seule chose dont vous avez besoin est un fichier jar et d’une machine virtuelle java.<br/>Vert.x 3 est une librairie pour créer des systèmes réactifs s’exécutant sur une machine virtuelle Java. Vert.x 3 offre une nouvelle manière d’implémenter des applications concurrentes,scalables et tolérantes aux fautes. Avec vert.x 3 vous pouvez développer des applications « micro-services » distribuées en Java, mais aussi en JavaScript, Groovy, Ruby et Ceylon.  Vert.x 3 permet également d’intégrer des applications ""non-vert.x"" tel que node.js, .NET ou C. <br/>Cette présentation introduit les concepts clés de Vert.x and comment vous pouvez utiliser Vert.x dans votre prochain projet. Cette session explique les systèmes réactifs, la programmation réactive (attention c’est pas la meme chose), comment le modèle de programmation asynchrone proposé par Vert.x vous permet de construire facilement des applications concurrentes et pourquoi c’est fait ainsi. Nous verrons également le passage a l’échelle, la tolérance aux pannes, les perfs, le monitoring et les composants clés de l’éco-système Vert.x…",
+        "speakersId": [37],
+        "links": []
+    },    {
         "name": "Go pour les développeurs Java",
         "date": "2016-02-02T18:30:00",
         "place": "ISTIC, Rennes",
