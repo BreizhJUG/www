@@ -2,7 +2,7 @@
     {
         "name": "Hackathon: viens coder le CFP du futur",
         "date": "2016-05-03T18:30:00",
-        "place": "TBD",
+        "place": "Le Loft, 3 Rue de Robien Rennes http://www.coworkinrennes.com/",
         "eventbrite": "24342262362",
         "image": "http://www.leecountybusiness.com/wp-content/uploads/2015/04/hackathon.png",
         "resume": "Après le succès du BreizhCamp, l'équipe vous propose de participer à un effort collectif pour faire de notre outils de call-for-papers un service en ligne multi-conférence, communautaire et gratuit. \n\nLe code est dispo sur https://github.com/breizhcamp/callForPaper pour vous faire une idée du bouzin. Pas mal de choses possible à faire :\n  * reprise du code qui n'est pas forcément nickel, un regard externe est le bienvenu\n  * conversion des accès base pour utiliser un 'tenantId'\n  * reprise de l'UI qui est ... euh ... qui a le mérite d'exister\ncréation d'une UI transverse multi-conférences\n  * infra - hébergement, certificats let's encrypt, monitoring, etc\n  * distribuer les bières\n\nTout le monde est le bienvenu !",
