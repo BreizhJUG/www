@@ -267,5 +267,19 @@
         "avatar":"images/speakers/ClementEscoffier.jpg",
         "resume":"Qui suis-je ? Bonne question. J'ai été chercheur à l’université de Grenoble, architecte chez Axway, directeur de l'innovation dans une boite allemande.... Actuellement je suis core developer sur Vert.x, et je travaille pour Red Hat. J’ai touché à beaucoup de domaines: OSGi, mobile, continuous delivery, devops, HTML5… Mon but ? Fournir des outils, des méthodes pour rendre le développement plus efficace mais également plus agréable et plus fun. Je suis un contributeur actif sur de nombreux projets Open Source comme Apache Felix, iPOJO, Wisdom Framework et bien évidement Vert.x.",
         "twitter":"clementplop"
+    },
+    {
+        "id":39,
+        "name":"Arnaud Bailly",
+        "avatar":"http://www.gravatar.com/avatar/48469162d45686615c6bf0eb4304bf26",
+        "resume":"Après diverses péripéties, dont un passage en banque, la création d'une société d'édition de jeux de rôles, une thèse en informatique, diverses missions longues pour des SSII ou des éditeurs de logiciels, Arnaud travaille aujourd'hui en tant qu'indépendant au sein de la société Murex comme développeur/consultant/coach technique/homme à tout faire.\nIl se passionne pour tout ce qui a trait de près ou de loin au code, avec une dilection particulière pour l'univers Java côté serveur.",
+        "twitter":"abailly"
+    },
+    {
+        "id":40,
+        "name":"Cédric Pineau",
+        "avatar":"",
+        "resume":"Directeur de la technologie chez Taelys.\nEnthousiasmé par la programmation fonctionnelle, entravé par mon quotidien de javaiste, passionné par les réflexions autour des architectures logicielles, interpellé par la qualité de ce que l'on produit, intéressé par les questions de performance, amusé par les modes qui rythment notre métier..",
+        "twitter":""
     }]
 
