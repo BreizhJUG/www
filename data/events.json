@@ -1,4 +1,13 @@
 [
+	{
+        "name": "Lancer un service en 72h, vous acceptez le challenge ?",
+        "date": "2016-09-08T18:30:00",
+        "place": "ISTIC, Rennes",
+		"eventbrite": "27327180332",
+        "image": "images/events/findgas.jpg",
+        "resume": "Mai 2016, les grèves en France bloquent les dépôts de carburants et il est difficile de trouver des stations approvisionnées. Afin d'aider les automobilistes, j'ai essayé de proposer une carte interactive permettant à chacun de mettre à jour l'état des stations qu'il croise sur sa route. <br>Dans cette présentation, je vous expliquerai ce que j'ai mis en place, du dev à la prod, en 72h pour lancer le service. J'y parlerai entre autre Elasticsearch, Spring Boot, Leaflet, Nginx, Let's Encrypt, Puppet mais aussi de ce qu'il faut éviter pour réussir le challenge.",
+        "speakersId": [41]
+    },
     {
         "name": "DDD, P&A, ES, CQRS, ETC",
         "date": "2016-06-02T18:30:00",
