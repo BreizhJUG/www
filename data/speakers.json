@@ -7,7 +7,7 @@
     },
     {
         "id": 2,
-        "name": "Thierry Lau",	
+        "name": "Thierry Lau",
         "avatar": "images/speakers/Thierry_Lau.jpg",
         "resume": "Développeur Front End chez [sfΞir], je suis passionné par HTML5, CSS3, JavaScript et plus particulièrement fan d'AngularJS car je suis persuadé qu'il aide à répondre à la problématique suivante : comment développer des applications Web modernes, maintenables de manière la plus simple, rapide et efficace possible ? Pour cela, je suis également intéressé aux outils qui viennent armer les développeurs Web modernes tels que Brunch, Grunt, Yeoman, Bower, Developer tools de Chrome etc ... Je suis également créateur et co-modérateur de la communauté française HTML5 * CSS3 [FR] sur Google + et j'anime également la page Google+ HTML5 * CSS3 - ʕ๏̮๏ʔ, deux endroits où vous pouvez venir partager avec moi la passion des technologies du Web.",
         "twitter": "laut3rry",
@@ -131,7 +131,7 @@
     	"id": 19,
     	"name":"Cédric Champeau",
     	"avatar":"images/speakers/Cedric_Champeau.jpg",
-    	"resume":"Cédric Champeau est committer sur Groovy Core. Il a rejoint SpringSource, une division de VMware, afin de participer au développement du langage après avoir passé plusieurs années à l'exploiter de manière industrielle chez un éditeur logiciel, Lingway, dans de multiples contextes (DSL, scripting, workflows, ...). Il est notamment derrière le type checker et la compilation statique ajoutés dans Groovy 2.",
+      "resume": "Cédric Champeau travaille chez Gradle Inc. sur l’outil de build open source éponyme. Il est en particulier intéressé par l’amélioration des performances et la modélisation. Cédric est aussi committer sur le langage Apache Groovy, qu’il a développé pendant plus de 3 ans au sein de Pivotal: créateur du compilateur statique, les traits, le support Android et autres fonctionnalités liées aux DSLs. Passionné par le métier, en particulier tout ce qui touche à l’outillage, Cédric aime avant tout développer des outils qui simplifient la vie des autres développeurs : langages, frameworks, build system, …",
     	"twitter":"CedricChampeau"
     },
     {
@@ -289,4 +289,3 @@
         "resume":"Développeur Java chez Softeam le jour, je m'intéresse pour le reste à tout ce qui touche de près ou de loin à un ordinateur : développement, ops, réseau, IoT, domotique...<br>Passionné depuis mon plus jeune âge, je fais naturellement parti de l'équipe d'organisation du BreizhCamp ce qui me laisse encore moins de temps pour mes nombreux projets perso :D",
         "twitter":"alexlg"
     }]
-

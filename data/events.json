@@ -1,5 +1,14 @@
 [
 	{
+        "name": "Des builds incroyablement rapides avec Gradle 3",
+        "date": "2016-10-04T18:30:00",
+        "place": "ISTIC, Rennes",
+				"eventbrite": "27675000672",
+        "image": "images/events/gradlephant.png",
+        "resume": "Personne n’aime les builds lentes. Combien de fois par jour compilez-vous votre application ? Combien de fois cliquez vous le bouton « run » dans votre IDE ? Combien de fois avez-vous maudit Maven, SBT, Ant, Grunt (et peut-être même Gradle ?) pour leur lenteur désespérante ? Peut-être même certains d’entre vous lancent systématiquement un `clean`, comme réflexe conditionné à un outil de build cassé ?<br/>Avec Gradle, on vise la _build happiness_ : il n’y a aucune raison de ne pas attendre les mêmes standards de qualité entre votre développement et votre process de build. Les builds sont importantes, et mêmes cruciales pour la productivité des développeurs. En ce sens, elles se doivent d’être optimisées pour la performance. Gradle offre différents moyens de le faire: builds incrémentales, builds continues, le daemon, le cache de tâches, les build scans, … Nous avons largement travaillé avec Gradle 3 à améliorer significativement les performances, suffisamment pour en faire un game changer.<br/>Venez apprendre comment rendre vos builds significativement plus rapides. Réclamez votre CPU pour coder, pas pour builder!",
+        "speakersId": [19]
+    },
+		{
         "name": "Lancer un service en 72h, vous acceptez le challenge ?",
         "date": "2016-09-08T18:30:00",
         "place": "ISTIC, Rennes",
@@ -111,14 +120,14 @@
             "type": "picture",
             "url": "http://www.slideshare.net/divarvel/http2-47748252",
             "name": "slides"
-            
+
         },{
             "type": "film",
             "url": "https://www.youtube.com/watch?v=ZcrWSeTeVUA",
             "name": "Vidéo"
         }]
-            
-            
+
+
     },
     {
         "name": "WebComponents",
@@ -166,7 +175,7 @@
             "type": "barcode",
             "url": "https://github.com/doanduyhai/killrchat",
             "name": "le code de KillrChat"
-            
+
         }]
     },
     {
@@ -199,7 +208,7 @@
             "url": "https://github.com/BreizhJUG/www/raw/gh-pages/slides/AndroidWear.pdf",
             "name": "Slides"
         }]
-        
+
     },{
         "name": "Big Data",
         "date": "2014-11-06T18:30:00",
@@ -249,7 +258,7 @@
         "place": "ISTIC, Rennes",
         "eventbrite": "11760850019",
         "image": "http://www.duchess-france.org/wp-content/uploads/2012/09/elasticsearch.png",
-        "resume": "Vous utilisez encore des requêtes SQL pour faire des recherches ? Vos utilisateurs vous reprochent de ne pas pouvoir chercher sur toutes les rubriques ? Votre temps de réponse moyen est supérieur à la demi-seconde avec seulement quelques millions de documents ? Il vous faut 3 jours pour produire des statistiques sur vos données ? Vous rêvez d’offrir une recherche 'à la google sur les données de votre SI ?\n\nNe cherchez plus ! Cette conférence est faite pour vous.\nDavid présentera au cours de la soirée pourquoi et comment il est passé de la recherche SQL à Elasticsearch en détaillant les apports de ce moteur par rapport à une solution pure Lucene :\n  - Pourquoi Elasticsearch ?\n  - L'indexation\n  - La recherche\n  - Les agrégations et le principe de navigation par facettes\n  - La scalabilité horizontale\n  - L'analyse et le mapping\n  - La percolation\n  - La communauté", 
+        "resume": "Vous utilisez encore des requêtes SQL pour faire des recherches ? Vos utilisateurs vous reprochent de ne pas pouvoir chercher sur toutes les rubriques ? Votre temps de réponse moyen est supérieur à la demi-seconde avec seulement quelques millions de documents ? Il vous faut 3 jours pour produire des statistiques sur vos données ? Vous rêvez d’offrir une recherche 'à la google sur les données de votre SI ?\n\nNe cherchez plus ! Cette conférence est faite pour vous.\nDavid présentera au cours de la soirée pourquoi et comment il est passé de la recherche SQL à Elasticsearch en détaillant les apports de ce moteur par rapport à une solution pure Lucene :\n  - Pourquoi Elasticsearch ?\n  - L'indexation\n  - La recherche\n  - Les agrégations et le principe de navigation par facettes\n  - La scalabilité horizontale\n  - L'analyse et le mapping\n  - La percolation\n  - La communauté",
         "speakersId": [23],
         "links": []
     },{
@@ -277,7 +286,7 @@
                 "type": "picture",
                 "url": "http://zenika.github.io/Presentations/20140227_BreizhJUG_RESTX",
                 "name": "slides"
-        }]                
+        }]
     },{
         "name": "La révolution Docker",
         "date": "2014-02-06T18:00:00+01:00",
@@ -286,7 +295,7 @@
         "image": "images/events/docker.png",
         "resume": "En très peu de temps, Docker a su s'imposer comme un standard __de facto__ dans le monde du Cloud (et pas seulement), ne laissant aucun fournisseur impassible. A mi-chemin entre IaaS et PaaS, Docker brouille les cartes et ouvre de nouvelles opportunités. \n Au cours de ce talk, nous vous présenterons ce qu'est techniquement Docker, son impact sur nos pratiques de déploiment et d'exploitation et comment vous pouvez le mettre à profit pour vos propres usages.",
         "speakersId": [8],
-        "links": []                
+        "links": []
     },{
         "name": "BigData",
         "date": "2014-01-09T18:30:00+01:00",
