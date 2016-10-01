@@ -288,4 +288,11 @@
         "avatar":"images/speakers/AlexThomazo.jpg",
         "resume":"Développeur Java chez Softeam le jour, je m'intéresse pour le reste à tout ce qui touche de près ou de loin à un ordinateur : développement, ops, réseau, IoT, domotique...<br>Passionné depuis mon plus jeune âge, je fais naturellement parti de l'équipe d'organisation du BreizhCamp ce qui me laisse encore moins de temps pour mes nombreux projets perso :D",
         "twitter":"alexlg"
+    },
+    {
+        "id":42,
+        "name":"Maxime Odye",
+        "avatar":"images/speakers/MaximeOdye.jpg",
+        "resume":"Maxime, consultant back-end chez Zenika Rennes. Passionné techniquement, j'aime découvrir et re-découvrir les différentes technologies gravitant autour de l'écosystème Java. Amateur des différentes communautés (Jug, BreizhCamp, AgileTour), j'estime que le partage technique, et non technique, dans le secteur de l'Informatique est quelque chose d'extraordinaire.<br> Découverte, progression et approfondissement, l'enrichissement personnel est grand et essentiel pour nous faire tous progresser. Je suis formateur ElasticSearch et ELK (ElasticSearch, Logstash, Kibana).",
+        "twitter":"MaxOdye"
     }]
