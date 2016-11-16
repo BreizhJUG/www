@@ -4,8 +4,8 @@
         "date": "2016-12-01T18:30:00",
         "place": "ISTIC, Rennes",
 		"eventbrite": "29458972580",
-        "image": "images/events/logo-kodo-kojo-300x169.png",
-        "resume": " Kodo Kojo (https://kodokojo.io), un concentré de bonnes pratiques, pour avoir une usine logicielle scalable et maintenable en trois clics.",
+        "image": "images/events/picto-kk-black.png",
+        "resume": " Kodo Kojo (https://kodokojo.io), un concentré de bonnes pratiques, pour avoir une usine logicielle scalable et maintenable en trois clics. Kodo Kojo se compose notamment d'un front et d'un backend. Nous vous proposons de vous présenter comment nous avons utiliser Docker dans notre workflow du test au déploiement , que ce soit pour le backend, mais aussi le frontend.",
         "speakersId": [43, 44]
     },
 	{
