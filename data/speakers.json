@@ -295,4 +295,18 @@
         "avatar":"images/speakers/MaximeOdye.jpg",
         "resume":"Maxime, consultant back-end chez Zenika Rennes. Passionné techniquement, j'aime découvrir et re-découvrir les différentes technologies gravitant autour de l'écosystème Java. Amateur des différentes communautés (Jug, BreizhCamp, AgileTour), j'estime que le partage technique, et non technique, dans le secteur de l'Informatique est quelque chose d'extraordinaire.<br> Découverte, progression et approfondissement, l'enrichissement personnel est grand et essentiel pour nous faire tous progresser. Je suis formateur ElasticSearch et ELK (ElasticSearch, Logstash, Kibana).",
         "twitter":"MaxOdye"
+    },
+    {
+        "id":43,
+        "name":"Jean-Pascal Thiery",
+        "avatar":"images/speakers/JeanPascalThiery.jpg",
+        "resume":"Java Craftsman et agiliste pratiquant. Jean-Pascal a arpenté les voies de l'intégration continue jusqu'à intégrer la mouvance DevOps. Il aime : Java, Docker, Mesos, et la qualité des livrables. Il n'aime pas : les phrases qui commence par \"Normalement, ...\".",
+        "twitter":"jpthiery "
+    },
+    {
+        "id":44,
+        "name":"Antoine Le Taxin",
+        "avatar":"images/speakers/AntoineLeTaxin.png",
+        "resume":"Développeur fullstack, afición du javascript de la première heure, Antoine suit avec passion les évolutions de l’écosystème : de Backbone à React en passant par Angular et Node, bon nombre de frameworks JS lui sont passés sous les doigts.",
+        "twitter":"ModuloM"
     }]

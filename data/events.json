@@ -1,5 +1,14 @@
 [
 	{
+        "name": "Kodo Kojo",
+        "date": "2016-12-01T18:30:00",
+        "place": "ISTIC, Rennes",
+		"eventbrite": "29458972580",
+        "image": "images/events/logo-kodo-kojo-300x169.png",
+        "resume": " Kodo Kojo (https://kodokojo.io), un concentré de bonnes pratiques, pour avoir une usine logicielle scalable et maintenable en trois clics.",
+        "speakersId": [43, 44]
+    },
+	{
         "name": "Démystifier ElasticSearch",
         "date": "2016-11-03T18:30:00",
         "place": "ISTIC, Rennes",
