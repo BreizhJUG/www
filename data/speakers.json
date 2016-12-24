@@ -309,4 +309,18 @@
         "avatar":"images/speakers/AntoineLeTaxin.png",
         "resume":"Développeur fullstack, afición du javascript de la première heure, Antoine suit avec passion les évolutions de l’écosystème : de Backbone à React en passant par Angular et Node, bon nombre de frameworks JS lui sont passés sous les doigts.",
         "twitter":"ModuloM"
+    },
+    {
+        "id":45,
+        "name":"Gilles Di Guglielmo",
+        "avatar":"images/speakers/GillesDiGuglielmo.jpg",
+        "resume":"Gilles travaille depuis 15 ans pour différents éditeurs de logiciels (ILOG, PrimaSolution, Courtanet) sur des sujets très variés: librairie graphique 2D, moteur de règles, plate-forme de services, code génération de modèle métier. Actuellement, il est architecte pour le site LesFurets.com, et aime prendre l’air de temps en temps à San Francisco ou à Anvers. Il a présenté différentes sessions à JavaOne, Devoxx, SoftShake, CodeGeneration et plusieurs Java User Group en France.",
+        "twitter":"gdigugli"
+    },
+    {
+        "id":46,
+        "name":"Ozan Gunalp",
+        "avatar":"images/speakers/OzanGunalp.jpg",
+        "resume":"Ingénieur docteur avec 5+ ans d'expérience dans les systèmes distribués, l'Internet des objets et les processus de développement logiciels. Chez LesFurets.com je m'intéresse à l'amélioration de la qualité et du pipeline de livraison de logiciel.",
+        "twitter":"ozangunalp"
     }]
