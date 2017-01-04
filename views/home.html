@@ -30,7 +30,12 @@
               <a href="https://maps.google.fr/maps?q={{ nextEvent.place }}&iwloc=A" target="_blank">{{ nextEvent.place }}</a>
             </li>
           </ul>
-          <a ng-show="nextEvent.eventbrite"href="https://www.eventbrite.fr/e/{{nextEvent.eventbrite}}" target="_blank"><img src="https://www.eventbrite.fr/custombutton?eid={{nextEvent.eventbrite}}" alt="Inscription" /></a>
+          <h4>Inscription :</h4>
+          <span ng-show="nextEvent.eventbrite">
+            <a href="https://www.eventbrite.fr/e/{{nextEvent.eventbrite}}" target="_blank"><img src="https://www.eventbrite.fr/custombutton?eid={{nextEvent.eventbrite}}" alt="Inscription" /></a>
+            <span ng-show="nextEvent.meetup">ou</span>
+          </span>
+          <a ng-show="nextEvent.meetup" href="https://www.meetup.com/fr-FR/BreizhJUG/events/{{nextEvent.meetup}}" target="_blank" class="btn btn-default" style="color:rgb(255, 255, 255);background-color:rgb(237, 28, 64);font-family:arial;font-size:16px;font-weight:600;padding-right:20px;padding-left:20px;line-height:1.5;">Meetup</a>
         </div>
       </div>
       <div class="row">
