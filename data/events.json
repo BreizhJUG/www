@@ -1,6 +1,6 @@
 [
     {
-        "name": "DomainModel().stream() & Programmation Reactive",
+        "name": "Programmation Reactive",
         "date": "2017-01-12T18:30:00",
         "place": "ISTIC, Rennes",
         "image": "images/events/lesfurets.jpg",
@@ -16,7 +16,7 @@
             }]
     },
     {
-        "name": "Programmation Reactive",
+        "name": "DomainModel().stream()",
         "date": "2017-01-12T18:30:00",
         "place": "ISTIC, Rennes",
         "image": "images/events/lesfurets.jpg",
