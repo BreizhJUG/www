@@ -323,4 +323,12 @@
         "avatar":"images/speakers/OzanGunalp.jpg",
         "resume":"Ingénieur docteur avec 5+ ans d'expérience dans les systèmes distribués, l'Internet des objets et les processus de développement logiciels. Chez LesFurets.com je m'intéresse à l'amélioration de la qualité et du pipeline de livraison de logiciel.",
         "twitter":"ozangunalp"
-    }]
+    },
+    {
+        "id":47,
+        "name":"Laurent Doguin",
+        "avatar":"images/speakers/laurentDoguin.png",
+        "resume":"Laurent is a Paris based Developer Advocate where he focuses on helping Java developers and the French community. He writes code in Java and blog posts in Markdown. Prior to joining Couchbase he was Nuxeo’s community liaison where he devoted his time and expertise to helping the entire Nuxeo Community become more active and efficient.",
+        "twitter":"ldoguin"
+    }
+]

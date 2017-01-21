@@ -1,4 +1,13 @@
 [
+	{
+        "name": "A practical RxJava example with Ratpack and Couchbase",
+        "date": "2017-02-02T18:30:00",
+        "place": "ISTIC, Rennes",
+		"eventbrite": "",
+        "image": "images/events/RatpackRxJavaCouchbase.png",
+        "resume": "RxJava seems to be this awesome thing that every cool kids start using. But when you read about it, half of the time it’s hard to make anything out of it. Sure the isolated examples look nice but it’s always hard to put this in perspective with a real app.<br/>In this talk I’ll go through an application made to store, index and search files. We’ll see the benefit brought by using RxJava , Ratpack and Couchbase together. Nothing too complicated or advanced, just something pragmatic.<br/>This talk is for you if you want to discover RxJava through a pragmatic example. It’s a beginner talk.",
+        "speakersId": [47]
+    },
     {
         "name": "Programmation Reactive",
         "date": "2017-01-12T18:30:00",
