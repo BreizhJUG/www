@@ -95,7 +95,13 @@
 		"eventbrite": "27327180332",
         "image": "images/events/findgas.jpg",
         "resume": "Mai 2016, les grèves en France bloquent les dépôts de carburants et il est difficile de trouver des stations approvisionnées. Afin d'aider les automobilistes, j'ai essayé de proposer une carte interactive permettant à chacun de mettre à jour l'état des stations qu'il croise sur sa route. <br>Dans cette présentation, je vous expliquerai ce que j'ai mis en place, du dev à la prod, en 72h pour lancer le service. J'y parlerai entre autre Elasticsearch, Spring Boot, Leaflet, Nginx, Let's Encrypt, Puppet mais aussi de ce qu'il faut éviter pour réussir le challenge.",
-        "speakersId": [41]
+        "speakersId": [41],
+	"links": [
+	    {
+                "type": "picture",
+                "url": "https://alex.thomazo.info/wp-content/uploads/2016/09/outrouverdelessence.pdf",
+                "name": "slides"
+            }]
     },
     {
         "name": "DDD, P&A, ES, CQRS, ETC",
