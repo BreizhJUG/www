@@ -1,0 +1,18 @@
+
+<section id="team" ng-controller="homeTeamController">
+  <h2><span class="glyphicon glyphicon-user"></span> l'équipe</h2>
+  <div class="grid">
+    <div class="row fivecolumns">
+      <div class="col-md-2 team" ng-repeat="member in team">
+        <div class="avatar">
+            <img ng-src="{{ member.avatar || 'https://avatars.io/twitter/' + member.twitter }}" width="180px" height="180px" />
+        </div>
+        <h4>{{ member.name }}</h4>
+        <div class="popup">
+          <p ng-bind-html="getSafeDescription(member.resume)"></p>
+          <div twitterlink name="{{ member.twitter }}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

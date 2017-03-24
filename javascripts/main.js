@@ -35,6 +35,10 @@ breizhjugApp.config(function ($routeProvider) {
                 }]
             }
         })
+        .when('/team', {
+            templateUrl: 'views/team.html',
+            controller: 'teamController'
+        })
         .otherwise({
             redirectTo: '/home'
         });
@@ -151,6 +155,10 @@ breizhjugApp.controller("eventsController", function ($scope, Events, $routePara
     $scope.search = $routeParams.q;
 
     $scope.reverseDate = true;
+});
+
+breizhjugApp.controller("teamController", function ($scope) {
+
 });
 
 /*########### Services ###########*/

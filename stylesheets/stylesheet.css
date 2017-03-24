@@ -201,6 +201,7 @@ header .nav li a {
 /*########### Home - Next event ###########*/
 #next {
 	padding-bottom: 10px;
+    background:  #ff6a00 url(../images/lensflare.png) no-repeat center top;
 }
 
 #next h3 {
