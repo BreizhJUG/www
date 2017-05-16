@@ -1,4 +1,12 @@
-[
+[	{
+        "name": "Découvrons et expérimentons RxJava2 ensemble",
+        "date": "2017-05-30T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "240038901",
+        "image": "images/events/rxjava2.png",
+        "resume": "Les concepts associés à la programmation réactive apportés par les Reactive Extensions ne sont pas toujours aisés à comprendre. L'idée de cette session est de présenter RxJava2 et son API à l'aide de plusieurs exemples codés en live.<br>L'objectif est aussi de rendre cette session interactive pour modifier le code et expérimenter l'API RxJava en fonction des questions/remarques de l'ensemble des participants.<br>Cet aspect collectif devrait nous permettre de nous enrichir mutuellement et de repartir avec plein d'idées !",
+        "speakersId": [9]
+    },
 	{
         "name": "A la fin de la soirée vous allez vous la jouer en programmation fonctionnelle",
         "date": "2017-03-21T18:30:00",
