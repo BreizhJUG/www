@@ -337,5 +337,12 @@
         "avatar":"images/speakers/k33g_org.jpg",
         "resume":"Mais qui est @k33g_org?<br/>Bon c’est pas simple à expliquer … Je voudrais dire que je suis un dev qui fait du commerce, ou un commercial qui fait du dev, mais ça passe mieux en anglais (tech evangelist with sales/post sales and pre sales skills) et en 🇫🇷 ça peut être mal interprété 😉 … “quoi un commercial dans un JUG! Mais de qui se moque-t-on!?”, donc dans la vie je suis:<br/>Eleveur de 🤖<br/>Golo tech-evangelist-dev-relation-advocate 😜 @TypeUnsafe<br/>Geek officiel d’entreprise<br/>IOT addict<br/>Consultant 😂<br/>@ScalaIO_FR member<br/>@MixIT_Lyon member<br/>Solutions engineer @GitHub<br/>Language agnostic … (à part le JavaScript)<br/>et certainement d’autres trucs mais bon …",
         "twitter":"k33g_org"
+    },
+    {
+        "id":49,
+        "name":"Lucas Pouzac",
+        "avatar":"images/speakers/lucasPouzac.png",
+        "resume":"Après plusieurs années de développement en SSII, j'ai rejoins PagesJaunes en tant qu'architecte technique. L'optimisation des performances serveurs du site web / mobile, la gestion de l'obsolescence de nos frameworks et l'évolution de nos plateformes et middlewares font partie de mon quotidien.",
+        "twitter":"lucaspouzac"
     }
 ]
