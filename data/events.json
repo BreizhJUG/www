@@ -4,7 +4,7 @@
         "place": "ISTIC, Rennes",
         "meetup": "",
         "image": "images/events/goreplay_white.png",
-        "resume": "Vous avez maudit JMeter / Gatling /… lors de l'écriture de scénario de performance pour votre site préféré : venez voir comment les faire crever à petit feu au profit de GoR.<br>GoR est l’outil le plus simple et le plus sûr pour tester votre application en utilisant le trafic réel avant de la mettre en production sur votre plateforme de staging.<br>En plus de la présentation de l’outil, vous allez voir pourquoi, au sein de PagesJaunes.fr, l’usage de GoR a été effectué, ainsi que l’architecture mise en place pour répondre à notre besoin de validation.",
+        "resume": "Vous avez maudit JMeter / Gatling /… lors de l'écriture de scénario de performance pour votre site préféré : venez voir comment faire crever ces outils à petit feu au profit de GoReplay.<br>GoReplay est l’outil le plus simple et le plus sûr pour tester votre application en utilisant le trafic réel, avant de la mettre en production, sur votre plateforme de staging.<br>En plus de la présentation de l’outil, vous allez voir pourquoi au sein de PagesJaunes.fr, l’usage de GoReplay a été faite, ainsi que l’architecture mise en place pour répondre à notre besoin de validation.",
         "speakersId": [49]
     },{
         "name": "Découvrons et expérimentons RxJava2 ensemble",
