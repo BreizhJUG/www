@@ -73,7 +73,7 @@ header .brand {
     padding: 2px 0 0 0 !important;
     margin: 0 40px 0 30px !important;
 }
-header .nav li a, #youtube a {
+header .nav li a, #youtube a, footer {
     font-family: "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
