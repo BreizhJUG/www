@@ -73,18 +73,26 @@ header .brand {
     padding: 2px 0 0 0 !important;
     margin: 0 40px 0 30px !important;
 }
+header .nav li a, #youtube a, footer {
+    font-family: "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 header .nav li a {
-	color: #000;
+    color: #000;
 	display: block;
 	padding: 16px 15px !important;
 	text-transform: uppercase;
-	font: normal 17px/17px "GothamBook","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
 }
 
 #menu-spacer {
-    height: 54px;
+    height: 100px;
 }
+
+#youtube { text-align:right;}
+#youtube > * { display: inline; vertical-align: super;}
+#youtube a { padding-right: 5px;}
 
 @media (max-width: 979px) {
     #menu-spacer {
@@ -113,7 +121,8 @@ header .nav li a {
 }
 .black {
 	background: #000;
-	}
+    color: white;
+}
 
 /*########### Twitter & Github link ###########*/
 .twitter, .github, .mail {
@@ -375,7 +384,7 @@ img.vignette {
 /*########### Home - Team ###########*/
 #team {
 	background: #1c1c1c url(../images/lensflare.png) no-repeat center top;
-	color: #737373;
+	color: #BBB;
 }
 
 #team .grid {
@@ -392,6 +401,8 @@ img.vignette {
 	text-align:center;
 	min-height: 40px;
 }
+
+#team a { color: #139be8;}
 
 #team .avatar{
     text-align: center;
