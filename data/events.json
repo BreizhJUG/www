@@ -1,4 +1,12 @@
 [	{
+        "name": "Tu modules ?",
+        "date": "2017-10-05T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "243455757",
+        "image": "images/events/jigsaw.jpg",
+        "resume": "On a tout dit sur les modules de Java 9, de « ça va jamais marcher », et « de toutes façons personnes n’est d’accord », à « de toute façon c’est pas encore intégré ».<br>Et si on prenait le temps de comprendre pourquoi il y a des modules dans Java 9, à quoi ils servent, ce que cela va changer et quels sont les bénéfices que l’on peut en tirer.",
+        "speakersId": [1]
+    },{
         "name": "REX pagesjaunes.fr - Les transactions dans une architecture microservices",
         "date": "2017-09-07T18:30:00",
         "place": "ISTIC, Rennes",
