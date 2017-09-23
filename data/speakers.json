@@ -351,5 +351,19 @@
         "avatar":"images/speakers/david-decarvalho.jpg",
         "resume":"Je travaille actuellement chez Pagesjaunes (7 ans). Je suis Technical Leader et Ingénieur Développeur \"touche-à-tout\" depuis une dizaine d'années (13 ans). Mon langage de prédilection est le Java (entre autres) mais je travaille également sur des sujets techniques, allant des Bases de données aux API REST en passant par la mise en place d'outillage interne. Je suis également friand de tout ce qui concerne les process Agile, j'ai d'ailleurs été ScrumMaster pendant 2 avant de revenir à la technique pure.",
         "twitter":"dedece35"
+    },
+    {
+        "id":51,
+        "name":"Florent Biville",
+        "avatar":"images/speakers/fbiville.jpg",
+        "resume":"Señor software engineer at Pivotal Labs, ex-Criteo, Spring Meetup & Papers We Love Paris co-founder, Hackergarten org and F/OSS lover, Florent Biville strives for producing simple and robust software within great teams.<br>Involved for several years with Neo4j, Florent is an official Neo4j Ambassador and an independent trainer.<br>He also enjoys giving back the time he borrowed while using F/OSS software by contributing patches and sometimes whole new projects such as Liquigraph.<br>Blog: http://fbiville.github.io",
+        "twitter":"fbiville"
+    },
+    {
+        "id":52,
+        "name":"Marouane Gazanayi",
+        "avatar":"images/speakers/mgazanayi.jpg",
+        "resume":"Marouane is a passionate developer and a continous learner. He attends as many conferences as he can and follow some MOOCs to always be up to date.<br>He likes working(and is working) with great people that can push him to the top.<br>He likes agility and want to be a software craftsman.",
+        "twitter":"mgazanayi"
     }
 ]
