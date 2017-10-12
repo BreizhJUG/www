@@ -2,7 +2,7 @@
         "name": "Open data avec Neo4j : de l'idée au déploiement",
         "date": "2017-11-02T18:30:00",
         "place": "ISTIC, Rennes",
-        "meetup": "",
+        "meetup": "244152098",
         "image": "images/events/neo4j_logo_globe.png",
         "resume": "Cette présentation vous guidera étape par étape de l'idée du produit jusqu'à son déploiement en production.<br>La présentation prendra la forme d'un dialogue client - consultant.<br>Ce jeu de rôles sera l'occasion d'aborder la modélisation d'un domaine concret en termes de graphe, le langage de requêtage Cypher ainsi que des librairies utiles quand on développe une application avec Neo4j.",
         "speakersId": [51,52]
