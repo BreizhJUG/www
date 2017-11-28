@@ -1,4 +1,12 @@
 [	{
+        "name": "Soirée Jenkins",
+        "date": "2017-12-14T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "",
+        "image": "images/events/jenkins.jpg",
+        "resume": "<br><strong>Talk de Nicolas Verle</strong> : <br><br>Présentation de la philosophie puis de l'architecture globale de la suite pipeline de Jenkins avant de démontrer un exemple complet d'industrialisation d'un projet Java. Du checkout des sources jusqu'au déploiement sur une plateforme de staging, le tout à l'aide d'un DSL custom.<br><br><strong>Talk de Yoann et Nicolas</strong> :<br><br>Dernières nouveautés de Jenkins ...<br><br>",
+        "speakersId": [53, 8, 15]
+    },{
         "name": "Open data avec Neo4j : de l'idée au déploiement",
         "date": "2017-11-02T18:30:00",
         "place": "ISTIC, Rennes",

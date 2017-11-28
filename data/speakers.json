@@ -365,5 +365,11 @@
         "avatar":"images/speakers/mgazanayi.jpg",
         "resume":"Marouane is a passionate developer and a continous learner. He attends as many conferences as he can and follow some MOOCs to always be up to date.<br>He likes working(and is working) with great people that can push him to the top.<br>He likes agility and want to be a software craftsman.",
         "twitter":"mgazanayi"
+    },
+    {
+        "id":53,
+        "name":"Nicolas Verle",
+        "avatar":"images/speakers/nicolasVerle.png",
+        "resume":"Nicolas Verlé est consultant chez Zenika depuis 3 ans. Après un parcours d'une dizaine d'années en tant que développeur puis architecte java, il se passionne pour les problématiques de Continuous Delivery et d'Infrastructure as Code. Ce qui l'amène tout naturellement à être convaincu des bienfaits de l'organisation DevOps."
     }
 ]

@@ -515,3 +515,9 @@ breizhjugApp.filter('eventsFilter', function () {
         return result;
     }
 });
+
+breizhjugApp.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
+});

@@ -57,7 +57,7 @@
 
         </div>
         <div class="col-md-8 speakers">
-          <div ng-repeat="speaker in nextEvent.speakers" ng-controller="speakerController">
+          <div ng-repeat="speaker in nextEvent.speakers | reverse" ng-controller="speakerController">
             <div ng-include src="'views/speaker.html'"></div>
           </div>
         </div>
