@@ -2,7 +2,7 @@
         "name": "Soirée Jenkins",
         "date": "2017-12-14T18:30:00",
         "place": "ISTIC, Rennes",
-        "meetup": "",
+        "meetup": "245635860",
         "image": "images/events/jenkins.jpg",
         "resume": "<br><strong>Intro de Yoann Dubreuil et Nicolas De Loof</strong> lancement du [BreizhJAM](https://www.meetup.com/fr-FR/Rennes-Jenkins-Area-Meetup) et tour d'horizon des dernières nouveautés de Jenkins : declarative pipeline, edition graphique des pipelines, JEP, CloudBees DevOptics, configuration-as-code, shared libraries...<br><br><strong>Talk de Nicolas Verle</strong> : <br><br>Présentation de la philosophie puis de l'architecture globale de la suite pipeline de Jenkins avant de démontrer un exemple complet d'industrialisation d'un projet Java. Du checkout des sources jusqu'au déploiement sur une plateforme de staging, le tout à l'aide d'un DSL custom.",
         "speakersId": [53, 8, 15]
