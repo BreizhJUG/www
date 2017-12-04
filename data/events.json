@@ -1,4 +1,12 @@
 [	{
+        "name": "Pourquoi Spring <3 Kotlin",
+        "date": "2018-01-09T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "",
+        "image": "images/events/spring_kotlin.png",
+        "resume": "J'expliquerai pourquoi Spring <3 Kotlin et comment utiliser le support officiel de ce langage qui sera disponible dans Spring Framework 5 [1], Spring Boot 2 et Spring Data Kay  pour développer votre prochaine application Spring plus efficacement tout en vous faisant plaisir. <br><br>Je décrirai comment transformer étape par étape un projet Spring Boot 1.0 écrit en Java en un projet Spring Boot 2.0 écrit en Kotlin tournant sur le nouveau framework réactif Spring WebFlux :<ul><li>Etape 1: Pourquoi choisir Kotlin et comment l'utiliser à la place de Java 8</li> <li>Etape 2: Mise à jour vers Spring Framework 5 et Spring Boot 2.0</li> <li>Etape 3: Migrer de Spring MVC à Spring WebFlux et ses API réactives</li> <li>Etape 4: Utiliser l'API fonctionnelle de Spring</li> </ul> [1] (https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0)",
+        "speakersId": [54]
+    },{
         "name": "Soirée Jenkins",
         "date": "2017-12-14T18:30:00",
         "place": "ISTIC, Rennes",

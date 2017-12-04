@@ -371,5 +371,11 @@
         "name":"Nicolas Verle",
         "avatar":"images/speakers/nicolasVerle.png",
         "resume":"Nicolas Verlé est consultant chez Zenika depuis 3 ans. Après un parcours d'une dizaine d'années en tant que développeur puis architecte java, il se passionne pour les problématiques de Continuous Delivery et d'Infrastructure as Code. Ce qui l'amène tout naturellement à être convaincu des bienfaits de l'organisation DevOps."
+    },
+    {
+        "id":54,
+        "name":"Sébastien Deleuze",
+        "avatar":"images/speakers/sebastien_deleuze.jpg",
+        "resume":"Sébastien travaille chez Pivotal en tant que développeur de Spring Framework et Reactor. Il intervient sur le support Web et Kotlin sur les différents projets Spring. Il fait également partie de l'équipe qui organise la conférence MiXiT."
     }
 ]
