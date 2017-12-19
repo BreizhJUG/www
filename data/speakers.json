@@ -376,6 +376,7 @@
         "id":54,
         "name":"Sébastien Deleuze",
         "avatar":"images/speakers/sebastien_deleuze.jpg",
-        "resume":"Sébastien travaille chez Pivotal en tant que développeur de Spring Framework et Reactor. Il intervient sur le support Web et Kotlin sur les différents projets Spring. Il fait également partie de l'équipe qui organise la conférence MiXiT."
+        "resume":"Sébastien travaille chez Pivotal en tant que développeur de Spring Framework et Reactor. Il intervient sur le support Web et Kotlin sur les différents projets Spring. Il fait également partie de l'équipe qui organise la conférence MiXiT.",
+	"twitter":"sdeleuze"
     }
 ]
