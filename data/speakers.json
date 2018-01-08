@@ -378,5 +378,12 @@
         "avatar":"images/speakers/sebastien_deleuze.jpg",
         "resume":"Sébastien travaille chez Pivotal en tant que développeur de Spring Framework et Reactor. Il intervient sur le support Web et Kotlin sur les différents projets Spring. Il fait également partie de l'équipe qui organise la conférence MiXiT.",
 	"twitter":"sdeleuze"
+    },
+    {
+        "id":55,
+        "name":"Camilo Sierra",
+        "avatar":"images/speakers/CamiloSierra.jpg",
+        "resume":"Camilo a suivi la formation Core d'Elasticsearch et a utilisé le support Elasticsearch pendant plus d'un an. Après plus de 5 ans dans le développement des applications en utilisant la suite Elastic il rejoint l'équipe support d'Elastic pour accompagner les clients en France et en Espagne.",
+	"twitter":"CamiloSierrax"
     }
 ]
