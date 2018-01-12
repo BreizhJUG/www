@@ -84,9 +84,6 @@ breizhjugApp.controller("homeHeadController", function ($scope) {
         {src:"images/header/breizhjug-h300.jpg"},
         {src:"images/header/devoxx_france_v2_h_600_130_2018.png", href:"http://www.devoxx.fr"},
         {src:"images/header/BreizhCamp-h300.jpg", href:"http://www.breizhcamp.org"},
-        {src:"images/header/GDG_Rennes-h300.jpg", href:"http://www.gdgrennes.org/"},
-        {src:"images/header/docker_meetup.jpeg", href:"http://www.meetup.com/Docker-Rennes/events/"},
-        {src:"images/header/BreizhKids-h300.jpg"}];
     $scope.carouselOptions = {
         auto: true,
         controls: false
