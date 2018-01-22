@@ -2,7 +2,7 @@
         "name": "Les nouveautés les plus marquantes de Elastic 6.0/6.1",
         "date": "2018-02-01T18:30:00",
         "place": "ISTIC, Rennes",
-        "meetup": "",
+        "meetup": "247047688",
         "image": "images/events/elastic6.png",
         "resume": "Nous parlerons non seulement des nouveautés de 6.0 mais aussi des nouveautés de la version 6.1, comme \"Adaptive replica selection\" ou des optimisations des structures de données et l'upgrade en Lucene 7.2, sans oublier les mises à jour de versions majeures sans interruptions, des Sequence IDs, de nos adieux au _type, des nouveaux modes dans les tableaux de bord, des alertes automatisées sur vos clusters Elastic, des pipelines Logstash et de leur gestion depuis Kibana, de l’intégration Beats avec Kubernetes et de tous les nouveaux modules Beats.",
         "speakersId": [55]
