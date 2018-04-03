@@ -5,7 +5,12 @@
         "meetup": "247047688",
         "image": "images/events/elastic6.png",
         "resume": "Nous parlerons non seulement des nouveautés de 6.0 mais aussi des nouveautés de la version 6.1, comme \"Adaptive replica selection\" ou des optimisations des structures de données et l'upgrade en Lucene 7.2, sans oublier les mises à jour de versions majeures sans interruptions, des Sequence IDs, de nos adieux au _type, des nouveaux modes dans les tableaux de bord, des alertes automatisées sur vos clusters Elastic, des pipelines Logstash et de leur gestion depuis Kibana, de l’intégration Beats avec Kubernetes et de tous les nouveaux modules Beats.",
-        "speakersId": [55]
+        "speakersId": [55],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=oeMRupiYLLY",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "Pourquoi Spring <3 Kotlin",
         "date": "2018-01-09T18:30:00",
@@ -13,7 +18,12 @@
         "meetup": "246011764",
         "image": "images/events/spring_kotlin.png",
         "resume": "J'expliquerai pourquoi Spring <3 Kotlin et comment utiliser le support officiel de ce langage qui sera disponible dans Spring Framework 5 [1], Spring Boot 2 et Spring Data Kay  pour développer votre prochaine application Spring plus efficacement tout en vous faisant plaisir. <br><br>Je décrirai comment transformer étape par étape un projet Spring Boot 1.0 écrit en Java en un projet Spring Boot 2.0 écrit en Kotlin tournant sur le nouveau framework réactif Spring WebFlux :<ul><li>Etape 1: Pourquoi choisir Kotlin et comment l'utiliser à la place de Java 8</li> <li>Etape 2: Mise à jour vers Spring Framework 5 et Spring Boot 2.0</li> <li>Etape 3: Migrer de Spring MVC à Spring WebFlux et ses API réactives</li> <li>Etape 4: Utiliser l'API fonctionnelle de Spring</li> </ul> [1] (https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0)",
-        "speakersId": [54]
+        "speakersId": [54],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=Yuh96IiMnUo",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "Soirée Jenkins",
         "date": "2017-12-14T18:30:00",
@@ -21,7 +31,16 @@
         "meetup": "245635860",
         "image": "images/events/jenkins.jpg",
         "resume": "<br><strong>Intro de Yoann Dubreuil et Nicolas De Loof</strong> lancement du [BreizhJAM](https://www.meetup.com/fr-FR/Rennes-Jenkins-Area-Meetup) et tour d'horizon des dernières nouveautés de Jenkins : declarative pipeline, edition graphique des pipelines, JEP, CloudBees DevOptics, configuration-as-code, shared libraries...<br><br><strong>Talk de Nicolas Verle</strong> : <br><br>Présentation de la philosophie puis de l'architecture globale de la suite pipeline de Jenkins avant de démontrer un exemple complet d'industrialisation d'un projet Java. Du checkout des sources jusqu'au déploiement sur une plateforme de staging, le tout à l'aide d'un DSL custom.",
-        "speakersId": [53, 8, 15]
+        "speakersId": [53, 8, 15],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=TMS9q1V5PnU",
+            "name": "Nouveautés Jenkins (Y. Dubreuil et N. De Loof)"
+        }, {
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=CALneLwsALg",
+            "name": "Pipeline Jenkins (Nicolas Verlé)"
+        }]
     },{
         "name": "Open data avec Neo4j : de l'idée au déploiement",
         "date": "2017-11-02T18:30:00",
@@ -29,7 +48,12 @@
         "meetup": "244152098",
         "image": "images/events/neo4j_logo_globe.png",
         "resume": "Cette présentation vous guidera étape par étape de l'idée du produit jusqu'à son déploiement en production.<br>La présentation prendra la forme d'un dialogue client - consultant.<br>Ce jeu de rôles sera l'occasion d'aborder la modélisation d'un domaine concret en termes de graphe, le langage de requêtage Cypher ainsi que des librairies utiles quand on développe une application avec Neo4j.",
-        "speakersId": [51,52]
+        "speakersId": [51,52],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=yokOTfYFaB8",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "Tu modules ?",
         "date": "2017-10-05T18:30:00",
@@ -37,7 +61,12 @@
         "meetup": "243455757",
         "image": "images/events/jigsaw.jpg",
         "resume": "On a tout dit sur les modules de Java 9, de « ça va jamais marcher », et « de toutes façons personnes n’est d’accord », à « de toute façon c’est pas encore intégré ».<br>Et si on prenait le temps de comprendre pourquoi il y a des modules dans Java 9, à quoi ils servent, ce que cela va changer et quels sont les bénéfices que l’on peut en tirer.",
-        "speakersId": [1]
+        "speakersId": [1],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=0Juw_LF9Vk4",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "REX pagesjaunes.fr - Les transactions dans une architecture microservices",
         "date": "2017-09-07T18:30:00",
@@ -45,7 +74,12 @@
         "meetup": "243071499",
         "image": "images/events/micro-services.png",
         "resume": "Comment sécuriser vos transactions sur une architecture distribuée (microservices) sans que cela vous coûte un bras ? (API REST / RabbitMQ / Cassandra).<br> Je vous propose un retour d'expérience sur la mise en place d'une solution chez PagesJaunes.fr.<br> Chacun a conscience que les transactions doivent être bien gérées pour avoir un système performant et garantissant l’intégrité des données notamment. <br> Venez découvrir comment nous avons mis en place une architecture distribuée basée sur l’asynchronisme et de la reprise de données automatique.",
-        "speakersId": [50]
+        "speakersId": [50],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=xgQeDF5264w",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "Un peu GOR l'exécution de votre outil de load test préféré!",
         "date": "2017-06-29T18:30:00",
@@ -53,7 +87,12 @@
         "meetup": "240916754",
         "image": "images/events/goreplay_white.png",
         "resume": "Vous avez maudit JMeter / Gatling /… lors de l'écriture de scénario de performance pour votre site préféré : venez voir comment faire crever ces outils à petit feu au profit de GoReplay.<br>GoReplay est l’outil le plus simple et le plus sûr pour tester votre application en utilisant le trafic réel, avant de la mettre en production, sur votre plateforme de staging.<br>En plus de la présentation de l’outil, vous allez voir pourquoi au sein de PagesJaunes.fr, l’usage de GoReplay a été faite, ainsi que l’architecture mise en place pour répondre à notre besoin de validation.",
-        "speakersId": [49]
+        "speakersId": [49],
+        "links": [{
+            "type": "film",
+            "url": "https://www.youtube.com/watch?v=KpZV9ZCigi0",
+            "name": "Vidéo de la session"
+        }]
     },{
         "name": "Découvrons et expérimentons RxJava2 ensemble",
         "date": "2017-05-30T18:30:00",
@@ -140,10 +179,10 @@
         "image": "images/events/gradlephant.png",
         "resume": "Personne n’aime les builds lentes. Combien de fois par jour compilez-vous votre application ? Combien de fois cliquez vous le bouton « run » dans votre IDE ? Combien de fois avez-vous maudit Maven, SBT, Ant, Grunt (et peut-être même Gradle ?) pour leur lenteur désespérante ? Peut-être même certains d’entre vous lancent systématiquement un `clean`, comme réflexe conditionné à un outil de build cassé ?<br/>Avec Gradle, on vise la _build happiness_ : il n’y a aucune raison de ne pas attendre les mêmes standards de qualité entre votre développement et votre process de build. Les builds sont importantes, et mêmes cruciales pour la productivité des développeurs. En ce sens, elles se doivent d’être optimisées pour la performance. Gradle offre différents moyens de le faire: builds incrémentales, builds continues, le daemon, le cache de tâches, les build scans, … Nous avons largement travaillé avec Gradle 3 à améliorer significativement les performances, suffisamment pour en faire un game changer.<br/>Venez apprendre comment rendre vos builds significativement plus rapides. Réclamez votre CPU pour coder, pas pour builder!",
         "speakersId": [19],
-	"links": [
+	    "links": [
 		    {
                 "type": "film",
-                "url": "https://youtu.be/TmFP9R4AD-c",
+                "url": "https://www.youtube.com/watch?v=o0UMy-lYEVI",
                 "name": "Vidéo de la session"
             },
             {
