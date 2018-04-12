@@ -385,5 +385,12 @@
         "avatar":"images/speakers/CamiloSierra.jpg",
         "resume":"Camilo a suivi la formation Core d'Elasticsearch et a utilisé le support Elasticsearch pendant plus d'un an. Après plus de 5 ans dans le développement des applications en utilisant la suite Elastic il rejoint l'équipe support d'Elastic pour accompagner les clients en France et en Espagne.",
 	"twitter":"CamiloSierrax"
+    },
+    {
+        "id":56,
+        "name":"Pascal Le Merrer",
+        "avatar":"images/speakers/pascalLeMerrer_400x400.jpg",
+        "resume":"",
+        "twitter":"pascallemerrer"
     }
 ]

@@ -1,4 +1,13 @@
-[	{
+[{
+        "name": "ELM : Goodbye Javascript !",
+        "date": "2018-04-19T19:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "249715461",
+        "image": "images/events/Elm_logo.svg.png",
+        "resume": "En collaboration avec le nouveau meetup Lambda (https://www.meetup.com/fr-FR/Meetup-Lambda-Rennes-Programmation-fonctionnelle/) et pour l'aider dans son lancement, nous allons aller au delà de notre univers Java pour découvrir le langage ELM.<br><br>Le langage ELM est un langage fonctionnel qui peut remplacer Javascript. Il produit du code robuste et performant.<br><br>Avec ELM, adieu les erreurs à l’exécution : fini les “undefined is not a function”. Refactorez votre code en toute confiance, dans un langage qui vous permettra de combiner fun et productivité.<br><br>Lors de cette session vous découvrirez ELM, ses points forts... et ses points faibles.",
+        "speakersId": [56],
+        "links": []
+    },{
         "name": "Les nouveautés les plus marquantes de Elastic 6.0/6.1",
         "date": "2018-02-01T18:30:00",
         "place": "ISTIC, Rennes",
