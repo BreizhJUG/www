@@ -392,5 +392,11 @@
         "avatar":"images/speakers/pascalLeMerrer_400x400.jpg",
         "resume":"Pascal est développeur depuis... euh... longtemps.^^<br>Il travaille chez Orange Labs, dans une équipe chargée de créer des logiciels de cybersécurité.<br>Fidèle à l’état d’esprit Software Craftsmanship, il apprends de nouveux langages tous les ans, et utilise certains d’entre eux sur ses projets pros, quand c’est pertinent.",
         "twitter":"pascallemerrer"
+    },
+    {
+        "id":57,
+        "name":"Benoit Baudry",
+        "avatar":"images/speakers/benoitBaudry.jpg",
+        "resume":"Benoit Baudry is a Professor of Software Technology at the KTH Royal Institute of Technology in Stockholm, Sweden. From 2004 to 2017, he was a research scientist at INRIA in Rennes, France. There, he led the DiverSE research group, one of the largest French group for software research, from 2013 to 2017.<br>His research interests are in the areas of  software diversification and testing ifor DevOps and moving target defenses. His work relies on experimental science and strong collaborations with the software industry, in order to develop sound and relevant results."
     }
 ]
