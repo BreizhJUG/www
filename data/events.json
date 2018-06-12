@@ -2,7 +2,7 @@
         "name": "Mutation Testing for Java",
         "date": "2018-06-21T18:30:00",
         "place": "ISTIC, Rennes",
-        "meetup": "",
+        "meetup": "251673077",
         "image": "images/events/mutants.png",
         "resume": "This talk introduces and illustrates the benefits of mutation testing to assess the quality of test suites. The intuition  of this technique is simple: to determine if a test suite can detect bugs in a program, simply inject bugs in this program and check if the tests can detect them.<br><br>In this talk, I cover the following points :<ul><li>the key principles of mutation analysis.</li><li>the Pit tool to perform mutation analysis on Java program to assess the quality of JUnit test suites.</li><li>the Descartes tool, an extension of Pit to scale mutation analysis to large Java projects</li><li>concrete examples of weaknesses in the test suite that are revealed by mutation analysis</li><li>the integration of Descartes in the new check API provided by Github</li></ul><br>",
         "speakersId": [57],
