@@ -398,5 +398,12 @@
         "name":"Benoit Baudry",
         "avatar":"images/speakers/benoitBaudry.jpg",
         "resume":"Benoit Baudry is a Professor of Software Technology at the KTH Royal Institute of Technology in Stockholm, Sweden. From 2004 to 2017, he was a research scientist at INRIA in Rennes, France. There, he led the DiverSE research group, one of the largest French group for software research, from 2013 to 2017.<br>His research interests are in the areas of  software diversification and testing ifor DevOps and moving target defenses. His work relies on experimental science and strong collaborations with the software industry, in order to develop sound and relevant results."
+    },
+    {
+        "id":58,
+        "name":"Florent Ramière",
+        "avatar":"images/speakers/florentRamiere_400x400.jpg",
+        "resume":"Florent Ramière a plus de vingt années d'expérience dans le développement logiciel et la conduite de projets informatiques. Il a passé plusieurs années aux Etats-Unis chez un éditeur de logiciel. A son retour en France après un détour chez Capgemini, il a co-fondé la société Jaxio. Après plus de 10 ans d'entreprenariat, Florent a rejoint Confluent -la société fondée par les créateurs d'Apache Kafka- où il accompagne les grands comptes en Europe en tant que Technical Account Manager.",
+        "twitter":"framiere"
     }
 ]

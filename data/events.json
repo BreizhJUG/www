@@ -1,4 +1,13 @@
 [{
+        "name": "Au delà des brokers: un tour de l'environnement Kafka",
+        "date": "2018-10-04T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "",
+        "image": "images/events/Kafka.png",
+        "resume": "Apache Kafka ne se résume pas aux brokers, il y a tout un écosystème open-source qui gravite autour. Je vous propose ainsi de découvrir les principaux composants comme Kafka Streams, KSQL, Kafka Connect, Rest proxy, Schema Registry, MirrorMaker, etc.<br>Venez avec vos questions, le plus la session sera interactive, le mieux elle sera!",
+        "speakersId": [58],
+        "links": []
+    },{
         "name": "Mutation Testing for Java",
         "date": "2018-06-21T18:30:00",
         "place": "ISTIC, Rennes",
