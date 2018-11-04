@@ -1,4 +1,14 @@
 [{
+        "name": "\"Look Ma, No Hands\" - Manage Jenkins Configuration as Code",
+        "date": "2018-11-06T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "256027947",
+        "image": "images/events/configAsCode.png",
+        "resume": "Pour donner un coup de pouce au Meetup Jenkins, nous vous proposons une session commune autour de la Configuration-as-Code. Il s'agit d'une des sessions phare de Jenkins World, qui vous sera présentée en Français mais nous avons la flemme de traduire le pitch:<br/><br/> \"The \"as code\" paradigm is about being able to reproduce and/or restore a full environment within minutes based on recipes and automation, managed as code.<br/> Most Jenkins users already use this approach to manage the architecture and infrastructure for applications they build and deploy with Jenkins. But what about your Jenkins master?<br/> Shall we store the whole JENKINS_HOME in a Git repository ? Many use xml templates or Groovy voodoo to address this need. Early in 2018, we released the Jenkins configuration as code project, designed to offer a standard mechanism to setup Jenkins, without needs to know either the Jenkins internals or any piece of Groovy syntax. Just mimic the web UI...as code.",
+        "speakersId": [8],
+        "links": []
+    },
+    {
         "name": "Au delà des brokers: un tour de l'environnement Kafka",
         "date": "2018-10-04T18:30:00",
         "place": "ISTIC, Rennes",
