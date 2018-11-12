@@ -405,5 +405,12 @@
         "avatar":"images/speakers/florentRamiere_400x400.jpg",
         "resume":"Florent Ramière a plus de vingt années d'expérience dans le développement logiciel et la conduite de projets informatiques. Il a passé plusieurs années aux Etats-Unis chez un éditeur de logiciel. A son retour en France après un détour chez Capgemini, il a co-fondé la société Jaxio. Après plus de 10 ans d'entreprenariat, Florent a rejoint Confluent -la société fondée par les créateurs d'Apache Kafka- où il accompagne les grands comptes en Europe en tant que Technical Account Manager.",
         "twitter":"framiere"
+    },
+    {
+        "id":59,
+        "name":"Stéphane Nicoll",
+        "avatar":"images/speakers/snicoll_400x400.jpg",
+	"resume":"Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors.<br/>An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world",
+        "twitter":"snicoll"
     }
 ]
