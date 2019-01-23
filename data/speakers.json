@@ -412,5 +412,12 @@
         "avatar":"images/speakers/snicoll_400x400.jpg",
 	"resume":"Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors.<br/>An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world",
         "twitter":"snicoll"
+    },
+    {
+        "id":60,
+        "name":"Mehdi El Kouhen",
+        "avatar":"images/speakers/mehdiElkouhen.jpeg",
+        "resume":"Développeur Java depuis 2002 et Nantais@SOFTEAM .FR depuis 2011, j'adore travailler sur des sujets DevOps. Je suis fan de Docker et de l'écosystème qui se construit autour.",
+        "twitter":"ElkouhenMehdi"
     }
 ]
