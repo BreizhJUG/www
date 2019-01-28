@@ -2,7 +2,7 @@
         "name": "Que se passe-t-il sous le capot ? Exploration au coeur de la JVM.",
         "date": "2019-02-21T18:30:00",
         "place": "ISTIC, Rennes",
-        "meetup": "",
+        "meetup": "258461182",
         "image": "images/events/JVMSousLeCapot.jpg",
 	"resume": "Suivez le lapin blanc ! Comment passe-t-on de votre code Java à l'assembleur qui le fait fonctionner ? Manipuler des concepts de haut niveau nous a fait oublier ce qui se passe \"sous le capot\", qui est pourtant une des clés pour écrire du code efficace.<br/><br/>A partir de quelques lignes de Java, nous partirons en exploration dans les différentes couches qui participent à l'exécution de votre code : compilateur, byte code, structure de la JVM OpenJDK, JIT, HotSpot, méthodes intrinsèques, assembleur généré...<br/><br/>Une présentation de vulgarisation accessible à tous, dont l'objectif est de susciter votre curiosité pour que vous aussi, vous partiez en exploration !",
         "speakersId": [61],
