@@ -419,5 +419,12 @@
         "avatar":"images/speakers/mehdiElkouhen.jpeg",
         "resume":"Développeur Java depuis 2002 et Nantais@SOFTEAM .FR depuis 2011, j'adore travailler sur des sujets DevOps. Je suis fan de Docker et de l'écosystème qui se construit autour.",
         "twitter":"ElkouhenMehdi"
+    },
+    {
+        "id":61,
+        "name":"Sylvain Wallez",
+        "avatar":"images/speakers/bluxte.jpg",
+        "resume":"Sylvain Wallez (@bluxte sur Twitter) est un développeur passionné, membre de la Fondation Apache, tech lead dans l'équipe Cloud chez Elastic. Il a écrit ses premières lignes de Java il y a déjà 20 ans et a commencé à bidouiller le bytecode il y a presque aussi longtemps !",
+        "twitter":"bluxte"
     }
 ]

@@ -1,7 +1,16 @@
 [{
+        "name": "Que se passe-t-il sous le capot ? Exploration au coeur de la JVM.",
+        "date": "2019-02-21T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "",
+        "image": "images/events/JVMSousLeCapot.jpg",
+	"resume": "Suivez le lapin blanc ! Comment passe-t-on de votre code Java à l'assembleur qui le fait fonctionner ? Manipuler des concepts de haut niveau nous a fait oublier ce qui se passe \"sous le capot\", qui est pourtant une des clés pour écrire du code efficace.<br/><br/>A partir de quelques lignes de Java, nous partirons en exploration dans les différentes couches qui participent à l'exécution de votre code : compilateur, byte code, structure de la JVM OpenJDK, JIT, HotSpot, méthodes intrinsèques, assembleur généré...<br/><br/>Une présentation de vulgarisation accessible à tous, dont l'objectif est de susciter votre curiosité pour que vous aussi, vous partiez en exploration !",
+        "speakersId": [61],
+        "links": []
+    },{
         "name": "Déploiement de son application Java avec Jenkins sur son cluster Kubernetes",
         "date": "2019-01-29T18:30:00",
-        "place": "ISTIC, Rennes (A confirmer)",
+        "place": "ISTIC, Rennes",
         "meetup": "258318833",
         "image": "images/events/kubernetes.png",
         "resume": "Dans cette présentation, nous déployons une application, composée d'un serveur Java et de sa base de données, vers un cluster [Kubernetes](https://kubernetes.io/). L'objectif est de montrer comment déployer une application dockerisée sur le poste de développeur ou à partir d'outils d'intégration continu comme Jenkins.<br/><br/>Nous commençons par créer deux [Chart Helm](https://helm.sh/) qui décrivent le déploiement de l'application et de la base de données. Nous déployons les charts sur le cluster via la ligne de commande Helm.<br/><br/>Pour améliorer l'expérience développeur, nous mettons en place via [Skaffold](https://skaffold.dev/), un déploiement continu de l'application vers un serveur kubernetes local ([minikube](https://github.com/kubernetes/minikube)).<br/><br/>Finalement, nous configurons un Job Jenkins pour déployer l'application. Le Job gère notamment, par environnement cible, des propriétés et des secrets (chiffrés via [helm secrets](https://github.com/futuresimple/helm-secrets)).",
