@@ -1,25 +1,5 @@
 [
     {
-        "name": "Nicolas De Loof",
-        "resume": "Je suis contributeur opensource ([Maven](http://maven.apache.org), [Jenkins](http://jenkins-ci.org)) et membre actif de la communauté Java.  \nAprès 14 années de bons et loyaux services en SSII j'ai rejoint [CloudBees](http://www.cloudbees.com) pour profiter du dynamisme et de la liberté d'action d'une startup innovante.  \nFondateur du JUG Rennais à une époque où ils se comptaient en France sur les doigts d'une main, j'ai également initié le [BreizhCamp](http://www.breizhcamp.org) et le [GDG Rennes](http://www.gdgrennes.org).  \nSigne particulier : orange",
-        "twitter": "ndeloof"
-    },
-    {
-        "name": "Michel David",
-        "resume": "Dans l'aventure du BreizhJug et du BreizhCamp depuis le début, j'aime l'émulation d'idées que ces évenements peuvent nous apporter. Passionné d'innovation, je touche un peu à tout lorsque j'ai 5 minutes (ou pas). Après 8 ans en société de service j'ai rejoint [Podbox](http://www.podbox.com) en qualité de directeur technique.  \nSigne particulier : petit oiseau rouge",
-        "twitter": "mimah35"
-    },
-    {
-        "name": "Julien Coste",
-        "resume": "Je ne lis pas mes mails donc je n'ai pas fourni ma bio pour le nouveau site web du JUG. C'est sans doute que je suis trop occupé à découper du bois ",
-        "twitter": "costejulien"
-    },
-    {
-        "name": "Sébastien Brousse",
-        "resume": "J'ai découvert les communautés de développeurs grâce au BreizhJUG. J'essaie maintenant d'apporter ma pierre pour bâtir un monde meilleur au travers du JUG et du BreizhCamp.   \nAprès 9 ans au service de clients, j'ai décidé de créer mon propre bébé [SearchMyMind](http://www.searchmymind.com) et de m'aventurer dans la jungle des startups.   \nSigne particulier : I &hearts; goodies",
-        "twitter": "seb_brousse"
-    },
-    {
         "name": "Laurent Huet",
         "resume": "Après avoir été quelques années spectateur assidu des conférences du BreizhJug, je suis passé du coté obscur de la force en rejoignant la team. Le orange pique parfois les yeux, mais on s'y fait (presque) ;-)  \nCoté pro, j'ai environ 15 ans de SSII au compteur et travaille désormais dans le domaine de la robotique industrielle chez [BA Systèmes](http://www.basystemes.com/). \nSigne particulier : j'aime le hard ... et promène parfois un minitel Telic 1B",
         "twitter": "lhuet35"
