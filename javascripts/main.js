@@ -82,7 +82,8 @@ breizhjugApp.controller("homeController", function ($scope, $rootScope, Scroll) 
 breizhjugApp.controller("homeHeadController", function ($scope) {
     $scope.headers = [
         {src:"images/header/breizhjug-h300.jpg"},
-        {src:"images/header/BreizhCamp-h300.jpg", href:"http://www.breizhcamp.org"}
+        {src:"images/header/BreizhCamp-h300.jpg", href:"http://www.breizhcamp.org"},
+        {src:"https://dvxfrance.cdn.prismic.io/dvxfrance/4d712b715acd9854ab0c4387d22120e1a221cc21_banniere_devoxx_france_horizontale_v3_2019.png":, href:"https://www.devoxx.fr/"}
     ];
     $scope.carouselOptions = {
         auto: true,
