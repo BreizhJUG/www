@@ -1,4 +1,22 @@
 [{
+        "name": "Sécurisez vos applications avec Keycloak",
+        "date": "2019-06-25T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "262219791",
+        "image": "images/events/keycloak-logo.png",
+        "resume": "Lors de mon Tool In Action sur Keycloak au BreizhCamp (https://www.youtube.com/watch?v=i94gJ4-tvfU), j'avais commencé à présenter comment Keycloak propose, et facilite l'intégration de l'authentification dans une application.<br/>Le use case mis en avant était celui qui concernait la page de login.<br/>Je vous propose de continuer à découvrir cet outil avec d'autres use case :<br/>- Securiser une API<br/>- Compléter le token JWT<br/>- Utiliser l'API Rest de Keycloak<br/>- Fédération d'utilisateurs<br/>- Clé privée compromise<br/>- Implémenter des SPI<br/>- ...",
+        "speakersId": [62],
+        "links": []
+    },{
+        "name": "Gradle: DSL Kotlin, performances des builds et autres nouveautés",
+        "date": "2019-05-28T18:30:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "261668300",
+        "image": "images/events/gradle-logo.png",
+        "resume": "Gradle continue d'évoluer pour apporter des builds plus rapides, plus précises et plus reproductibles, affûtées à vos besoins. Dans cette session, nous parlerons en particulier des apports de Gradle 5:<br/><br/>* le DSL Kotlin statiquement typé<br/>* des builds encore plus rapides (builds incrémentales, incremental annotation processing, ...)<br/>* gestion de dépendances fine (dependency locking, alignement de versions, ...)<br/>* nouvelles APIs pour les auteurs de plugins<br/>et bien plus encore !<br/><br/>N'attendez pas, up-gradlez votre build :)",
+        "speakersId": [19],
+        "links": []
+    },{
         "name": "Que se passe-t-il sous le capot ? Exploration au coeur de la JVM.",
         "date": "2019-02-21T18:30:00",
         "place": "ISTIC, Rennes",

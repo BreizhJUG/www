@@ -426,5 +426,12 @@
         "avatar":"images/speakers/bluxte.jpg",
         "resume":"Sylvain Wallez (@bluxte sur Twitter) est un développeur passionné, membre de la Fondation Apache, tech lead dans l'équipe Cloud chez Elastic. Il a écrit ses premières lignes de Java il y a déjà 20 ans et a commencé à bidouiller le bytecode il y a presque aussi longtemps !",
         "twitter":"bluxte"
+    },
+    {
+        "id":62,
+        "name":"Jérôme Marchand",
+        "avatar":"images/speakers/grigri_400x400_jmarchand.jpg",
+        "resume":"Passionné par l'informatique depuis l'adolescence, j'en ai fait mon métier depuis pas loin de 18 ans. Malgré plusieurs années de développements (Java, PHP, Python, C++), de déploiements et de supervision avec la fameuse méthode \"A l'arrache\", je reste pragmatique et plaide pour la culture DevOPS.",
+        "twitter":"Neken13"
     }
 ]
