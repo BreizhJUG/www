@@ -433,5 +433,12 @@
         "avatar":"images/speakers/grigri_400x400_jmarchand.jpg",
         "resume":"Passionné par l'informatique depuis l'adolescence, j'en ai fait mon métier depuis pas loin de 18 ans. Malgré plusieurs années de développements (Java, PHP, Python, C++), de déploiements et de supervision avec la fameuse méthode \"A l'arrache\", je reste pragmatique et plaide pour la culture DevOPS.",
         "twitter":"Neken13"
+    },
+    {
+        "id":63,
+        "name":"Yacine Rezgui",
+        "avatar":"images/speakers/yrezgui_400x400.jpg",
+        "resume":"Yacine est développeur advocate dans l'équipe Android chez Google, travaillant sur l'expérience développeur et les relations avec la communauté de développeurs. Il a travaillé précédemment chez IBM ainsi que plusieurs startups en tant que développeur frontend et backend.",
+        "twitter":"yrezgui"
     }
 ]

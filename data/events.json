@@ -1,4 +1,13 @@
 [{
+        "name": "Kotlin/Everywhere",
+        "date": "2019-09-17T19:00:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "264695317",
+        "image": "images/events/500px-Kotlin-logo.svg.png",
+        "resume": "<i>Meetup organisé en collaboration avec Android Rennes</i>.<br/><br/>\"Kotlin en 2019\" : Pour la plupart des développeurs qui ont utilisé Kotlin, leur expérience a commencé sur mobile avec Android quand le support officiel a été annoncé en 2017. Depuis, le langage a beaucoup évolué et son support s'est continuellement amélioré. Dans cette présentation, je parlerai de l'état actuel de Kotlin sur Android mais aussi sur les autres plateformes ainsi qu'un aperçu de son futur.",
+        "speakersId": [63],
+        "links": []
+    },{
         "name": "Sécurisez vos applications avec Keycloak",
         "date": "2019-06-25T18:30:00",
         "place": "ISTIC, Rennes",
