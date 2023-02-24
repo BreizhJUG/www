@@ -83,7 +83,7 @@ breizhjugApp.controller("homeHeadController", function ($scope) {
     $scope.headers = [
         {src:"images/header/breizhjug-h300.jpg"},
         {src:"images/header/BreizhCamp-h300.jpg", href:"http://www.breizhcamp.org"},
-	{src:"images/header/banniere-devoxx-fr-2022-h300.jpg", href:"https://www.devoxx.fr/"}
+	{src:"images/header/devoxxfr-20-970x250-Billboard.jpg", href:"https://www.devoxx.fr/"}
     ];
     $scope.carouselOptions = {
         auto: true,
