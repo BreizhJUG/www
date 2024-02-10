@@ -1,4 +1,22 @@
 [{
+        "name": "Generative AI par la pratique : cas concrets d’utilisation d’un LLM en Java, avec l’API PaLM et Gemini",
+        "date": "2024-01-25T19:00:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "298392506",
+        "image": "images/events/genAI_java_gemini.png",
+        "resume": "Les Large Language Models (LLM) sont une nouvelle technologie puissante qui peut être utilisée pour une variété de tâches, notamment la génération de texte, la traduction de texte et la rédaction de différents types de contenu créatif. Cependant, les LLMs peuvent être difficiles à utiliser, en particulier pour les développeurs qui ne sont pas expérimentés en Python, la “lingua franca” de l'IA. Alors, qu'en est-il des développeurs Java ? Comment pouvons-nous tirer parti de l'IA générative ?<br/><br/>Cette présentation vous montrera comment utiliser les LLMs en Java sans avoir besoin de Python. Nous utiliserons les APIs PaLM et Gemini, fournies par les services Google Cloud Vertex AI, pour effectuer une variété de tâches, telles que la recherche dans de la documentation, la génération d'histoires pour enfants, la synthèse du contenu, l'extraction de mots-clés ou d'entités, et plus encore. Nous utiliserons également LangChain4j, l'orchestrateur de LLM pour Java",
+        "speakersId": [65],
+        "links": []
+    },{
+        "name": "JDK21",
+        "date": "2023-11-09T19:00:00",
+        "place": "ISTIC, Rennes",
+        "meetup": "297046904",
+        "image": "images/events/jdk21-500px.png",
+        "resume": "Au programme:<br/>- Virtual threads<br/>- Record patterns<br/>- Sequenced collections<br/>- Preview features</br>- et plus ...",
+        "speakersId": [64],
+        "links": []
+    },{
         "name": "Kotlin/Everywhere",
         "date": "2019-09-17T19:00:00",
         "place": "ISTIC, Rennes",
