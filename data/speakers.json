@@ -452,8 +452,7 @@
         "id":65,
         "name":"Guillaume Laforge",
         "avatar":"images/speakers/GuillaumeLaforge.jpg",
-        "resume":"Guillaume Laforge est Developer Advocate chez Google Cloud.
-        Il se focalise sur les solutions serverless, l'orchestration d'API, ou bien sur l'intelligence artificielle générative.<br/>Guillaume est également le co-fondateur du langage de programmation Apache Groovy et un des membres fondateurs du podcast Les Cast Codeurs.",
+        "resume":"Guillaume Laforge est Developer Advocate chez Google Cloud.<br/>Il se focalise sur les solutions serverless, l'orchestration d'API, ou bien sur l'intelligence artificielle générative.<br/>Guillaume est également le co-fondateur du langage de programmation Apache Groovy et un des membres fondateurs du podcast Les Cast Codeurs.",
         "twitter":"glaforge"
     }
 ]
