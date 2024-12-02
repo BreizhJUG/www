@@ -454,5 +454,12 @@
         "avatar":"images/speakers/GuillaumeLaforge.jpg",
         "resume":"Guillaume Laforge est Developer Advocate chez Google Cloud.<br/>Il se focalise sur les solutions serverless, l'orchestration d'API, ou bien sur l'intelligence artificielle générative.<br/>Guillaume est également le co-fondateur du langage de programmation Apache Groovy et un des membres fondateurs du podcast Les Cast Codeurs.",
         "twitter":"glaforge"
+    },
+    {
+        "id":66,
+        "name": "Jérôme Molière",
+        "avatar":"images/speakers/JeromeMoliere.jpg",
+        "resume":"Jérôme Molière est développeur, formateur et auteur de livres sur Java depuis plus de 20 ans. Il est accroc aux langages fonctionnels (Scala, Clojure, Erlang), passionné par le monde du back end et de la performance (RabbitMQ, Kafka, JMS) et intégriste de la qualité logicielle...",
+        "twitter":""
     }
 ]
