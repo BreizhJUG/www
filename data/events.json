@@ -1,4 +1,15 @@
-[{
+[
+    {
+        "name": "Boostez vos performances Java avec JMH\n",
+        "date": "2024-11-28T19:00:00",
+        "place": "LIKSI, Rennes",
+        "meetup": "304528721",
+        "image": "images/events/jmh.png",
+        "resume": "JMH est un outil de microbenchmarking fournit par OpenJDK. Cet outil permet de mesurer finement les performances de vos algorithmes, ce qui est un problème beaucoup plus compliqué qu'il n'y paraît !",
+        "speakersId": [66],
+        "links": []
+    },
+    {
         "name": "Generative AI par la pratique : cas concrets d’utilisation d’un LLM en Java, avec l’API PaLM et Gemini",
         "date": "2024-01-25T19:00:00",
         "place": "ISTIC, Rennes",
